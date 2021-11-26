@@ -8,7 +8,7 @@ Andruav Web Client
 Andruav-Web-Client is website where you can track and control your drone from it.
 
 
-Andruav Web-Client URL: `https://andruav.com:8000/andruavweb.html <https://andruav.com:8000/andruavweb.html>`_
+Andruav Web-Client URL: `https://cloud.ardupilot.org:8001/andruavweb.html <https://cloud.ardupilot.org:8001/andruavweb.html>`_
 
 
 

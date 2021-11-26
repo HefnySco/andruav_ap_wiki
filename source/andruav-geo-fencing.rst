@@ -13,7 +13,7 @@ This is not GEO fence that Ardupilot support. This Geo-Fencing is controlled by 
 
 |
 
-To access Geo-Fence click `https://andruav.com:8000/mapeditor.html <https://andruav.com:8000/mapeditor.html>`_ .
+To access Geo-Fence click `https://cloud.ardupilot.org:8001/mapeditor.html <https://cloud.ardupilot.org:8001/mapeditor.html>`_ .
 
 Geo-Fence Manager allows you to design geo-fences and mission plans for multiple drones at the same time.
 
@@ -28,7 +28,7 @@ In the below image you can see *two* mission plans together with geo-fences regi
         :alt: Mission Planner
 
 you can export each mission plan as a file to be uploaded from :ref:`andruav-web-client`. Geo-Fences on the other side are saves for all the group in the system database.
-Geo-Fences will be active each time Andruav Mobile starts until it is deleted by `Geo-Fence editor <https://andruav.com:8000/mapeditor.html>`_ .
+Geo-Fences will be active each time Andruav Mobile starts until it is deleted by `Geo-Fence editor <https://cloud.ardupilot.org:8001/mapeditor.html>`_ .
 
 
 Rules of Geo-Fence
