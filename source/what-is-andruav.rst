@@ -17,7 +17,7 @@ Only two mobile devices and Andruav are what you need to get Imaging & FPV Gears
 
 .. tip::
 
-      Download Andruav from `here <https://play.google.com/store/apps/details?id=rcmobile.FPV>`_
+      Download Andruav from `here <https://play.google.com/store/apps/details?id=arudpilot.andruav>`_
 
 
 
