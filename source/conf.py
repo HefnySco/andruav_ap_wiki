@@ -21,8 +21,8 @@ master_doc = 'index'
 
 # -- Project information -----------------------------------------------------
 
-project = u'Andruav Project'
-copyright = u'2020, Andruav.com'
+project = u'Ardupilot Cloud EcoSystem'
+copyright = u'2022, Ardupilot.org (Powered by Andruav.com)'
 author = u'Mohammad Said Hefny'
 
 

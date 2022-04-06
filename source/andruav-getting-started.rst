@@ -20,6 +20,10 @@ Please check this video for better understanding
 .. youtube:: https://www.youtube.com/watch?v=sytNIby_Pe8
 
 
+This is another video shows how to register from web. 
+
+.. youtube:: https://www.youtube.com/watch?v=baHWBc6RvaE
+
 Successful registration will create an access code that should be sent to your email. It also can be accessed from Andruav app.
 
 In order to link other mobiles you need to only enter this access-code. In :ref:`andruav-web-client` you need to enter using email and access-code.

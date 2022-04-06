@@ -57,7 +57,7 @@ Features
 |
 
 
-4. You need to use a wired XBOX Gamepad not the wireless one. Other Gamepads can work, however you need to make sure channels are mapped correctly. you can `Contact us <email:rcmobilestuff@gmail.com>`_ to extend support when possible.
+4. You need to use a wired XBOX Gamepad not the wireless one. Other Gamepads can work, however you need to make sure channels are mapped correctly.
 
 
 .. image:: ./images/xbox-wired.png
