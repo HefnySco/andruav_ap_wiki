@@ -27,7 +27,7 @@ In the below image you can see *two* mission plans together with geo-fences regi
         :align: center
         :alt: Mission Planner
 
-you can export each mission plan as a file to be uploaded from :ref:`andruav-web-client`. Geo-Fences on the other side are saves for all the group in the system database.
+you can export each mission plan as a file to be uploaded from :ref:`webclient-whatis`. Geo-Fences on the other side are saves for all the group in the system database.
 Geo-Fences will be active each time Andruav Mobile starts until it is deleted by `Geo-Fence editor <https://cloud.ardupilot.org:8001/mapeditor.html>`_ .
 
 

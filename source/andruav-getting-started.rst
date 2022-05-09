@@ -5,7 +5,7 @@
 Andruav Getting Started
 =======================
 
-First you need to have at least an Android mobile that will be mounted on drone. A second mobile can be used as a ground station or you can use :ref:`andruav-web-client` which is recommended for better monitoring and control.
+First you need to have at least an Android mobile that will be mounted on drone. A second mobile can be used as a ground station or you can use :ref:`webclient-whatis` which is recommended for better monitoring and control.
 
 You also need to create an account and get **accesscode**. 
 The accesscode will be used to link vehicles and GCS either on mobile or on web.
@@ -26,7 +26,7 @@ This is another video shows how to register from web.
 
 Successful registration will create an access code that should be sent to your email. It also can be accessed from Andruav app.
 
-In order to link other mobiles you need to only enter this access-code. In :ref:`andruav-web-client` you need to enter using email and access-code.
+In order to link other mobiles you need to only enter this access-code. In :ref:`webclient-whatis` you need to enter using email and access-code.
 
 .. warning::
     Sharing your access code with other persons will allow them to join their devices on you Andruav account. This is useful when you want your friend enter as a GCS and share with you your flight.

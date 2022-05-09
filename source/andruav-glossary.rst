@@ -5,7 +5,7 @@
 Andruav Glossary
 ================
 
-**GSC:** This is referred to Ground Control Station. GCS can be Andruav App running in GCS mode, :ref:`andruav-web-client` or applications such as `Mission Planner <https://ardupilot.org/planner/>`_ and `QGroundControl <http://qgroundcontrol.com/>`_.
+**GSC:** This is referred to Ground Control Station. GCS can be Andruav App running in GCS mode, :ref:`webclient-whatis` or applications such as `Mission Planner <https://ardupilot.org/planner/>`_ and `QGroundControl <http://qgroundcontrol.com/>`_.
 
 
 **Drone Mode:** The mobile that is mounted on the drone should run in Drone-Mode. This is important to be able to communicate with flying control boards, capture images and all other information.

@@ -1,14 +1,14 @@
-.. _andruav-web-client:
+.. _webclient-whatis:
 
 
 ==================
-Andruav Web Client
+WebClient
 ==================
 
-Andruav-Web-Client is website where you can track and control your drone from it.
+Web-Client is website where you can track and control your drone from it.
 
 
-Andruav Web-Client URL: `https://cloud.ardupilot.org:8001/andruavweb.html <https://cloud.ardupilot.org:8001/andruavweb.html>`_
+Web-Client URL: `https://cloud.ardupilot.org:8001/andruavweb.html <https://cloud.ardupilot.org:8001/andruavweb.html>`_
 
 
 
@@ -27,4 +27,4 @@ Main Features
 
 #. Ability to connect GamePad directly to web and fly drone smoothly.
 
-#. Ability to connect web client to QGroundControl or Mission Planner using :ref:`andruav-web-plugin` 
+#. Ability to connect web client to QGroundControl or Mission Planner using :ref:`webclient-webplugin` 

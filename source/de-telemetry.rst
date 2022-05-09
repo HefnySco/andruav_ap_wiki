@@ -16,7 +16,7 @@ Drone-Engage Telemetry
    :titlesonly:
    :maxdepth: 2
 
-   Drone-Engage Web Plugin </de-web-plugin>
+   Drone-Engage Web Plugin </webclient-web-plugin>
    
 
 

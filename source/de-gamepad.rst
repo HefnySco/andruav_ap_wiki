@@ -67,7 +67,7 @@ Features
 
 .. note::
 
-    Connecting joystick to Mission Planner and control your drone via :ref:`de-web-plugin` is possible but not recommended as this method is more efficient.
+    Connecting joystick to Mission Planner and control your drone via :ref:`webclient-web-plugin` is possible but not recommended as this method is more efficient.
 
 
 |

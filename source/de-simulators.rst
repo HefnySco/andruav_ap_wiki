@@ -13,7 +13,7 @@ If you want more real action then maybe you can try `Webots SITL <https://ardupi
 
 
 
-Please check :ref:`de-web-plugin`
+Please check :ref:`webclient-web-plugin`
 
 
 

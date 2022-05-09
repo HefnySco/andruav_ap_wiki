@@ -5,7 +5,7 @@ Andruav TX Freeze
 =================
 
 
-This command is called from :ref:`andruav-web-client` only. 
+This command is called from :ref:`webclient-whatis` only. 
 This function is used to simulate signals from TX. 
 For example if you switch to loiter mode then you need to keep TX throttle at a level to keep your drone from falling. 
 You can set your TX throttle then press TX-Freeze then Andruav will copy the last value from TX and keep using it while your drone is far out of your TX range.

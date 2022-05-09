@@ -12,7 +12,7 @@ FPV Gears are normally expensive, requires certain setup and antennas. Andruav h
 
 |
 
-Andruav FPV is very distinguished, as it allows multiple GCS to receive a video broadcast from the same vehicle. Those GCSs could be in different places in the world and they all share the same video streaming from drone. Also video streaming receiving is supported by Andruav GCS mobile app, as well as :ref:`andruav-web-client`.
+Andruav FPV is very distinguished, as it allows multiple GCS to receive a video broadcast from the same vehicle. Those GCSs could be in different places in the world and they all share the same video streaming from drone. Also video streaming receiving is supported by Andruav GCS mobile app, as well as :ref:`webclient-whatis`.
 
 |
 
@@ -32,7 +32,7 @@ Andruav FPV Capabilities
 
 #. Ability to stream video to multiple GCSs.
 
-#. Ability to receive stream from multiple drones simultaneously using :ref:`andruav-web-client`.
+#. Ability to receive stream from multiple drones simultaneously using :ref:`webclient-whatis`.
 
 #. Ability to use camera zoom and flash.
 

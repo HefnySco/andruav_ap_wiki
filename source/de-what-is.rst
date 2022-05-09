@@ -33,7 +33,15 @@ Drone-Engage uses on-board Raspberry-Pi Zero connected to `Ardupilot <https://ar
         :align: center
         :alt: Drone-Engage on RPI-Zero
 
-It is only 42 grams is everything you need to take full control on your drone anywhere anytime.
+It is only 42 grams or 1.48 oz is everything you need to take full control on your drone anywhere anytime.
+
+
+If you want to make use of video streaming then you can use Raspberry-Pi Zero 2. It is only 52.2gm or 1.84oz.
+including camera and OTG cable.
+
+.. image:: ./images/IMG_20220402_160422.jpg
+        :align: center
+        :alt: Drone-Engage on RPI-Zero-2 with camera
 
 
 

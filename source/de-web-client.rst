@@ -25,7 +25,7 @@ Main Features
 
 #. Ability to connect GamePad directly to web and fly drone smoothly.
 
-#. Ability to connect web client to QGroundControl or Mission Planner using :ref:`de-web-plugin` 
+#. Ability to connect web client to QGroundControl or Mission Planner using :ref:`webclient-web-plugin` 
 
 
 .. youtube:: https://www.youtube.com/watch?v=YwEw_YSFVEo

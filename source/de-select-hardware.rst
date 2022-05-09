@@ -4,8 +4,9 @@
 Select Your Hardware
 ====================
 
-All you need to have is a Raspberry-Pi board. You can use RPI 2,3,4 & Zero. This board model determines the capabilities of your system. 
-Using RPI-4 enables you to run video streaming module. This module allows you to connect multiple cameras and stream from them simultaneously.
+All you need to have is a Raspberry-Pi board. You can use RPI 2,3,4 & Zero/Zero2. This board model determines the capabilities of your system. 
+Using RPI-4 enables you to run video streaming module from multiple cameras. This module allows you to connect multiple cameras and stream from them simultaneously.
+
 If you need a telemetry then RPI-Zero is a perfect fit.
 
 .. image:: ./images/rpizero.png

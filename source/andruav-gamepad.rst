@@ -14,7 +14,7 @@ Navigation Using GamePad
 
 |
 
-:ref:`andruav-web-client` allows you to connect XBOX-360 gamepad directly to your webbrowser. 
+:ref:`webclient-whatis` allows you to connect XBOX-360 gamepad directly to your webbrowser. 
 You do not need to run GCS applications such as `Mission Planner <https://ardupilot.org/planner/>`_ to connect your joystick anymore.
 
 |
@@ -67,7 +67,7 @@ Features
 
 .. note::
 
-    Connecting joystick to Mission Planner and control your drone via :ref:`andruav-web-plugin` is possible but not recommended as this method is more efficient.
+    Connecting joystick to Mission Planner and control your drone via :ref:`webclient-webplugin` is possible but not recommended as this method is more efficient.
 
 
 |
@@ -110,7 +110,7 @@ DJI-Style Remote
 
 `DJI  <https://www.dji.com/phantom>`_ is known of its ease of flying among many other features. What is targetted here is that changing throttle stick function so that pushing stick up will lead to climbing while pusshing it down will lead to decreasing altitude. Andruav make use on Ardupilot remote control features to achieve similar capabilities.
 
-This mode is activated automatically from :ref:`andruav-web-client` when switching to **Guided Mode** in copter vehicle. It is equivelant to fly-by-wire in ArduPlane.
+This mode is activated automatically from :ref:`webclient-whatis` when switching to **Guided Mode** in copter vehicle. It is equivelant to fly-by-wire in ArduPlane.
 
 |
 

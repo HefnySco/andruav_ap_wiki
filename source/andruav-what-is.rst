@@ -7,6 +7,8 @@ What is Andruav ?
 
 .. youtube:: http://www.youtube.com/watch?v=ak4IFExkYsA
 
+|
+
 Andruav is an interconnected Android-based system that uses Android mobiles as companian computers to add advanced capabilities to your drones and rc-vehicles.
 
 Andruav saves you lots of gears and connections and replace it with a single Android mobile phone.
