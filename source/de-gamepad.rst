@@ -7,10 +7,8 @@ Navigation Using GamePad
 ========================
 
 
+.. youtube:: https://www.youtube.com/watch?v=-qh248Hnn-M
 
-.. image:: ./images/xbox_web.png
-   :align: center
-   :alt: XBox Wired Gamepad
 
 |
 
@@ -23,18 +21,22 @@ Features
 ========
 
 1. Gamepad can control one vehicle at a time. And you can switch control between multiple vehicles.
-2. Channel reverse and scale is set from Andruav-Drone settings. This is a very important feature, as if you are going to use GamePad for different drones and vehicle you will need to reverse some channels and change rate of some channels based one the vehicle your control. This is handled automatically by storing RX settings in each Andruav Drone App mobile through **RC Settings** screen.
+2. Channel reverse and scale is set by editing **config.module.json** file. This is a very important feature, as if you are going to use GamePad for different drones and vehicle you will need to reverse some channels and change rate of some channels based one the vehicle your control. This is handled automatically by storing RX settings in each ArdupilotModule configuration file.
 
+.. code-block:: JAVASCRIPT
 
-|pic1|  and   |pic2|
+   "rc_channels":
+   {
+      "rc_channel_enabled": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      "rc_channel_reverse": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      "rc_channel_limits_max": [1850,2000,1750,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000],
+      "rc_channel_limits_min": [1150,1000,1300,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000]
+   }
+   
+.. note::
 
-.. |pic1| image:: ./images/rc_settings.png
-   :width: 35 %
-   :alt: How to enter to RC Settings
+    Although xml does not allow adding comments in c-style using "//" but **config.module.json** accepts this syntax.
 
-.. |pic2| image:: ./images/rc_screen.png
-   :width: 35 %
-   :alt: Adjust Channels
 
 3. You can change flight modes from GamePad buttons by long pressing "red - yellow - blue - green" buttons.
 
@@ -50,7 +52,7 @@ Features
 | Copter     | yellow     | RTL       |
 +------------+------------+-----------+
 
-.. image:: ./images/rx_web_onscreen.png
+.. image:: ./images/rx_web_onscreen2.png
    :width: 50 %
    :alt: Adjust Channels
 
@@ -103,6 +105,47 @@ To release control press the same button **RX** or press **TX-Rel** button. **RX
    :align: center
    :alt: Release Remote
 
+|
+
+Automatic Channel Mapping
+=========================
+
+Different veichles can have different channels for Roll-Pitch-Throttle-Yaw. If you want Drone-Engage to remap channels instead of using default first 4 channels blindly then you need 
+to define **"rc_smart_channels"** record. In this record you can override **"rc_channel_enabled"**, **"rc_channel_limits_max"** and **"rc_channel_limits_min"** for the 4 main channels.
+The order is always fixed in the config file **ROLL - PITCH - THR - YAW** regardless of actual channel numbers.
+
+|
+
+In the video I use `OBAL <https://ardupilot.org/copter/docs/common-obal-overview.html>`_ board and I use diffrent channels and still I can control the wheels without adjusting channel nummber.
+
+.. youtube:: https://www.youtube.com/watch?v=MeYIKJpHngM
+
+|
+
+To enable this feature you need to edit **config.module.json** file and add the following.
+
+.. code-block:: JAVASCRIPT
+
+   "rc_channels":
+   {
+      // SMART MAPPING BEGIN
+      "rc_smart_channels": // optional but very recommended.
+      { 
+         "active": true, // optional and true by default as record "rc_smart_channels" already exists.
+         
+         // ROLL - PITCH - THR - YAW regardless of actual settings on ardupilot 
+         "rc_channel_enabled": [1, 1, 1, 1], // optional - enabled by default.
+         "rc_channel_limits_max": [2000,2000,1750,2000], // optional if not exist then global rc_channel_limits_max are used
+         "rc_channel_limits_min": [1000,1000,1300,1000]  // optional if not exist then global rc_channel_limits_min are used
+      },
+      // SMART MAPPING END
+
+      "rc_channel_enabled": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      "rc_channel_reverse": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+      "rc_channel_limits_max": [1850,2000,1750,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000],
+      "rc_channel_limits_min": [1150,1000,1300,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000]
+   }
+   
 |
 
 DJI-Style Remote

@@ -15,6 +15,7 @@ Welcome to WebClient Project Website
    
    Web-Client </webclient-whatis>
    Web Plugin </webclient-web-plugin>
+   Gamepad Navigation </webclient-gamepad>
    FAQ </andruav-faq> 
    Glossary </andruav-glossary> 
 

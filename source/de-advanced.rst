@@ -11,7 +11,8 @@ Drone-Engage Advanced
    :maxdepth: 2
 
    GEO-Fencing </de-geo-fencing>
-   GamePad Navigation </de-gamepad>
+   GamePad Navigation </webclient-gamepad>
+   RC Blocking </de-tx-block>
 ..
    RC Blocking </de-tx-block>
    TX Freeze </de-tx-freeze>

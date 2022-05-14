@@ -34,7 +34,7 @@ Copy files to youe home folder in the board.
 
 Copy downloaded file to your raspberry using the following command:
 
-.. code-block:: bh
+.. code-block:: bash
 
    scp ./latest.zip  pi@raspberry_pi_ip_address:.
 |
@@ -42,7 +42,7 @@ Copy downloaded file to your raspberry using the following command:
 
 login to your raspberry-pi board using the following commands:
     
-.. code-block:: bh
+.. code-block:: bash
 
    ssh pi@raspberry_pi_ip_address
 
@@ -54,7 +54,7 @@ login to your raspberry-pi board using the following commands:
 
 download file directly to Raspberry-PI.
 
-.. code-block:: bh
+.. code-block:: bash
    
    wget https://droneengage.com/downloads/telemetry/latest.zip
 
@@ -62,7 +62,7 @@ download file directly to Raspberry-PI.
 
 unzip your file.
 
-.. code-block:: bh
+.. code-block:: bash
 
    unzip ./latest.zip
 
@@ -71,13 +71,13 @@ unzip your file.
 It will extract a folder and a file script.
 
 
-.. code-block:: bh
+.. code-block:: bash
 
    chmod +x ./install_droneengage.sh
 
 Now you need to start the installation process.
 
-.. code-block:: bh
+.. code-block:: bash
 
    ./install_droneengage.sh
 
@@ -96,7 +96,7 @@ settings right now.
 Update your account in file **./drone_engage/de_comm/config.module.json** you need to enter your email & :term:`Access Code`.
 You may also name your vehicle.
 
-.. code-block:: bh
+.. code-block:: bash
 
    nano ./drone_engage/de_comm/config.module.json 
 |
@@ -111,7 +111,7 @@ for more information about this file :ref:`de-config-comm`
 |
 
 
-.. code-block:: bh
+.. code-block:: bash
 
    nano ./drone_engage/de_mavlink/config.module.json 
 |

@@ -11,14 +11,14 @@ To those who do not know :term:`JSON` just consider it a text file that you need
 
 login to your Raspberry-PI board using ssh.
 
-.. code-block:: bh
+.. code-block:: bash
 
    ssh pi@raspberry_pi_ip_address
 |
 
 and go to the file
 
-.. code-block:: bh
+.. code-block:: bash
 
    cd /home/pi/drone_engage/de_comm/
    ls
@@ -27,7 +27,7 @@ and go to the file
 
 and open the file 
 
-.. code-block:: bh
+.. code-block:: bash
 
    nano config.module.json
 

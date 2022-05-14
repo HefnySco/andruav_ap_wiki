@@ -34,6 +34,6 @@ Both are the same exact video filmed from two places.
 
 .. tip::
 
-   **Andruav 12,193 km RC Car Demo** :ref:`here <andruav-telemetry>` is done by connecting joystick to Mission Planner via Andruav Telemetry. However it is recommended to use :ref:`GamePad Directly <andruav-gamepad>`.
+   **Andruav 12,193 km RC Car Demo** :ref:`here <andruav-telemetry>` is done by connecting joystick to Mission Planner via Andruav Telemetry. However it is recommended to use :ref:`GamePad Directly <webclient-gamepad>`.
 
 

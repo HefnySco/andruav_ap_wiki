@@ -12,18 +12,21 @@ Here comes the value of **RC-Block** where you can define a channel on yout TX. 
 
 This mechanism ensures that the pilot in the field with TX has full control over a remote pilot to ensure better security as safety.
  
+The idea is easy you need to define a channel in yout TX in the field to be used as a switch for entering Block-Mode.
 
-.. image:: ./images/blocking.png
-   :height: 400px
-   :align: center
-   :alt: XBox Wired Gamepad
 
 How to Use
 ==========
 
-#. From Andruav Drone Setting enable RC Block.
-#. Choose a channel to activate from your TX.
-#. Set minimum PWM value for this channel after which it is considered active.
+The channel is defined in **config.module.json** in field **"rc_block_channel"**. When this field is larger than 1800 pwm blocking mode is activated.
+You can still deactivate blocking mde by switching channel to value lower than 1800.
+
+
+.. code-block:: JAVASCRIPT
+
+   // should be a channel from 1 to 8. when High all commands from GCS will be ignored including RC-Override.
+   "rc_block_channel": 6,
+
 
 |
 
@@ -33,5 +36,5 @@ How to Use
 
 .. tip::
 
-    You can block and un-block Andruav as you wish.
+    You can block and un-block many times during flying.
 

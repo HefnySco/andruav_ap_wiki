@@ -29,7 +29,7 @@ The remaining 2 cores are enough for running Drone-Engage pro version with Camer
 
 We can easily do that by editing /boot/cmdline.txt and add **isolcpus=1,2**
 
-.. code-block:: bh
+.. code-block:: bash
 
    console=tty1 root=PARTUUID=414e6dda-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait  isolcpus=1
 
@@ -42,7 +42,7 @@ As we can see from the above image that **htop** command shows core 1,2 with 0% 
 
 Then we can execute Ardupilot with the following parameters:
 
-.. code-block:: bh
+.. code-block:: bash
     
     /home/pi/arducopter -A  udp:192.168.1.144:14550:bcast  -C /dev/serial0 -c 1
 

@@ -39,7 +39,7 @@ Both are the same exact video filmed from two places.
 
 .. tip::
 
-   **Andruav 12,193 km RC Car Demo** :ref:`here <de-telemetry>` is done by connecting joystick to Mission Planner via Andruav Telemetry. However it is recommended to use `GamePad Directly <https://andruav.com/andruav-gamepad.html>`_.
+   **Andruav 12,193 km RC Car Demo** :ref:`here <de-telemetry>` is done by connecting joystick to Mission Planner via Andruav Telemetry. However it is recommended to use `GamePad Directly <https://andruav.com/webclient-gamepad.html>`_.
 
 
 Although the video was made using Andruav at that time. Drone-Engage is even more capable and more optimized for this types of missions.
