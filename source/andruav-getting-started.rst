@@ -13,7 +13,7 @@ The accesscode will be used to link vehicles and GCS either on mobile or on web.
 The first time you register in Andruav, you should set Andruav in GCS mode. 
 Then it will go to registration screen where you can enter your email and press Register. An **access code** will be created and placed in the accesscode box. Also it will be sent to you via email -it might appears in the spam section-. 
 
-You can also use `Account Manager <http://cloud.ardupilot.org:8001/accounts.html>`_ page to create a new account.
+You can also use `Account Manager <https://cloud.ardupilot.org:8001/accounts.html>`_ page to create a new account.
 
 Please check this video for better understanding 
     

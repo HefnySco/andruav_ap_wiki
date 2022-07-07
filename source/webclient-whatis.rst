@@ -8,7 +8,7 @@ WebClient
 Web-Client is website where you can track and control your drone from it.
 
 
-Web-Client URL: `https://cloud.ardupilot.org:8001/andruavweb.html <https://cloud.ardupilot.org:8001/andruavweb.html>`_
+Web-Client URL: `https://cloud.ardupilot.org:8001/webclient.html <https://cloud.ardupilot.org:8001/webclient.html>`_
 
 
 

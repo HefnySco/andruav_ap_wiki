@@ -5,6 +5,4 @@ build/*
 *.log
 
 # Build outputs
-*.html
 *.pyc
-

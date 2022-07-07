@@ -5,7 +5,7 @@ What is Drone-Engage ?
 ======================
 
 
-Drone-Engage (D.E.) is a distibuted system that allows monitoring & controlling drones via Internet. Drone-Engage objective is to provide a Linux-based alternative for Android mobiles.
+Drone-Engage (D.E.) is a distibuted system that allows monitoring & controlling drones via Internet. Drone-Engage objective is to provide a Linux-based alternative for `Andruav <https://play.google.com/store/apps/details?id=arudpilot.andruav&hl=en&gl=US>`_ Android mobiles.
 
 
 .. youtube:: https://www.youtube.com/watch?v=F9b4dXLRLjg
