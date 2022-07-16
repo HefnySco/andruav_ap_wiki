@@ -1,14 +1,14 @@
 .. _de-geo-fencing:
 
-===================
+=======================
 DroneEngage Geo Fencing
-===================
+=======================
 
 Geo Fence means that you define areas where you that is safe for your drone to fly in and other areas that is unsafe or forbidden to fly over them.
 
 This is not GEO fence that Ardupilot support. This Geo-Fencing is controlled by DroneEngage itself not ardupilot. It is very flexible.
 
-.. youtube:: https://www.youtube.com/watch?v=URw6F2fcFS4
+.. youtube:: URw6F2fcFS4
 
 |
 
@@ -18,7 +18,7 @@ Geo-Fence Manager allows you to design geo-fences and mission plans for multiple
 **interacts** with each others as in the below video. This is **unique**.
 
 
-.. youtube:: https://www.youtube.com/watch?v=YwEw_YSFVEo
+.. youtube:: YwEw_YSFVEo
 
 |
 

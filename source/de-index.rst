@@ -26,7 +26,7 @@ Welcome to Drone Engage Project Website
 
 
 |
-.. youtube:: https://www.youtube.com/watch?v=by1-t7By9LQ
+.. youtube:: by1-t7By9LQ
 |
 
 

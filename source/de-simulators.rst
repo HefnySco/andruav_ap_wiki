@@ -9,7 +9,7 @@ You do not need to have a real drone to test Drone-Engage cabapilities. Actually
 
 If you want more real action then maybe you can try `Webots SITL <https://ardupilot.org/dev/docs/sitl-with-webots.html>`_ to have a real taste of how using Drone-Engage really feels.
 
-.. youtube:: https://www.youtube.com/watch?v=c5CJaRH9Pig
+.. youtube:: c5CJaRH9Pig
 
 
 

@@ -19,7 +19,7 @@ Ardupilot Cloud
    WebClient </webclient-index>
    
 |
-.. youtube:: https://www.youtube.com/watch?v=c6wFTDcvxtQ
+.. youtube:: c6wFTDcvxtQ
 |
 
 .. _home:

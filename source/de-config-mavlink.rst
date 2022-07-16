@@ -1,8 +1,8 @@
 .. _de-config-mavlink:
 
-==========================
+=============================
 de_mavlink Configuration File
-==========================
+=============================
 
 A file called **config.module.json** exists in **/home/pi/drone_engage/de_mavlink/**
 This file is written in :term:`JSON` format. However, you can still add comments to the file.

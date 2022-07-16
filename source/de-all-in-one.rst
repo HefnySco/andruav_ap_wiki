@@ -5,7 +5,7 @@ All In One Board
 ================
 
 
-.. youtube:: https://www.youtube.com/watch?v=Rsuo76jYF0I
+.. youtube:: Rsuo76jYF0I
 
 
 |

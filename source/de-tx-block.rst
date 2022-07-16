@@ -30,7 +30,7 @@ You can still deactivate blocking mde by switching channel to value lower than 1
 
 |
 
-.. youtube:: https://www.youtube.com/watch?v=hL0x1kCPyX4
+.. youtube:: hL0x1kCPyX4
 
 |
 

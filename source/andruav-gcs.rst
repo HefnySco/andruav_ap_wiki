@@ -15,7 +15,7 @@ These modes are switchables from the button highlighted in the below image.
 
 
 
-.. youtube:: https://www.youtube.com/watch?v=5wd5S8onxq8
+.. youtube:: 5wd5S8onxq8
 
 |
 

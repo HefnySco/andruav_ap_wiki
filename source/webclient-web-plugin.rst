@@ -12,7 +12,7 @@ You can connect directly from :ref:`webclient-whatis` and no need for :ref:`Andr
 This plugin can run on Windows, MacOS & Linux.
 
 
-.. youtube:: https://www.youtube.com/watch?v=mUCbhzvmVcI
+.. youtube:: mUCbhzvmVcI
 
 |
 

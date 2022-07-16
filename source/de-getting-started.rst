@@ -6,7 +6,7 @@ Getting Started
 ===============
 
 |
-.. youtube:: https://www.youtube.com/watch?v=cvQgMcnM7NA
+.. youtube:: cvQgMcnM7NA
 |
 
 

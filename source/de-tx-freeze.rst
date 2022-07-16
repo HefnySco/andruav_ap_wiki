@@ -1,8 +1,8 @@
 .. _de-tx-freeze:
 
-=================
+======================
 Drone-Engage TX Freeze
-=================
+======================
 
 
 This command is called from :ref:`de-web-client` only. 

@@ -11,7 +11,7 @@ Different versions of software can be found `here <https://drive.google.com/driv
 
 
 |
-.. youtube:: https://www.youtube.com/watch?v=cvQgMcnM7NA
+.. youtube:: cvQgMcnM7NA
 |
 
 

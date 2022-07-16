@@ -5,7 +5,7 @@ Drone-Engage Telemetry
 ======================
 
 |
-.. youtube:: https://www.youtube.com/watch?v=rZ-UkhF3WYw
+.. youtube:: rZ-UkhF3WYw
 |
 
 
@@ -27,12 +27,12 @@ The below video might be a record-breaking telemetry range for RC. In the follow
 
 The first Video captured in USA
 
-.. youtube:: https://www.youtube.com/watch?v=DmpX-D10GyQ
+.. youtube:: DmpX-D10GyQ
 
 
 While the second is captured in Egypt
 
-.. youtube:: https://www.youtube.com/watch?v=Kh4NU3FaFeE
+.. youtube:: Kh4NU3FaFeE
 
 
 Both are the same exact video filmed from two places.

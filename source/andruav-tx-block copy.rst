@@ -26,7 +26,7 @@ How to Use
 #. Set minimum PWM value for this channel after which it is considered active.
 
 |
-.. youtube:: https://www.youtube.com/watch?v=hL0x1kCPyX4
+.. youtube:: hL0x1kCPyX4
 
 
 

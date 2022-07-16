@@ -8,7 +8,7 @@ Geo Fence means that you define areas where you that is safe for your drone to f
 
 This is not GEO fence that Ardupilot support. This Geo-Fencing is controlled by Andruav itself not ardupilot. It is very flexible.
 
-.. youtube:: https://www.youtube.com/watch?v=Vlt3dbQ30W0
+.. youtube:: Vlt3dbQ30W0
 
 
 |

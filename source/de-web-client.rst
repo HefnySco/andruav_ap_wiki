@@ -12,7 +12,7 @@ Drone-Engage Web-Client URL: `https://droneengage.com:8021/webclient.html <https
 
 
 
-.. youtube:: https://www.youtube.com/watch?v=To3sngcdvh4&t=7s
+.. youtube:: To3sngcdvh4&t=7s
 
 |
 
@@ -28,4 +28,4 @@ Main Features
 #. Ability to connect web client to QGroundControl or Mission Planner using :ref:`webclient-web-plugin` 
 
 
-.. youtube:: https://www.youtube.com/watch?v=YwEw_YSFVEo
+.. youtube:: YwEw_YSFVEo

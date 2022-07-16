@@ -5,7 +5,7 @@ What is Andruav ?
 =================
 
 
-.. youtube:: http://www.youtube.com/watch?v=ak4IFExkYsA
+.. youtube:: ak4IFExkYsA
 
 |
 

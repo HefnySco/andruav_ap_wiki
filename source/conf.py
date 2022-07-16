@@ -38,6 +38,7 @@ extensions = [
     'sphinx.ext.imgmath',
     'sphinx.ext.ifconfig',
     #'recommonmark',
+    #https://sphinxcontrib-youtube.readthedocs.io/en/latest/
     'sphinxcontrib.youtube' #For youtube embedding
     #'sphinxcontrib.vimeo', #For vimeo embedding
 ]

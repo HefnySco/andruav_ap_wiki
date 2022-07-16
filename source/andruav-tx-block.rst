@@ -10,13 +10,24 @@ For any reason you need to take control of your drone. And you need to prevent r
 You need to be able to control your drone from your TX directly to save it from a crash -for example-. 
 Here comes the value of **RC-Block** where you can define a channel on yout TX. Once this channel is actived Andruav stops executing any command from any GCS and redirect your TX signal to FCB board and you take for control of your drone.
 
-This mechanism ensures that the pilot in the field with TX has full control over a remote pilot to ensure better security as safety.
- 
 
 .. image:: ./images/blocking.png
    :height: 400px
    :align: center
-   :alt: XBox Wired Gamepad
+   :alt: Blocking Settings
+
+This mechanism ensures that the pilot in the field with TX has full control over a remote pilot to ensure better security as safety.
+ 
+.. image:: ./images/andruav_block_screen.jpg
+   :height: 400px
+   :align: center
+   :alt: FCB is Blocked
+
+.. image:: ./images/webclint_blocked.png
+   :height: 400px
+   :align: center
+   :alt: Webclient is blocked 
+
 
 How to Use
 ==========
@@ -26,7 +37,7 @@ How to Use
 #. Set minimum PWM value for this channel after which it is considered active.
 
 |
-.. youtube:: https://www.youtube.com/watch?v=hL0x1kCPyX4
+.. youtube:: hL0x1kCPyX4
 
 
 

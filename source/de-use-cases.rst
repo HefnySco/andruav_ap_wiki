@@ -5,7 +5,7 @@ Use Cases
 =========
 
 
-.. youtube:: https://www.youtube.com/watch?v=Lv9_dq8OgdY
+.. youtube:: Lv9_dq8OgdY
 
 |
 

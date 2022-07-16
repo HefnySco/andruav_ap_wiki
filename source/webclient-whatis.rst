@@ -12,7 +12,7 @@ Web-Client URL: `https://cloud.ardupilot.org:8001/webclient.html <https://cloud.
 
 
 
-.. youtube:: https://www.youtube.com/watch?v=To3sngcdvh4&t=7s
+.. youtube:: To3sngcdvh4&t=7s
 
 |
 

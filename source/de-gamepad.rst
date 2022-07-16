@@ -7,7 +7,7 @@ Navigation Using GamePad
 ========================
 
 
-.. youtube:: https://www.youtube.com/watch?v=-qh248Hnn-M
+.. youtube:: -qh248Hnn-M
 
 
 |
@@ -118,7 +118,7 @@ The order is always fixed in the config file **ROLL - PITCH - THR - YAW** regard
 
 In the video I use `OBAL <https://ardupilot.org/copter/docs/common-obal-overview.html>`_ board and I use diffrent channels and still I can control the wheels without adjusting channel nummber.
 
-.. youtube:: https://www.youtube.com/watch?v=MeYIKJpHngM
+.. youtube:: MeYIKJpHngM
 
 |
 

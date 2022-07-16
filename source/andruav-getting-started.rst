@@ -17,12 +17,12 @@ You can also use `Account Manager <https://cloud.ardupilot.org:8001/accounts.htm
 
 Please check this video for better understanding 
     
-.. youtube:: https://www.youtube.com/watch?v=sytNIby_Pe8
+.. youtube:: sytNIby_Pe8
 
 
 This is another video shows how to register from web. 
 
-.. youtube:: https://www.youtube.com/watch?v=baHWBc6RvaE
+.. youtube:: baHWBc6RvaE
 
 Successful registration will create an access code that should be sent to your email. It also can be accessed from Andruav app.
 

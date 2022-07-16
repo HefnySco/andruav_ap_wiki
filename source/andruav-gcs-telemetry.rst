@@ -8,7 +8,7 @@ Andruav GCS Telemetry
 
 Andruav Mobile App in GCS mode can stream telemetry data. The following video shows how easy it can be done.
 
-.. youtube:: https://www.youtube.com/watch?v=XHCfO6Zq4ek
+.. youtube:: XHCfO6Zq4ek
 
 |
 
@@ -41,7 +41,7 @@ Select only one at a time to stream telemetry data to GCS applications such as M
 The next video shows two mobiles the first is Andruav Drone mobile that is connected to a Rover using Bluetooth-to-USB,
 and the second is Andruav Mobilein GCS mode. The latter acts as a telemetry for `Tower App <https://discuss.ardupilot.org/t/why-tower-and-droidplanner-app-disappear-from-goole-play-store/36977>`_ .
 
-.. youtube:: https://www.youtube.com/watch?v=Hv4Fp-b0wLM&t=150
+.. youtube:: Hv4Fp-b0wLM&t=150
 
 |
 

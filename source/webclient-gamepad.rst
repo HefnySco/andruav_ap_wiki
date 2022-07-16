@@ -7,7 +7,7 @@ Navigation Using GamePad
 ========================
 
 
-.. youtube:: https://www.youtube.com/watch?v=-qh248Hnn-M
+.. youtube:: -qh248Hnn-M
 
 |
 
@@ -91,7 +91,7 @@ However you can set maximum and minimum ranges from **config.module.json**
 
 
 
-.. youtube:: https://www.youtube.com/watch?v=MeYIKJpHngM
+.. youtube:: MeYIKJpHngM
 
 
 |
@@ -100,10 +100,8 @@ However you can set maximum and minimum ranges from **config.module.json**
 
 |
 .. note::
-
-    Connecting joystick to Mission Planner and control your drone via :ref:`webclient-webplugin` is possible but not recommended as this method is more efficient.
+  Connecting joystick to Mission Planner and control your drone via :ref:`webclient-webplugin` is possible but not recommended as this method is more efficient.
 |
-
 
 Running in Linux
 ================

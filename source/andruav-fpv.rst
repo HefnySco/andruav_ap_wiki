@@ -8,7 +8,7 @@ Andruav FPV
 
 FPV Gears are normally expensive, requires certain setup and antennas. Andruav has a long path evolving its FPV, and has reached a very good performance using only a mobile camrea and no extra setup. You can get a real-time video under Wifi and good 3G/4G connection.
 
-.. youtube:: https://www.youtube.com/watch?v=PNFjHC8rWaY
+.. youtube:: PNFjHC8rWaY
 
 |
 
@@ -16,7 +16,7 @@ Andruav FPV is very distinguished, as it allows multiple GCS to receive a video 
 
 |
 
-.. youtube:: https://www.youtube.com/watch?v=BEAkdFYmsyo
+.. youtube:: BEAkdFYmsyo
 
 
 |

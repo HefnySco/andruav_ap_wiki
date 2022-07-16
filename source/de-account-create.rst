@@ -16,7 +16,7 @@ To validate your new account please login to `Drone-Engage Web Client <https://d
 
 
 
-.. youtube:: https://www.youtube.com/watch?v=baHWBc6RvaE
+.. youtube:: baHWBc6RvaE
 |
 
 .. warning::
