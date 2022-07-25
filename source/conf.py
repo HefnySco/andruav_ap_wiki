@@ -39,8 +39,9 @@ extensions = [
     'sphinx.ext.ifconfig',
     #'recommonmark',
     #https://sphinxcontrib-youtube.readthedocs.io/en/latest/
-    'sphinxcontrib.youtube' #For youtube embedding
+    'sphinxcontrib.youtube', #For youtube embedding
     #'sphinxcontrib.vimeo', #For vimeo embedding
+    'sphinx.ext.autosectionlabel'
 ]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

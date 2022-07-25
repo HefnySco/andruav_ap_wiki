@@ -18,6 +18,7 @@ Ardupilot Cloud
 
    WebClient </webclient-index>
    
+   Server </srv-index>
 |
 .. youtube:: c6wFTDcvxtQ
 |
