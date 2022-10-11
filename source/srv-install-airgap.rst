@@ -4,6 +4,11 @@
 Air-Gap RPI-4 Backend-Server Deployment
 =======================================
 
+
+
+.. youtube:: R1BedRTxuuY
+
+    
 script is available at: `prepare-airgapped-server.sh <https://raw.githubusercontent.com/HefnySco/andruav_droneengane_scripts/main/server_installation/prepare-airgapped-server.sh>`_
 
 
@@ -145,7 +150,4 @@ You need two extra steps to access this local domain from your local wifi networ
 
 
 
-
-
-    
 

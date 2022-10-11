@@ -20,7 +20,7 @@ Drone Engage Project Website
    Drone-Engage Advanced Features </de-advanced>
    Using Drone-Engage with SITL </de-simulators>
    Use Cases </de-use-cases>
-
+   Installation </de-install>
    FAQ </de-faq> 
    Glossary </de-glossary> 
 
