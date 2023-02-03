@@ -26,7 +26,10 @@ On Drone Engage
 ---------------
 Channel reverse and scale is set by editing **config.module.json** file. This is a very important feature, as if you are going to use GamePad for different drones and vehicle you will need to reverse some channels and change rate of some channels based one the vehicle your control. This is handled automatically by storing RX settings in each **Ardupilot-Module** configuration file.
 
+
 .. code-block:: JAVASCRIPT
+
+   "ignore_loading_parameters": false,
 
    "rc_channels":
    {

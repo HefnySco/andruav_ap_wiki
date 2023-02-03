@@ -41,14 +41,14 @@ Fields Meaning
    :widths: 25 25 50
    :header-rows: 1
 
-   * - Heading Field Name
-     - Heading Description
-     - Heading Example
+   * - Field Name
+     - Description
+     - Example
    * - "module_id"
-     - just a name for your module. 
+     - Just a name for your module. 
      - "C1" , "COMM_MAIN" ...etc.
    * - "module_key" (*)
-     - unique identification for your module.
+     - Unique identification for your module.
      - GUID number. you can change it or just leave it.
    * - "s2s_udp_target_ip" (**)
      - points to de_comm **"s2s_udp_listening_ip"** in :ref:`de-config-comm`. 
@@ -57,7 +57,7 @@ Fields Meaning
      - ip port used by communicate ** "s2s_udp_listening_port"** in :ref:`de-config-comm`.
      - default: "60000".
    * - "s2s_udp_listening_ip" (**)
-     - listen ip for the de_comm module to communicate with other modules. 
+     - Listen ip for the de_comm module to communicate with other modules. 
      - "127.0.0.1" if :term:`Comm Module` on the same board else "0.0.0.0".
    * - "s2s_udp_listening_port" (**)
      - ip port used to communicate with :term:`Comm Module`. 
@@ -65,8 +65,21 @@ Fields Meaning
    * - "fcbConnectionURI" (M)
      - This is the connection to the flight control :term:`FCB` board. 
      - 
-   
-
+   * - "default_optimization_level"
+     - Telemetry bandwidth optimization. 0 means no optimization and 3 is the make optimization check :ref:`de-telemetry`.
+     - any value from 0 to 3
+   * - "udp_proxy_enabled" (*)
+     - This is to enable the udp telemetry. By default it is disabled.
+     - true, Default(false)
+   * - "ignore_loading_parameters" (*)
+     - This enable and disable loading vehicle parameters and expose it to web client. You need to enable this if you want to use R/C gamepad :ref:`webclient-gamepad`.
+     - true, Default(false)
+   * - "read_only_mode" (*)
+     - This is used to prevent any type of commands from WebClient. WebClient will be used for monitoring only. When this is true nothing can control the drone even from udp telemetry.
+     - true, Default(false) 
+   * - "message_timeouts" (*)
+     - This is used to determine message rates for mavlink telemetry.
+     - see :ref:`webclient-udp-telemetry`
 
 `(*)` You can keep default value.  
 
@@ -76,17 +89,52 @@ Fields Meaning
 
 
 
+Connecting via UDP:
+
+ .. code-block:: json
+
+    {
+    "fcb_connection_uri": 
+    {
+    "type": "udp",
+    "ip": "0.0.0.0",
+    "port":14551
+    },
+    }
+
+This connection is straight forward using UDP. This is suitable when connecting DroneEngage to boards like `OBAL <https://github.com/HefnySco/OBAL>`_ via OTG Ethernet.
+
+
+Connecting to a Serial Port:
+
 .. code-block:: json
 
     {
     "fcbConnectionURI":
      {
      "type": "serial",
-     "port": "/dev/serial0",
+     "port": "/dev/My_DE_PORT",
      "baudrate": 115200
      }
     }
-    
+Remember you can easly `create alias <https://unix.stackexchange.com/questions/66901/how-to-bind-usb-device-under-a-static-name>`_ for your USB to appear such as My_DE_PORT using 
+
+.. code-block:: json
+
+    {
+    "fcb_connection_uri":
+     {
+     "type": "serial",
+     "port": "/dev/ttyUSB",
+     "baudrate": 115200,
+     "dynamic": true
+    },
+    }
+
+The **dynamic** field will make the module search for a valid mavlink port from /dev/ttyUSB0 to /dev/ttyUSB10. 
+So Even if you unplug and plugged it again and the usb appeared on different address the module will find it.
+This feature is developed to be able to detect mavlink port from SCan port. 
+
 **baudrate** has to match the baudrate defined in :term:`FCB`. You can open :term:`GSC` and configure mavlink parameters.
 
 .. important::

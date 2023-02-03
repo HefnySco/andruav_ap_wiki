@@ -6,7 +6,7 @@ Software Installation
 =====================
 
 Installing the system is fairly straight forward. You need to start with a `Raspberry-PI board that is up and running <https://www.raspberrypi.com/software/operating-systems/>`_ with ssh connection.
-Different versions of software can be found `here <https://drive.google.com/drive/folders/1wMIw5VSW4CdIxMXIFMeq0AyuZBDIfFaH?usp=sharing>`_ 
+Different versions of software can be found `here <https://cloud.ardupilot.org/downloads/>`_ 
 
 
 
@@ -22,10 +22,10 @@ Steps
 =====
 
 Make sure you have a Raspberry-PI board with `Raspberry PI OS Lite (Legacy) <https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2022-01-28/2022-01-28-raspios-buster-armhf-lite.zip>`_ installed on it.
-This is important to have access to camera if you choose to run Camera Module.
+This is important to have access to camera if you choose to run Camera Module. In case of using Bullseye-64 then enable Legacy Camera using raspi-config.
 
 
-Open `Drone-Engage WebSite <https://www.droneengage.com>`_ and select `"Download Application" <https://www.droneengage.com/downloads>`_ .
+Open `Drone-Engage WebSite <https://www.droneengage.com>`_ and select `"Download Application" <https://cloud.ardupilot.org/downloads>`_ .
 |
 Download the appropriate binary for your board and version.
 |
@@ -48,27 +48,11 @@ login to your raspberry-pi board using the following commands:
 
 |
 .. tip::
-    Now you can download the files directly into Raspberry-PI using wget 
+    Now you can download the files directly into Raspberry-PI using from `here <https://cloud.ardupilot.org/downloads/RPI/>`_ .
 
 |
 
-download file directly to Raspberry-PI.
-
-.. code-block:: bash
-   
-   wget https://droneengage.com/downloads/telemetry/latest.zip
-
-|
-
-unzip your file.
-
-.. code-block:: bash
-
-   unzip ./latest.zip
-
-|
-
-It will extract a folder and a file script.
+Unzip your file. It will extract a folder and a file script.
 
 
 .. code-block:: bash

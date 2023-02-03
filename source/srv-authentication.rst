@@ -6,5 +6,7 @@
 Authentication Server
 ===================
 
+This is a `module in nodejs <https://github.com/DroneEngage/droneegnage_authenticator>`_ . It's function is to allow users and drone to login to the system.
 
-TODO: ADD HELP
+
+TODO: TO BE COMPLETED

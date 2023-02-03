@@ -5,6 +5,10 @@ Web Plugin
 ==================
 
 
+.. warning::
+    Web plugin is obsolete, it has been replaced with :ref:`webclient-udp-telemetry`
+
+
 Web Plugin streams telemetry data from :ref:`webclient-whatis` to GCS apps such as Mission Planner, QGround Control or similar GCS applications to your vehicle via Andruav.
 
 You can connect directly from :ref:`webclient-whatis` and no need for :ref:`Andruav GCS Mobile App <andruav-gcs-telemetry>` to stream telemetry data.

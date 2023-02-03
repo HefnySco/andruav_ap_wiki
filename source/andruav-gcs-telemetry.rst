@@ -6,6 +6,11 @@
 Andruav GCS Telemetry
 =====================
 
+.. warning::
+    Web plugin is obsolete, it has been replaced with :ref:`webclient-udp-telemetry`
+
+
+
 Andruav Mobile App in GCS mode can stream telemetry data. The following video shows how easy it can be done.
 
 .. youtube:: XHCfO6Zq4ek

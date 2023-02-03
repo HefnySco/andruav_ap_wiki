@@ -13,8 +13,9 @@ WebClient Project Website
    :titlesonly:
    :maxdepth: 1
    
-   Web-Client </webclient-whatis>
-   Web Plugin </webclient-web-plugin>
+   What is Web-Client </webclient-whatis>
+   Web Plugin (obsolete)</webclient-web-plugin>
+   UDP-Telemetry </webclient-udp-telemetry>
    Gamepad Navigation </webclient-gamepad>
    FAQ </andruav-faq> 
    Glossary </andruav-glossary> 
