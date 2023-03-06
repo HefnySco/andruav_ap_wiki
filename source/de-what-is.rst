@@ -5,12 +5,18 @@ What is Drone-Engage ?
 ======================
 
 Drone-Engage is a distibuted system that allows monitoring & controlling drones via Internet. 
+
+
+
+.. youtube:: F9b4dXLRLjg
+
+|
+
 Drone-Engage does a lot of every cool things, including:
 
-* a metered telemetry connection from your drone to a website and 
-* (optionally) forwarding telemetry to/from your ground station such as Mission Planner or QGroundControl
-* easy streaming of video and/or pictures from one or more cameras connected to the companion computer in the vehicle
-* ability to record video or pictures on the drone or on your computer via the web interface.
+* A metered telemetry connection from your drone to a website and (optionally) forwarding telemetry to/from your ground station such as Mission Planner or QGroundControl.
+* Easy streaming of video and/or pictures from one or more cameras connected to the companion computer in the vehicle.
+* Ability to record video or pictures on the drone or on your computer via the web interface.
 * An easy to use web based ground control station interface that can be accessed via the internet from literally anywhere
 * Ability to manage a fleet of many drones using the same interface
 * An advanced geo-fencing capability that supersedes the flight controller 
@@ -34,13 +40,15 @@ Basic requirements for Drone-Engage to work are:
 Drone-Engage objective is to provide a Linux-based alternative for `Andruav <https://play.google.com/store/apps/details?id=arudpilot.andruav&hl=en&gl=US>`_ Android mobiles.
 
 
-.. youtube:: F9b4dXLRLjg
+
 
 Now you can use Raspberry-pi boards to run Drone-Engage companion computer software and enjoy tiny size of RPI-Zero, and the multi-camera capabilities or RPI-4.
 
 .. image:: ./images/setup1.png
         :align: center
         :alt: Drone-Engage on RPI-Zero connected to OBAL board.
+
+|
 
 
 .. tip::
@@ -54,6 +62,8 @@ Drone-Engage uses on-board Raspberry-Pi Zero connected to `Ardupilot <https://ar
 .. image:: ./images/rpizeroweight.jpeg
         :align: center
         :alt: Drone-Engage on RPI-Zero
+
+|
 
 This example is only 42 grams or 1.48 oz and 
 is everything you need to take full control on your drone anywhere anytime.

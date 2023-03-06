@@ -9,7 +9,7 @@ Installing the system is fairly straight forward. You need to start with a `Rasp
 Different versions of software can be found `here <https://cloud.ardupilot.org/downloads/>`_ 
 
 If you will connect a camera you need the "Video" package. 
-If you are running 64 bit Bullseye - download this version, otherwise use the latest legacy version.
+If you are running 64 bit Bullseye - download `this version <https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2023-02-22/2023-02-21-raspios-bullseye-arm64-lite.img.xz>`_ , otherwise use the latest `legacy version <https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2023-02-22/2023-02-21-raspios-buster-armhf-lite.img.xz>`_.
 
 |
 .. youtube:: cvQgMcnM7NA
@@ -25,21 +25,22 @@ Steps
 Make sure you have a Raspberry-PI board with `Raspberry PI OS Lite (Legacy) <https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2022-01-28/2022-01-28-raspios-buster-armhf-lite.zip>`_ installed on it.
 This is important to have access to camera if you choose to run Camera Module. In case of using Bullseye-64 then enable Legacy Camera using raspi-config.
 
-If you are running Bullseye, use raspi-config to enable "Legacy Camera support".
+.. tip::
+   If you are running Bullseye, use raspi-config to enable "Legacy Camera support".
+
 
 Open `Drone-Engage WebSite <https://www.droneengage.com>`_ and select `"Download Application" <https://cloud.ardupilot.org/downloads>`_ .
-|
+
 Download the appropriate binary for your board and version.
-|
+
 Copy files to your home folder in the board.
-|
 
 Copy downloaded file to your raspberry using the following command:
 
 .. code-block:: bash
 
    scp ./(the name of the file you downloaded).zip  pi@raspberry_pi_ip_address:.
-|
+
 
 
 login to your raspberry-pi board using the following commands:

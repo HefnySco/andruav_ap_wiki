@@ -13,6 +13,8 @@ If you need a telemetry then RPI-Zero is a perfect fit.
         :align: center
         :alt: Drone-Engage on RPI-Zero connected to OBAL board.
 
+|
+
 A connection to the internet is also required. 
 The simplest option for this is a USB 4G or LTE data stick, but you could also use a "HAT" that 
 has a 4G, LTE or even 5G modem on board.  
@@ -27,6 +29,7 @@ to save power and weight. RPI-4 will be your option if you want multiple cameras
         :alt: Raspberry-PI Zero 2 W 
 
 
+|
 
 .. tip::
 
