@@ -4,8 +4,10 @@
 What is Drone-Engage ?
 ======================
 
-Drone-Engage is a distibuted system that allows monitoring & controlling drones via Internet. 
-
+DroneEngage is a cloud-based software solution for managing drone operations that enables users to easily plan, execute, and oversee their unmanned aerial vehicle (UAV) activities.
+It offers a range of useful features, such as flight planning, mission management, data collection, and fleet management. 
+DroneEngage is designed to provide a user-friendly and accessible experience, and is compatible with Mavlink-based vehicles. 
+It is highly customizable and can be tailored to meet the specific needs of diverse industries and applications.
 
 
 .. youtube:: F9b4dXLRLjg
@@ -30,12 +32,9 @@ In a nutshell Drone-Engage is:
 * A drone camera streaming platform for your drone(s)
 * A remote controller that allows you to control your drone over the internet
 
-Basic requirements for Drone-Engage to work are:
-* A Raspberry PI directly connected to your autopilot on the vehicle
-* A 4G or LTE connection to the internet via the Raspberry PI
-* A login/access code for Drone-Engage on ArduPilot Cloud (cloud.ardupilot.org)
-* [optional] One or more cameras directly connected to the Raspberry PI
-* [optional] An X-box controller connected to your PC 
+To use Drone-Engage, you will need to meet the following basic requirements: a Raspberry Pi connected directly to your autopilot on the vehicle, 
+a 4G or LTE internet connection via the Raspberry Pi, and a login or access code for Drone-Engage on ArduPilot Cloud (cloud.ardupilot.org). 
+You may also choose to use one or more cameras directly connected to the Raspberry Pi, as well as an X-box controller connected to your PC, though these are optional.
 
 Drone-Engage objective is to provide a Linux-based alternative for `Andruav <https://play.google.com/store/apps/details?id=arudpilot.andruav&hl=en&gl=US>`_ Android mobiles.
 
@@ -53,7 +52,7 @@ Now you can use Raspberry-pi boards to run Drone-Engage companion computer softw
 
 .. tip::
 
-      Download Drone-Engage apps from `here <https://drive.google.com/drive/folders/1wMIw5VSW4CdIxMXIFMeq0AyuZBDIfFaH?usp=sharing>`_
+      Download Drone-Engage apps from `here <https://cloud.ardupilot.org/downloads/>`_
 
 
 
@@ -70,7 +69,7 @@ is everything you need to take full control on your drone anywhere anytime.
 
 
 If you want to make use of video streaming then you can use Raspberry-Pi Zero 2. It is only 52.2gm or 1.84oz.
-including camera and OTG cable. A Zero 2 is enough for one camera, but if you want more than one camera you will need a more powerful PI.
+including camera and OTG cable. A Zero 2 or a MangoPI MQ-QUAD is enough for one camera, but if you want more than one camera you will need a more powerful PI.
 
 .. image:: ./images/IMG_20220402_160422.jpg
         :align: center

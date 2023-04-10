@@ -4,7 +4,7 @@
 de_comm config.module.json Configuration File
 =============================================
 
-A file called **config.module.json** exists in **/home/pi/drone_engage/de_comm/**
+A file called **de_comm.config.module.json** exists in **/home/pi/drone_engage/de_comm/**
 This file is written in :term:`JSON` format. However, you can still add comments to the file.
 To those who do not know :term:`JSON` just consider it a text file that you need to edit only few lines in it.
 
@@ -37,7 +37,7 @@ Fields Meaning
 ==============
 
 
-.. list-table:: Title
+.. list-table:: de_comm.config.module.json
    :widths: 25 25 50
    :header-rows: 1
 
@@ -47,9 +47,6 @@ Fields Meaning
    * - "module_id"
      - just a name for your module. 
      - "C1" , "COMM_MAIN" ...etc.
-   * - "module_key" (*)
-     - unique identification for your module.
-     - GUID number. you can change it or just leave it.
    * - "s2s_udp_listening_ip" (**)
      - listen ip for the de_comm module to communicate with other modules. 
      - "127.0.0.1" if all modules on the same board else "0.0.0.0".
@@ -68,8 +65,8 @@ Fields Meaning
    * - "accessCode" (M)
      - just a name for your module. 
      - "C1" , "COMM_MAIN" ...etc.
-   * - "partyID" (M)
-     - a **unqiue** short key for your drone. 
+   * - "partyID" 
+     - a **unqiue** short key for your drone. it can be deleted and then the module will create a fixed partyid in a separate file automatically at its first run.
      - "D1", "U1" ...etc.
    * - "unitID" (M)
      - a readable name for your drone that will be displayed. 
@@ -80,6 +77,9 @@ Fields Meaning
    * - "unitDescription" (M)
      - a brief single line description of vehicle.
      - "My X8 Drone" ...etc.
+   * - "logger_enabled" (*)
+     - enabling it will create a log file for each run in a folder called Logs
+     - false
 
          
 

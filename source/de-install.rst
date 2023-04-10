@@ -78,6 +78,8 @@ each folder contains **config.module.json** that you need to edit.
 DE_COMM Configuration File 
 --------------------------
 
+:ref:`de-config-comm`
+
 You mainly need to enter two fields:
 
 "userName"                  :"team@ardupilot.org", 
@@ -88,6 +90,8 @@ use your own account and access code from registration.
 
 DE_MAVLINK Configuration File 
 -----------------------------
+
+:ref:`de-config-mavlink`
 
 you can enable wifi connection or serial connection form the settings:
 

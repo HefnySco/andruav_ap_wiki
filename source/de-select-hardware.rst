@@ -31,9 +31,19 @@ to save power and weight. RPI-4 will be your option if you want multiple cameras
 
 |
 
+
+`Mangopi MQ-Quad MCore H616   <https://mangopi.org/h616/>`_ is a very competing alternative to RPI-ZW2. It is cheaper, available and with the same computational power.
+
+
+.. image:: ./images/orangepi.png
+        :align: center
+        :alt: Mangopi MQ-Quad MCore H616 
+
+|
+
 .. tip::
 
-      It is recommended to have RPI-Zero for telemetry only and RPI-4 for telemetry + streaming video.
+      It is recommended to have RPI-Zero for telemetry only and RPI-Zero W2 / RPI-4 for telemetry + streaming video.
 
 
 

@@ -4,7 +4,7 @@
 de_mavlink Configuration File
 =============================
 
-A file called **config.module.json** exists in **/home/pi/drone_engage/de_mavlink/**
+A file called **de_mavlink.config.module.json** exists in **/home/pi/drone_engage/de_mavlink/**
 This file is written in :term:`JSON` format. However, you can still add comments to the file.
 To those who do not know :term:`JSON` just consider it a text file that you need to edit only few lines in it.
 
@@ -29,7 +29,7 @@ and open the file
 
 .. code-block:: bash
 
-   nano config.module.json
+   nano de_mavlink.config.module.json
 
 |
 
@@ -47,9 +47,6 @@ Fields Meaning
    * - "module_id"
      - Just a name for your module. 
      - "C1" , "COMM_MAIN" ...etc.
-   * - "module_key" (*)
-     - Unique identification for your module.
-     - GUID number. you can change it or just leave it.
    * - "s2s_udp_target_ip" (**)
      - points to de_comm **"s2s_udp_listening_ip"** in :ref:`de-config-comm`. 
      - "127.0.0.1" if all modules on the same board else the comm board IP e.g. "192.168.1.147".
@@ -71,12 +68,18 @@ Fields Meaning
    * - "udp_proxy_enabled" (*)
      - This is to enable the udp telemetry. By default it is disabled.
      - true, Default(false)
+   * - "udp_proxy_fixed_port" (*)
+     - Specify a fixed port for UDO cpnnection. Communication Server can ignore this value based on its settings.
+     - 
    * - "ignore_loading_parameters" (*)
      - This enable and disable loading vehicle parameters and expose it to web client. You need to enable this if you want to use R/C gamepad :ref:`webclient-gamepad`.
      - true, Default(false)
    * - "read_only_mode" (*)
      - This is used to prevent any type of commands from WebClient. WebClient will be used for monitoring only. When this is true nothing can control the drone even from udp telemetry.
      - true, Default(false) 
+   * - "logger_enabled" (*)
+     - enabling it will create a log file for each run in a folder called Logs
+     - false
    * - "message_timeouts" (*)
      - This is used to determine message rates for mavlink telemetry.
      - see :ref:`webclient-udp-telemetry`

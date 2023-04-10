@@ -1,7 +1,7 @@
 .. _webclient-web-plugin:
 
 ==================
-Web Plugin
+Web Plugin 
 ==================
 
 

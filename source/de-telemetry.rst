@@ -16,8 +16,8 @@ Drone-Engage Telemetry
    :titlesonly:
    :maxdepth: 2
 
-   Drone-Engage Web Plugin </webclient-web-plugin>
-   
+   Drone-Engage Web Plugin (obsolete) </webclient-web-plugin>
+   Web UDP Telemetry </webclient-udp-telemetry>
 
 
 

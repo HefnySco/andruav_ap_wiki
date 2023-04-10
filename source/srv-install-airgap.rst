@@ -86,11 +86,11 @@ When the script finishs successfully the following will be created:
         
     #. dnsmasq a DNS server that is up running and configured in /etc/dnsmasq.conf
 
-    #. a folder **~/andruav_authenticator** contains `andruav_authenticator <https://github.com/HefnySco/andruav_authenticator>`_ 
+    #. a folder **~/droneengage_authenticator** contains `droneengage_authenticator <https://github.com/DroneEngage/droneenage_authenticator.git>`_ 
 
-    #. a folder **~/andruav_server** contains `andruav_server <https://github.com/HefnySco/andruav_server>`_ 
+    #. a folder **~/droneengage_server** contains `droneengage_server <https://github.com/DroneEngage/droneengage_server.git>`_ 
 
-    #. a folder **~/andruav_webclient** contains `andruav_webclient <https://github.com/HefnySco/andruav_webclient>`_ 
+    #. a folder **~/droneengage_webclient** contains `droneengage_webclient <https://github.com/DroneEngage/droneengage_webclient.git>`_ 
 
     #. a folder **~/map/cachedMap** that is empty. This folder can be filled with cached images to be used as a local map server.
         
