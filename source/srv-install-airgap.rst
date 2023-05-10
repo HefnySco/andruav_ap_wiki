@@ -50,9 +50,9 @@ Enter to your Raspberry-PI using ssh or open a terminal on your Ubuntu server.
 .. code-block::
 
     cd ~
-    wget https://raw.githubusercontent.com/HefnySco/andruav_droneengane_scripts/main/server_installation/prepare-airgapped-server.sh
+    wget https://raw.githubusercontent.com/DroneEngage/DroneEngage_ScriptWiki/main/server_installation/prepare-airgapped-server.sh
 
-This command will download script `prepare-airgapped-server.sh <https://raw.githubusercontent.com/HefnySco/andruav_droneengane_scripts/main/server_installation/prepare-airgapped-server.sh>`_
+This command will download script `prepare-airgapped-server.sh <https://raw.githubusercontent.com/DroneEngage/DroneEngage_ScriptWiki/main/server_installation/prepare-airgapped-server.sh>`_
 
 You can open this script for editing to change domain name of ip address as below.
 
@@ -80,8 +80,8 @@ When the script finishs successfully the following will be created:
 
     #. a folder **~/ssl** with three files - we will see this later in :ref:`access local domain`-:
 
-        * localssl.key
-        * localssl.crt
+        * privkey.pem
+        * fullchain.pem
         * root.crt
         
     #. dnsmasq a DNS server that is up running and configured in /etc/dnsmasq.conf
@@ -114,12 +114,12 @@ You need two extra steps to access this local domain from your local wifi networ
 
         a folder **~/ssl** with three files:
 
-            * localssl.key
-            * localssl.crt
+            * privkey.pem
+            * fullchain.pem
             * root.crt
 
-    you need to copy root.crt into any browser of mobile device that is part of this system.
-    This is a root certificate that is used to tell those devices that localssl.crt is trusted and hence the conection will be secure and accepted. 
+    you need to copy `root.crt <https://github.com/DroneEngage/DroneEngage_ScriptWiki/blob/main/server_installation/root.crt>`_ into any browser of mobile device that is part of this system.
+    This is a root certificate that is used to tell those devices that fullchain.pem is trusted and hence the conection will be secure and accepted. 
 
     The below images shows `how to do that on Chrome <https://support.google.com/chrome/a/answer/6342302?hl=en>`_ .
 

@@ -40,6 +40,8 @@ to save power and weight. RPI-4 will be your option if you want multiple cameras
         :alt: Mangopi MQ-Quad MCore H616 
 
 |
+.. warning::
+    `Mango MQ-Quad MCore H618 <https://forum.mangopi.org/t/new-user-help-needed/2140/8>`_ does not have a Linux image. So make sure to use `H616   <https://mangopi.org/h616/>`_ only.
 
 .. tip::
 

@@ -19,6 +19,6 @@ The simplest way to deploy Backend-Server on a small computer that can be as sim
    :maxdepth: 2
 
    Air-Gap Tiny Server Installation </srv-install-airgap>
-   Full Server Installation  </srv-install-full>
+
 
 

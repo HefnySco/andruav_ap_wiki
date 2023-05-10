@@ -22,25 +22,14 @@ If you are running 64 bit Bullseye - download `this version <https://downloads.r
 Steps
 =====
 
-Make sure you have a Raspberry-PI board with `Raspberry PI OS Lite (Legacy) <https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2022-01-28/2022-01-28-raspios-buster-armhf-lite.zip>`_ installed on it.
-This is important to have access to camera if you choose to run Camera Module. In case of using Bullseye-64 then enable Legacy Camera using raspi-config.
+Make sure you have a Raspberry-PI board with `Raspberry PI OS Lite (Legacy) <https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2022-01-28/2022-01-28-raspios-buster-armhf-lite.zip>`_ installed on it, 
+or you can enable legacy camera support on Bullseye-64. This is important to have access to camera if you choose to run Camera Module. In case of using Bullseye-64 then enable Legacy Camera using raspi-config.
 
 .. tip::
    If you are running Bullseye, use raspi-config to enable "Legacy Camera support".
 
 
 Open `Drone-Engage WebSite <https://www.droneengage.com>`_ and select `"Download Application" <https://cloud.ardupilot.org/downloads>`_ .
-
-Download the appropriate binary for your board and version.
-
-Copy files to your home folder in the board.
-
-Copy downloaded file to your raspberry using the following command:
-
-.. code-block:: bash
-
-   scp ./(the name of the file you downloaded).zip  pi@raspberry_pi_ip_address:.
-
 
 
 login to your raspberry-pi board using the following commands:
@@ -49,23 +38,19 @@ login to your raspberry-pi board using the following commands:
 
    ssh pi@raspberry_pi_ip_address
 
-|
-.. tip::
-    Now you can download the files directly into Raspberry-PI using from `here <https://cloud.ardupilot.org/downloads/RPI/>`_ .
-
-|
-
-Unzip your file. It will extract a folder and a file script.
-
-
-.. code-block:: bash
-
+   mkdir tmp
+   cd tmp
+   wget <FilePath>
+   unzip <File.zip>
    chmod +x ./install_droneengage.sh
+
+|
 
 Now you need to start the installation process.
 
 .. code-block:: bash
 
+   chmod +x ./install_droneengage.sh
    ./install_droneengage.sh
 
 The above command will extract folder **drone_engage** that contains two applications. **de_comm** that is responsible for communicating with 
@@ -77,10 +62,9 @@ It will also ensure that these applications will be autorun so whenever you powe
 Configuring Apps
 ================
 
-You need to edit two text files to register simple information required to run apps properly. You do not need to go through all
-settings right now. 
+During installation, the install script will allow to you edit mandatory fields. You can still config files easily using a text editor.
 
-Update your account in file **./drone_engage/de_comm/config.module.json** you need to enter your email & :term:`Access Code`.
+You can update your account in file **./drone_engage/de_comm/config.module.json** you need to enter your email & :term:`Access Code`.
 You may also name your vehicle.
 
 .. code-block:: bash

@@ -65,9 +65,6 @@ Fields Meaning
    * - "accessCode" (M)
      - just a name for your module. 
      - "C1" , "COMM_MAIN" ...etc.
-   * - "partyID" 
-     - a **unqiue** short key for your drone. it can be deleted and then the module will create a fixed partyid in a separate file automatically at its first run.
-     - "D1", "U1" ...etc.
    * - "unitID" (M)
      - a readable name for your drone that will be displayed. 
      - "drone1", "D1-Copter" ...etc.

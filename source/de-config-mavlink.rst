@@ -69,7 +69,7 @@ Fields Meaning
      - This is to enable the udp telemetry. By default it is disabled.
      - true, Default(false)
    * - "udp_proxy_fixed_port" (*)
-     - Specify a fixed port for UDO cpnnection. Communication Server can ignore this value based on its settings.
+     - Specify a fixed port for UDO cpnnection or you can change it from WebClient. Communication Server can ignore this value based on its settings.
      - 
    * - "ignore_loading_parameters" (*)
      - This enable and disable loading vehicle parameters and expose it to web client. You need to enable this if you want to use R/C gamepad :ref:`webclient-gamepad`.
