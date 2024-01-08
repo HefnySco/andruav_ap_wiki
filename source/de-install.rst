@@ -16,9 +16,8 @@ The following steps assume that you know how to install a raspberry-pi and have 
 
 
 .. important::
-    System is tested on `Raspberry Pi OS Lite (Legacy) <https://www.raspberrypi.com/software/operating-systems/>`_
-
-
+    You need to execute this script also to install **libcrypto_1.1**
+    `install_libcrypto_1.1.sh <https://github.com/DroneEngage/DroneEngage_ScriptWiki/blob/main/helper_scripts/install_libcrypto_1.1.sh>`_
 
 
 Download Binaries
@@ -152,7 +151,7 @@ DE_CAMERA Configuration File
 
 you mainly need to define cameras. bedefault there is a camera defined on /dev/video0 and given name "AI1"
 
-.. code-block:: bash
+.. code-block:: json
     
     "one_session_per_camera"    : true,
     "camera_list": [
@@ -162,7 +161,26 @@ you mainly need to define cameras. bedefault there is a camera defined on /dev/v
     } // name should be unique across all cameras.
     ],
 
+
+you can also choose to enumerate on video devices that exists in a given range. 
+for example list all video devices from **/dev/video0** to **/dev/video10** :
+
+.. code-block:: json
+    
+    "one_session_per_camera"    : true,
+    "camera_start_index"        :0, 
+    "camera_end_index"          :10,
+    
+
+
+You can comment the unwanted option by adding **//** at the beginning if its line.
+
 Other parameters exists but they are not mandatory to change and you can just leave them as a start.
+
+
+.. important::
+    you need to enable legacy camera suppot on camera devices that you are using, and remember to reboot.
+    **sudo raspi-config nonint do_legacy 0**
 
 
 
@@ -171,6 +189,11 @@ Other parameters exists but they are not mandatory to change and you can just le
 The following video describes installation procedures. It may differ from version to another, but the video includes the main steps.
 
 .. youtube:: cvQgMcnM7NA
+
+
+
+
+
 
 
 
