@@ -15,7 +15,8 @@ Andruav Advanced
    Andruav GEO-Fencing </andruav-geo-fencing>
    Andruav GamePad Navigation </webclient-gamepad>
    Andruav GPS Injection </andruav-gps-injection>
-   
+   Andruav SMS Reporting and Control </andruav-sms>
+
 |
 
 Andruav is much more than a 4G telemetry or a video streaming. It has lots of details and logic that distinguish it.

@@ -2,9 +2,9 @@
 
 
 
-=====================
-Andruav GCS Telemetry
-=====================
+================================
+Andruav GCS Telemetry (obsolete)
+================================
 
 .. warning::
     Web plugin is obsolete, it has been replaced with :ref:`webclient-udp-telemetry`

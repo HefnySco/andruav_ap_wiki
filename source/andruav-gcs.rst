@@ -1,8 +1,13 @@
 .. _andruav-gcs:
 
-===============
-Andruav GCS App
-===============
+==========================
+Andruav GCS App (obsolete)
+==========================
+
+
+.. warning::
+    Andruav GCS is obsolete, it has been replaced with :ref:`webclient-whatis`.
+
 
 
 Andruav App works in two modes. **Drone mode** which is used to connect to drone and control it as a companion computer. And **GCS mode** that works as a ground control station.

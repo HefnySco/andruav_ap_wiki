@@ -15,6 +15,7 @@ Andruav Project Website
    
    What is Andruav </andruav-what-is>
    Getting Started </andruav-getting-started>
+   How to Build </andruav-how-to-compile>
    Andruav FPV </andruav-fpv>
    Andruav GCS App </andruav-gcs>
    Andruav Web Client </webclient-whatis>
