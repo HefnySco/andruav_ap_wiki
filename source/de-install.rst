@@ -12,12 +12,19 @@ Preparing Raspberry
 If you want to install **Telemetry without Video** then you can use `RPI-Zero W <https://www.raspberrypi.com/products/raspberry-pi-zero-w/>`_.
 If you want to install **Telemetry and Video streaming** then you can use `RPI-Zero W2 <https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/>`_ or and for multiple camera support please use `RPI-4 <https://www.raspberrypi.com/products/raspberry-pi-4-model-b/>`_.
 
-The following steps assume that you know how to install a raspberry-pi and have a raspberry-pi board up and running and accessible using SSH.
 
+.. danger::
+    Unless you will compile DroneEngage, you need to use **Raspberry Pi OS (bullseye) 64-bit**.
+    `download image <https://downloads.raspberrypi.com/raspios_oldstable_arm64/images/raspios_oldstable_arm64-2024-07-04/2024-07-04-raspios-bullseye-arm64.img.xz>`_
+
+
+The following steps assume that you know how to install a raspberry-pi and have a raspberry-pi board up and running and accessible using SSH.
 
 .. important::
     You need to execute this script also to install **libcrypto_1.1**
-    `install_libcrypto_1.1.sh <https://github.com/DroneEngage/DroneEngage_ScriptWiki/blob/main/helper_scripts/install_libcrypto_1.1.sh>`_
+    `install_libcrypto_1.1.sh <https://github.com/DroneEngage/DroneEngage_ScriptWiki/blob/main/helper_scripts/install_libcrypto_1.1.sh>`_ the installation
+    script will install it for you and may ask you to re-run the installion script again.
+
 
 
 Download Binaries
