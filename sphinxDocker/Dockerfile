@@ -3,11 +3,9 @@ FROM sphinxdoc/sphinx
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git \
-    apt-get install -y nano
-
-RUN apt-get autoremove \
-    apt-get clean \
+    apt-get install -y git nano && \
+    apt-get autoremove -y && \
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 #RUN pip3 install git+https://github.com/shomah4a/sphinxcontrib.youtube.git#egg=httpie
