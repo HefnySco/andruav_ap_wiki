@@ -5,6 +5,7 @@ Air-Gap RPI-4 Backend-Server Deployment
 =======================================
 
 
+For a ready image please :ref:`_srv-install-airgap-download`
 
 .. youtube:: R1BedRTxuuY
 
@@ -171,7 +172,10 @@ You need two extra steps to access this local domain from your local wifi networ
 
 This **public_host** is used to by the mobile to access the :ref:`srv-communication`.
 
-    
+    .. important::
+
+        You can download a full image from :ref:`srv-install-airgap-download`
+
     
     
 
