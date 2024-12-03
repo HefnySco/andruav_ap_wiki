@@ -21,6 +21,7 @@ Drone Engage Project Website
    Using Drone-Engage with SITL </de-simulators>
    Use Cases </de-use-cases>
    Installation </de-install>
+   Dev-Section </de-dev>
    FAQ </de-faq> 
    Glossary </de-glossary> 
 

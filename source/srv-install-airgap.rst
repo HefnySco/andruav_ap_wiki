@@ -146,6 +146,35 @@ You need two extra steps to access this local domain from your local wifi networ
         ssl certificate from a trusted provider. And you need to have **a static IP address** not a local one.
 
 
+#. **Andruav FIX**
+    Because **Andruav** runs on a phone and the domain airgap.droneengage.com might not be recognized to it then you need to depend on ip to reach the server.
+    On the RPI server you need to go to 
+
+    .. code-block:: bash
+
+        cd ~/droneengage_server
+        nano ./server.config
+    
+    .. image:: ./images/comm_server_config.png
+        :height: 400px
+        :align: center
+        :alt: register root certificate in Authorities section in Chrome.
+
+    |
+
+    and edit 
+        "public_host"                   : "airgap.droneengage.com",
+    to 
+        "public_host"                   : "192.168.1.161", // or whateverr IP of RPI Airgap server
+    and 
+        "allow_fake_SSL"                : true,  // should be TRUE
+
+This **public_host** is used to by the mobile to access the :ref:`srv-communication`.
+
+    
+    
+    
+
 
 
 
