@@ -1,19 +1,21 @@
-.. _srv-install-airgap-download:
+.. _de-software-installation_download:
 
-=========================
-Air-Gap RPI-4 Ready Image
-=========================
 
+===================================
+Drone Engage RPI-WZero2 Ready Image
+===================================
 
 
 You can download a ready-made image from here:
 
-Download Image from `Here <https://cloud.ardupilot.org/downloads/RPI_Full_Images/>`_ .
+Download Image from `Here <https://cloud.ardupilot.org/downloads/RPI_Full_Images/droneengage_rpi/rpi_wzero_2_drone_engage_w_camera.xz>`_ .
 
 Please remember to change the password to your own WIFI password by editing /etc/wpa_supplicant/wpa_supplicant.conf
 as in the below images.
 
+
 username/password:  **pi/raspberry**
+
 
 .. image:: ./images/wpa_path.png
    :align: center
@@ -29,3 +31,10 @@ username/password:  **pi/raspberry**
 
 change SSID and password to your own WIFI and password by editing it on your laptop before running the ROM on the RPI.
 
+
+
+Also please update your account by editing file de_comm.config.module.json
+
+.. image:: ./images/de_comm_config.png
+   :align: center
+   :alt: de_comm.config.module.json

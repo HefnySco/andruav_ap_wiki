@@ -92,7 +92,11 @@ for more information about this file :ref:`de-config-mavlink`
 
 
 
+Ready-Image
+===========
 
+You can download a ready image on RPI-WZero2. It contains all modules included camera modules.
+PLease check this :ref:`de-software-installation_download`
    
 
 

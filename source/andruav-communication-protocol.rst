@@ -46,7 +46,7 @@ message type:
 
 field: mt
 
-this is a numeric field that defines the message itself.
+This is a numeric field that defines the message itself.
 
 see :ref:`andruav-communication-protocol-messages`
 
@@ -68,6 +68,12 @@ see: `js_andruav_chat_server.js function fn_parseMessage <https://github.com/Dro
 
 
 
+binary command:
+---------------
+
+Binary command is optional based on the message type. The binary data is concatenated after the text content of the message header. 
+A binary message can contain also message command in text format. Binary content length is defined by subtracting total message length from the text content that is terminated
+by a null character.
 
 
 
