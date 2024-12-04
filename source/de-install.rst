@@ -197,6 +197,16 @@ The following video describes installation procedures. It may differ from versio
 
 .. youtube:: cvQgMcnM7NA
 
+|
+
+
+Ready-Image
+===========
+
+You can download a ready image on RPI-WZero2. It contains all modules included camera modules.
+PLease check this :ref:`de-software-installation_download`
+   
+
 
 
 
