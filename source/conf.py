@@ -37,6 +37,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.imgmath',
     'sphinx.ext.ifconfig',
+    'sphinx.ext.imgconverter',
     #'recommonmark',
     #https://sphinxcontrib-youtube.readthedocs.io/en/latest/
     'sphinxcontrib.youtube', #For youtube embedding
@@ -53,6 +54,11 @@ exclude_patterns = []
 
 [extensions]
 todo_include_todos=True
+rst_prolog = """
+.. |br| raw:: html
+
+   <br />
+"""
 
 # -- Options for HTML output -------------------------------------------------
 
