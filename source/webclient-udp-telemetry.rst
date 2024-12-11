@@ -104,7 +104,7 @@ This feature can be enabled in Andruav using the settings.
 
 .. |pic5| image:: ./images/webclient_udp_proxy_andruav.jpg
    :width: 50 %
-   :alt: Adnruav Settings
+   :alt: Andruav Settings
    :class: with-border
 
 To enable udp_proxy in DroneEngage, modify the **udp_proxy_enabled** property in the *config.module.json** file of :ref:`de-config-mavlink`. 

@@ -5,7 +5,7 @@ Air-Gap RPI-4 Backend-Server Deployment
 =======================================
 
 
-For a ready image please :ref:`_srv-install-airgap-download`
+For a ready image please check :ref:`srv-install-airgap-download`
 
 .. youtube:: R1BedRTxuuY
 

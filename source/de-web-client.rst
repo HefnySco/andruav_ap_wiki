@@ -23,6 +23,8 @@ Main Features
 
 #. Ability to stream videos from multiple drones simultaneously.
 
+#. Ability to take photos.
+
 #. Ability to connect GamePad directly to web and fly drone smoothly.
 
 #. Ability to connect web client to QGroundControl or Mission Planner using :ref:`webclient-web-plugin` 

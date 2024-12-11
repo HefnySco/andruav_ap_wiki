@@ -55,7 +55,6 @@ Now you can use Raspberry-pi boards to run Drone-Engage companion computer softw
       Download Drone-Engage apps from `here <https://cloud.ardupilot.org/downloads/>`_
 
 
-
 Drone-Engage uses on-board Raspberry-Pi Zero connected to `Ardupilot <https://ardupilot.org/>`_ flight control board "FCB" to provide unlimited range telemetry and control. 
 
 .. image:: ./images/rpizeroweight.jpeg
@@ -75,6 +74,14 @@ including camera and OTG cable. A Zero 2 or a MangoPI MQ-QUAD is enough for one 
         :align: center
         :alt: Drone-Engage on RPI-Zero-2 with camera
 
+
+|
+
+Ready-Image
+===========
+
+You can download a ready image on RPI-WZero2. It contains all modules included camera modules.
+Please check this :ref:`de-software-installation_download`
 
 
 
