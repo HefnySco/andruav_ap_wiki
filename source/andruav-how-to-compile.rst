@@ -13,6 +13,7 @@ You need to download Android Studio from `here <https://developer.android.com/st
 Clone Android Source Cide using github:
 
 .. code-block:: bash
+    
     git clone https://github.com/HefnySco/andruav_android_app
 
 

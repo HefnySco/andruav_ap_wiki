@@ -45,7 +45,7 @@ extensions = [
     'sphinx.ext.autosectionlabel'
 ]
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['']
+templates_path = ['_templates','_static']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -122,7 +122,6 @@ html_favicon = './images/andruav.ico'
 
 
 html_additional_pages = {
-    'eula': '_static/eula.html',
-    'eula_team': '_static/eula_team.html',
-    'andruavweb': '_static/andruavweb.html',
+    'eula': "eula.html",
+    # 'eula_team': 'eula_team.html'
 }

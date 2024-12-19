@@ -1,4 +1,4 @@
-.. _de-install:
+.. _de-dev:
 
 ==============================
 DroneEngage Development Topics
@@ -13,6 +13,8 @@ DroneEngage Development Topics
    :maxdepth: 1
    
    Andruav Communication Protocol </andruav-communication-protocol>
+   DroneEngage Custom Plugin Module </de-dev-plugin>
+
 
 
 
