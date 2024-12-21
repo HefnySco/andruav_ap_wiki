@@ -19,6 +19,10 @@ Ardupilot Cloud
    WebClient </webclient-index>
    
    Server </srv-index>
+
+   Dev-Section </de-dev>
+
+   Obsolete Pages </obsolete-index>
 |
 .. youtube:: c6wFTDcvxtQ
 |

@@ -17,9 +17,7 @@ Andruav Project Website
    Getting Started </andruav-getting-started>
    How to Build </andruav-how-to-compile>
    Andruav FPV </andruav-fpv>
-   Andruav GCS App </andruav-gcs>
    Andruav Web Client </webclient-whatis>
-   Andruav Telemetry </andruav-telemetry>
    Andruav Advanced Features </andruav-advanced>
    Using Andruav with SITL </andruav-simulators>
      

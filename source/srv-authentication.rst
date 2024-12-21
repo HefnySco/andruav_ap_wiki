@@ -109,7 +109,7 @@ The file is a simple JSON format like in the following example:
 
 |
 
-**user1** and **user2** share the same drones, they are just to logins that can be used via webclient od DroneEngage Communicator.
+**user1** and **user2** share the same drones, they are just to logins that can be used via webclient and DroneEngage Communicator.
 **user3** is another user that is separated from then as he/she has a separate SID value.
 
  
