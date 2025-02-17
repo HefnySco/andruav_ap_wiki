@@ -1,29 +1,19 @@
 .. _de-account-create:
 
-
 ====================================
 Create your Drone-Engage Account Key
 ====================================
 
-To get access to Drone-Engage you need to register and get :term:`Access Code` from `Account Manager <http://cloud.ardupilot.org:8001/accounts.html>`_.
-This is a very straight forward step. You will recieve an :term:`Access Code` on your email that you need to save and use in all your drones.
+Access to Drone-Engage requires registration and the acquisition of an :term:`Access Code` from the `Account Manager <http://cloud.ardupilot.org:8001/accounts.html>`_.  The registration process is straightforward, and the :term:`Access Code` will be delivered to the provided email address. This code is essential and should be securely stored for use with all drones.
 
+Account validation is completed by logging into the `Drone-Engage Web Client <https://cloud.ardupilot.org:8001/webclient.html>`_.
 
-To validate your new account please login to `Drone-Engage Web Client <https://cloud.ardupilot.org:8001/webclient.html>`_.
+The same :term:`Access Code` is used to configure the Communication Client (`de_comm.so`) on the Raspberry Pi, establishing the connection between the vehicle, the Drone-Engage server, and the web client.
 
-This access code will also be used on your Raspberry PI to configure the Communication Client (de_comm.so) 
-that connects your vehicle to the Drone Engage server and web client.
 .. tip::
-    You only need one account for all your drones.
-
-
+    A single account is sufficient for managing multiple drones.
 
 .. youtube:: baHWBc6RvaE
-|
 
 .. warning::
-    Sharing your :term:`Access Code` with other persons will allow them to join their devices on your Drone-Engage account. This is useful when you want your friend enter as a GCS and share with you your flight.
-
-
-
-
+    Sharing your :term:`Access Code` grants access to your Drone-Engage account to other individuals, potentially allowing them to connect their devices. This functionality can be utilized to enable shared access, such as when collaborating with a ground control station (GCS) operator during a flight.

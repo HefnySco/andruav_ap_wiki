@@ -1,17 +1,18 @@
-.. _de_dev-building-code:
+.. _de-dev-building-code:
 
 =========================
 Building DroneEngage Code
 =========================
 
-
 If you want to build binaries form sourcecode in order to make it compatible with your linux platform you need to follow the following steps.
-In this scenario we will use RPI-4 with Bullseye image. However you can use any version, or you can even compile it using the same steps on your linux laptop or VM.
+In this scenario we will use RPI-4 with Bullseye image. However you can use any version including RPI-5 and Bookworm, or you can even compile it using the same steps on your linux laptop or VM.
 
 
 
 Preparing prerequisites 
 -----------------------
+
+The following steps assume that you know how to install a raspberry-pi and have a raspberry-pi board up and running and accessible using SSH.
 
 .. code-block:: bash
 

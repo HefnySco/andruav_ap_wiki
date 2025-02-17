@@ -6,7 +6,7 @@ DroneEngage Installation
 
 
 
-If you want to install **Telemetry without Video** then you can use `RPI-Zero W <https://www.raspberrypi.com/products/raspberry-pi-zero-w/>`_.
+If you want to install **Telemetry without Video** then you can use `RPI-Zero W <https://www.raspberrypi.com/products/raspberry-pi-zero-w/>`_ .
 If you want to install **Telemetry and Video streaming** then you can use `RPI-Zero W2 <https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/>`_ or and for multiple camera support please use `RPI-4 <https://www.raspberrypi.com/products/raspberry-pi-4-model-b/>`_.
 
 
@@ -14,18 +14,35 @@ If you want to install **Telemetry and Video streaming** then you can use `RPI-Z
 Ready Image
 ===========
 
-If you do not want to install binaries on your RPI. You can download You can also use a **Ready Image with binaries installed** on `Ready Image <https://cloud.ardupilot.org/downloads/RPI_Full_Images/>`_ 
-on RPI Zero W2 and RPI4.
+For users who prefer not to install binaries directly onto their Raspberry Pi, pre-built images are available. These images, containing the necessary binaries, can be downloaded from `Ready Image repository <https://cloud.ardupilot.org/downloads/RPI_Full_Images/droneengage_rpi/>`_ 
+Support for these pre-built images extends to both the Raspberry Pi Zero W2 and Raspberry Pi 4.
 
-You can download a ready image on RPI-WZero2. It contains all modules included camera modules.
-Please check this :ref:`de-software-installation_download`
+Further information regarding image downloads can be found in the :ref:`de-software-installation_download` section.
+
+
+Installing from Binaries
+========================
+
+System installation is straightforward, requiring a functional Raspberry Pi with SSH access.  Raspberry Pi OS can be downloaded from the `official website <https://www.raspberrypi.com/software/operating-systems/>`_. Drone-Engage software packages are available `here <https://cloud.ardupilot.org/downloads/>`_.
+
+The "Video" package is necessary for camera integration.  For 64-bit Bullseye, download `this version <https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2023-02-22/2023-02-21-raspios-bullseye-arm64-lite.img.xz>`_.  Users wishing to build binaries themselves should consult :ref:`de-dev-building-code`.  
+Pre-built images are also available; visit  `Drone-Engage website <https://www.droneengage.com>`_ and select "Download Application" `link <https://cloud.ardupilot.org/downloads>`_.
+
+.. youtube:: cvQgMcnM7NA
+
+
+.. tip::
+   For Bullseye, enable "Legacy Camera Support" via `raspi-config`.
+
 
 
 
 Preparing Raspberry
-===================
+-------------------
 
-Please use **Bulleyes** to run `compiled binaries <https://cloud.ardupilot.org/downloads/RPI/>`_ of DroneEngage uses **Raspberry Pi OS (bullseye) 64-bit**.
+Please use **Raspberry Pi OS (bullseye) 64-bit** to run `compiled binaries <https://cloud.ardupilot.org/downloads/RPI/>`_ of DroneEngage.
+You can still compile your code on other versions check :ref:`de-dev-building-code`.
+ 
 
 
 
@@ -39,7 +56,7 @@ The following steps assume that you know how to install a raspberry-pi and have 
 
 
 Download Binaries
-=================
+-----------------
 
 
 Binaries are available at `Binaries Download <https://cloud.ardupilot.org/downloads/>`_ and are ordered by date. 
