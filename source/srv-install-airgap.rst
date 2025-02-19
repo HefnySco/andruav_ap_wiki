@@ -5,12 +5,11 @@ Air-Gap RPI-4 Backend-Server Deployment
 =======================================
 
 
-For a ready image please check :ref:`srv-install-airgap-download`
+For a **ready image** please check :ref:`srv-install-airgap-download`, also **script** is available at `prepare-airgapped-server.sh <https://raw.githubusercontent.com/HefnySco/andruav_droneengane_scripts/main/server_installation/prepare-airgapped-server.sh>`_
 
 .. youtube:: R1BedRTxuuY
 
-    
-script is available at: `prepare-airgapped-server.sh <https://raw.githubusercontent.com/HefnySco/andruav_droneengane_scripts/main/server_installation/prepare-airgapped-server.sh>`_
+
 
 
 
