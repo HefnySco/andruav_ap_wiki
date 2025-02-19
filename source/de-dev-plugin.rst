@@ -51,8 +51,8 @@ make a complex plugin.
 Drone Engage Plugin Code
 ------------------------
 
-This is actually the part of code that you will include into your plugin. Your plugin can be written in C++ and Python, and any other language,
-however the available plugin templates are in C++ and Python.
+This is actually the part of code that you will include into your plugin. Your plugin can be written in C++, nodejs, Python, or any other language,
+however the available plugin templates are in C++, nodejs and Python.
 
 **Source Code:** `https://github.com/DroneEngage/droneengage_databus <https://github.com/DroneEngage/droneengage_databus>`_  
 

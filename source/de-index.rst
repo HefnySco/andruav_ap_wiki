@@ -18,6 +18,7 @@ Drone Engage Project Website
    Drone-Engage Web Client </de-web-client>
    Drone-Engage Telemetry </de-telemetry>
    Drone-Engage Advanced Features </de-advanced>
+   Drone-Engage Plugins </de-plugins>
    Using Drone-Engage with SITL </de-simulators>
    Use Cases </de-use-cases>
    Installation </de-install>

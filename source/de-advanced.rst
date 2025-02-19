@@ -13,6 +13,7 @@ Drone-Engage Advanced
    GEO-Fencing </de-geo-fencing>
    GamePad Navigation </webclient-gamepad>
    RC Blocking </de-tx-block>
+   Swarm </de-swarm>
 ..
    RC Blocking </de-tx-block>
    TX Freeze </de-tx-freeze>
