@@ -10,63 +10,72 @@ The following is the `js_siteConfig.js <https://github.com/DroneEngage/droneenga
 
 .. code-block:: JAVASCRIPT
 
-    /**
-    * 
-    * SITE Configuration File
-    * 
-    * Auth: Mohammad Hefny
-    * 
-    */
+  /**
+ * 
+ * SITE Configuration File
+ * 
+ * Auth: Mohammad Hefny
+ * 
+ */
 
 
-    /**
-    * Communication Server
-    */
-
-    export const CONST_TEST_MODE = false;
-    export const CONST_PROD_MODE_IP = 'airgap.droneengage.com'; 
-    export const CONST_PROD_MODE_PORT = '19408';
-    
-    export const CONST_TEST_MODE_IP = '127.0.0.1';
-    export const CONST_TEST_MODE_PORT = '19408';
-    
-    export const CONST_TEST_MODE_ENABLE_LOG = false;  // should be used together with CONST_TEST_MODE
-    export const CONST_TITLE = 'Drone Engage';
-
-    /**
-    * Links that are used in Header
-    */
-    export const CONST_HOME_URL = "https://cloud.ardupilot.org/";
-    export const CONST_MANUAL_URL = "https://cloud.ardupilot.org/";
-    export const CONST_FAQ_URL = "https://cloud.ardupilot.org/de-faq.html";
-    export const CONST_CONTACT_URL = "https://droneengage.com/contact.html";
-
-    /**
-    * Location of GCS are not sent over network. Only The existence of connected GCS are shared.
-    */
-    export const CONST_DONT_BROADCAST_TO_GCSs = false;
+  /**
+  * Communication Server
+  */
 
 
-    /**
-    * This is for disable experimental features.
-    * If a feature is not explicitly mentioned or has a value of true, it is considered to be enabled.
-    */
-    export const CONST_FEATURE = 
-    {
-        DISABLE_UNIT_NAMING: false,
-        DISABLE_UDPPROXY_UPDATE: false,
-        DISABLE_SWARM: false,
-        DISABLE_SWARM_DESTINATION_PONTS: false,
-        DISABLE_P2P: false,
-        DISABLE_SDR: false,
-        DISABLE_GPIO: false,
-        DISABLE_VOICE: false,
-    };
+  // Default Configuration
+  export let CONST_TEST_MODE = false;
+  export let CONST_PROD_MODE_IP = 'airgap.droneengage.com';
+  export let CONST_PROD_MODE_PORT = '19408';
+  export let CONST_TEST_MODE_IP = '127.0.0.1';
+  export let CONST_TEST_MODE_PORT = '19408';
+  export let CONST_TEST_MODE_ENABLE_LOG = false;
+  export let CONST_TITLE = 'Drone Engage';
 
-    export const CONST_ICE_SERVERS =  [
-        {urls: 'turn:cloud.ardupilot.org', 'credential':'1234', 'username':'andruav_ap'},
-        {urls: "stun:stun1.l.google.com:19302"},
-        ];
+  /**
+  * Links that are used in Header
+  */
+  export let CONST_HOME_URL = "https://cloud.ardupilot.org/";
+  export let CONST_MANUAL_URL = "https://cloud.ardupilot.org/";
+  export let CONST_FAQ_URL = "https://cloud.ardupilot.org/de-faq.html";
+  export let CONST_CONTACT_URL = "https://droneengage.com/contact.html";
+
+
+  // CHOOSE YOUR MAP SOURCE
+  export let CONST_MAP_LEAFLET_URL = "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHNhYWQiLCJhIjoiY2tqZnIwNXRuMndvdTJ4cnV0ODQ4djZ3NiJ9.LKojA3YMrG34L93jRThEGQ";
+  //export let CONST_MAP_LEAFLET_URL = "https://airgap.droneengage.com:88/{x}_{y}_{z}.jpeg" //LOCAL MAP
+  
+
+  /**
+  * Location of GCS are not sent over network. Only The existence of connected GCS are shared.
+  */
+  export let CONST_DONT_BROADCAST_TO_GCSs = false;
+
+
+  /**
+  * This is for disable experimental features.
+  * If a feature is not explicitly mentioned or has a value of true, it is considered to be enabled.
+  */
+  export let CONST_FEATURE = {
+      DISABLE_UNIT_NAMING: false,
+      DISABLE_UDPPROXY_UPDATE: false,
+      DISABLE_SWARM: false,
+      DISABLE_SWARM_DESTINATION_PONTS: false,
+      DISABLE_P2P: false,
+      DISABLE_SDR: false,
+      DISABLE_GPIO: false,
+      DISABLE_VOICE: false,
+  };
+
+  /**
+  * WEBRTC Video Streaming Settings
+  */
+  export let CONST_ICE_SERVERS = [
+      { urls: 'turn:cloud.ardupilot.org', credential: '1234', username: 'andruav_ap' },
+      { urls: "stun:stun1.l.google.com:19302" },
+  ];
+
 
 
 |
@@ -81,7 +90,7 @@ The following are the fields that are used in the configuration file.
 Connection to the Server
 ------------------------
 
-.. list-table:: Title
+.. list-table:: Communication Links
    :widths: 25 25 50
    :header-rows: 1
 
@@ -110,6 +119,8 @@ Connection to the Server
      - Title of the WebClient.
      - "My Own Drone Engage Site"
 
+|
+|
 
 
 
@@ -118,7 +129,7 @@ Header Links
 
 These are the links that are used in the header of the WebClient.
 
-.. list-table:: Title
+.. list-table:: Header Links
    :widths: 25 25 50
    :header-rows: 1
 
@@ -144,7 +155,7 @@ Features
 
 There are features that you can enable or disable in the WebClient. Some of these features are experimental and are disabled by default.
 
-.. list-table:: Title
+.. list-table:: Features
    :widths: 25 25 50
    :header-rows: 1
 
@@ -182,16 +193,81 @@ Some of the above features will not display any GUI unless the correspondent mod
 Other Parameters
 ----------------
 
-
-.. list-table:: Title
+.. list-table:: Others
    :widths: 25 25 50
    :header-rows: 1
 
    * - CONST_DONT_BROADCAST_TO_GCSs
      - This is to disable the broadcasting of the location of the GCSs to the network.
      - false
-    
-    * - CONST_ICE_SERVERS
-      - This is the ICE servers used for WebRTC. Donot change unless you know what you do or you might cannot establish video connection.
-      - 
+   * - CONST_ICE_SERVERS
+     - This is the ICE servers used for WebRTC. Donot change unless you know what you do or you might cannot establish video connection.
+     - 
+   * - CONST_MAP_LEAFLET_URL
+     - This is a URL for the map. You can use your own `map-server <https://youtu.be/ppwuUqomxXY>`_  or use the default map server.
+     - 
+
+
+Config.json
+===========
+
+This is a file exits in /public/config.json. It is a copy of the js_siteConfig.js file. You can **overwrite** all or some of the fields in the js_siteConfig.js file 
+by changing the values in the config.json file without the need to rebuild WebClient code.
+
+
+.. code-block:: JAVASCRIPT
+
+  {
+      "CONST_TEST_MODE": true,
+      "CONST_PROD_MODE_IP": "cloud.ardupilot.org",
+      "CONST_PROD_MODE_PORT": "19408",
+      "CONST_TEST_MODE_IP": "127.0.0.1",
+      "CONST_TEST_MODE_PORT": "19408",
+
+  /**
+  * This is for disable experimental features.
+  * If a feature is not explicitly mentioned or has a value of true, it is considered to be enabled.
+  */
+      "CONST_FEATURE" :{
+          "DISABLE_UNIT_NAMING": false,
+          "DISABLE_UDPPROXY_UPDATE": false,
+          "DISABLE_SWARM": false,
+          "DISABLE_SWARM_DESTINATION_PONTS": false,
+          "DISABLE_P2P": false,
+          "DISABLE_SDR": false,
+          "DISABLE_GPIO": false,
+          "DISABLE_VOICE": false
+      },
+
+  // CHOOSE YOUR MAP SOURCE
+  "CONST_MAP_LEAFLET_URL": "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHNhYWQiLCJhIjoiY2tqZnIwNXRuMndvdTJ4cnV0ODQ4djZ3NiJ9.LKojA3YMrG34L93jRThEGQ",
+  //export let CONST_MAP_LEAFLET_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+  //export let CONST_MAP_LEAFLET_URL = "https://airgap.droneengage.com:88/{x}_{y}_{z}.jpeg" //LOCAL MAP
+  //export let CONST_MAP_LEAFLET_URL = "http://127.0.0.1:9991/{x}_{y}_{z}.jpeg" //LOCAL MAP
+
+
+  /**
+  * WEBRTC Video Streaming Settings
+  */
+      "CONST_ICE_SERVERS": [
+          { "urls": "turn:cloud.ardupilot.org", "credential": "1234", "username": "andruav_ap" },
+          { "urls": "stun:stun1.l.google.com:19302" }
+      ]
+  }
+
+
+for example if you need to change connection string you can only write connection info and ignore writing other fields.
+
+
+.. code-block:: JAVASCRIPT
+
+  {
+      "CONST_TEST_MODE": false,
+      "CONST_PROD_MODE_IP": "myown.server.com",
+      "CONST_PROD_MODE_PORT": "19408",
+      "CONST_TEST_MODE_IP": "127.0.0.1",
+      "CONST_TEST_MODE_PORT": "19408"
+  }
+
+|
         

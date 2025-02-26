@@ -6,16 +6,22 @@ DroneEngage Installation
 
 
 
-If you want to install **Telemetry without Video** then you can use `RPI-Zero W <https://www.raspberrypi.com/products/raspberry-pi-zero-w/>`_ .
-If you want to install **Telemetry and Video streaming** then you can use `RPI-Zero W2 <https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/>`_ or and for multiple camera support please use `RPI-4 <https://www.raspberrypi.com/products/raspberry-pi-4-model-b/>`_.
+Hardware Requirements
+=====================
+Drone-Engage can be installed on a variety of Raspberry Pi models.  The choice of model depends on the desired functionality.
 
+If you want to install **Telemetry without Video** then you can use `RPI-Zero W <https://www.raspberrypi.com/products/raspberry-pi-zero-w/>`_ .
+
+If you want to install **Telemetry and Video streaming** then you can use **RPI-Zero W2** or and for multiple camera support please use **RPI-4**.
+
+The following steps assume that you know how to install a raspberry-pi and have a raspberry-pi board up and running and accessible using SSH.
 
 
 Ready Image
 ===========
 
 For users who prefer not to install binaries directly onto their Raspberry Pi, pre-built images are available. These images, containing the necessary binaries, can be downloaded from `Ready Image repository <https://cloud.ardupilot.org/downloads/RPI_Full_Images/droneengage_rpi/>`_ 
-Support for these pre-built images extends to both the Raspberry Pi Zero W2 and Raspberry Pi 4.
+Support for these pre-built images extends to both the Raspberry **Pi Zero W2** and **Raspberry Pi 4**.
 
 Further information regarding image downloads can be found in the :ref:`de-software-installation_download` section.
 

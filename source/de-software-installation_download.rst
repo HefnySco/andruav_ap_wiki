@@ -38,3 +38,24 @@ Also please update your account by editing file de_comm.config.module.json
 .. image:: ./images/de_comm_config.png
    :align: center
    :alt: de_comm.config.module.json
+
+
+|
+
+you can stop and restart DroneEngage Services  using the following commands:
+
+.. code-block:: bash
+
+      ~/home/pi/stop_droneengage_services.sh
+
+      ~/home/pi/restart_droneengage_services.sh
+
+.. important::
+
+     services will start automatically when you restart RPI board. Stopping services does not disable them.
+
+
+
+
+
+
