@@ -16,7 +16,7 @@ DroneEngage Development Topics
    Andruav Communication Protocol </de-dev-andruav-communication-protocol>
    DroneEngage DataBus </de-dev-databus>
    DroneEngage Custom Plugin Module </de-dev-plugin>
-
+   DroneEngage SWARM Logic </de-dev-swarm>
 
 
 

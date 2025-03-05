@@ -15,6 +15,7 @@ WebClient Project Website
    
    What is Web-Client </webclient-whatis>
    UDP-Telemetry </webclient-udp-telemetry>
+   SWARM Interface <webclient-swarm>
    Gamepad Navigation </webclient-gamepad>
    Configuration </webclient-configuration>
    FAQ </andruav-faq> 
