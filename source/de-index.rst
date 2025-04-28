@@ -21,7 +21,7 @@ Drone Engage Project Website
    Drone-Engage Plugins </de-plugins>
    Using Drone-Engage with SITL </de-simulators>
    Use Cases </de-use-cases>
-   Installation </de-install>
+   Unit Installation & Administration</de-install>
    Dev-Section </de-dev>
    FAQ </de-faq> 
    Glossary </de-glossary> 

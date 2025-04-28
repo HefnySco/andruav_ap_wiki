@@ -18,7 +18,7 @@ Getting Started
 
    Select Your Hardware </de-select-hardware>
    Create Account and Get Access Code  </de-account-create>
-   Software Installation </de-install>
+   DroneEngage Unit Installation </de-install-unit>
 
 
 

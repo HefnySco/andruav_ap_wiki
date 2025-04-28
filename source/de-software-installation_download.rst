@@ -1,9 +1,9 @@
 .. _de-software-installation_download:
 
 
-===================================
-Drone Engage RPI-WZero2 Ready Image
-===================================
+===========================================
+Drone Engage RPI-WZero2 / RPI-4 Ready Image
+===========================================
 
 
 You can download a ready-made image from here:
@@ -13,6 +13,8 @@ Download Image from `Here <https://cloud.ardupilot.org/downloads/RPI_Full_Images
 Please remember to change the password to your own WIFI password by editing /etc/wpa_supplicant/wpa_supplicant.conf
 as in the below images.
 
+
+sudo nano ./etc/wpa_supplicant/wpa_supplicant.conf
 
 username/password:  **pi/raspberry**
 
