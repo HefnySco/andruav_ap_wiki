@@ -8,9 +8,7 @@ RPI Administration Tools
 
 
 
-.. image:: ./images/de_rpi_image_cockpit_signin.png
-   :align: center
-   :alt: RPI Image Login Screen
+.. youtube::  -mV9EARM0_0
 
 
 

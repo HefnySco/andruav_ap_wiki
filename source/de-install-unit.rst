@@ -34,6 +34,10 @@ The pre-built images are available for both the **Raspberry Pi Zero W2** and the
 
 Further information regarding image downloads can be found in the :ref:`de-software-installation_download` section.
 
+.. youtube:: WEE4tTnNDwQ
+
+|
+
 
 Installing from Binaries
 ========================
