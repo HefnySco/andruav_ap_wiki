@@ -22,3 +22,9 @@ to access the admin website use URL `https://192.189.9.1:9090 <https://192.189.9
 
 username/password:  **pi/raspberry**
 
+
+
+
+
+Now you can use :ref:`de-rpi-image-tools` for easier administration.
+
