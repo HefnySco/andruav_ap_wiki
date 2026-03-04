@@ -18,7 +18,6 @@ Andruav Project Website
    How to Build </andruav-how-to-compile>
    Andruav Serial Port </andruav-serial>
    Andruav FPV </andruav-fpv>
-   Andruav Web Client </webclient-whatis>
    Andruav Advanced Features </andruav-advanced>
    Using Andruav with SITL </andruav-simulators>
      

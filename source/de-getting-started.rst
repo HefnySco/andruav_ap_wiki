@@ -25,19 +25,6 @@ Getting started with DroneEngage involves three main steps:
 
 |
 
-Step-by-Step Guide
-==================
-
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
-
-   1. Select Your Hardware </de-select-hardware>
-   2. Create Account & Get Access Code </de-account-create>
-   3. Install DroneEngage Unit </de-install-unit>
-
-|
-
 What's Next?
 ============
 

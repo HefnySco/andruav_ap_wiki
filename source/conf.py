@@ -22,7 +22,7 @@ master_doc = 'index'
 # -- Project information -----------------------------------------------------
 
 project = u'Ardupilot Cloud EcoSystem'
-copyright = u'2025, Ardupilot.org (Powered by Andruav.com)'
+copyright = u'2026, Ardupilot.org (Powered by Andruav.com)'
 author = u'Mohammad Said Hefny'
 
 
@@ -39,7 +39,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.imgconverter',
     'sphinx.ext.extlinks',
-    #'recommonmark',
+    'recommonmark',
     #https://sphinxcontrib-youtube.readthedocs.io/en/latest/
     'sphinxcontrib.youtube', #For youtube embedding
     #'sphinxcontrib.vimeo', #For vimeo embedding

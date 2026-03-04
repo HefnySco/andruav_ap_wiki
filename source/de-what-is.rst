@@ -4,7 +4,9 @@
 What is DroneEngage?
 ======================
 
-DroneEngage is a cloud-based companion computer software for Ardupilot and PX4 drones that provides unlimited range telemetry, video streaming, and advanced fleet management capabilities over the internet.
+DroneEngage is a professional, cloud-based companion computer ecosystem designed for ArduPilot and PX4-based vehicles. It leverages cellular networks (4G/LTE/5G) and the internet to provide unlimited-range telemetry, high-definition video streaming, and advanced fleet management.
+
+As the Linux-based evolution of the Andruav project, DroneEngage moves beyond mobile-phone-based hardware to support dedicated single-board computers like the Raspberry Pi, offering a modular and robust architecture for enterprise and long-range drone operations.
 
 .. youtube:: Q-OyRnisq8U
 
@@ -103,19 +105,6 @@ For video streaming, use the Raspberry Pi Zero 2 W at only **52.2g (1.84 oz)** i
 .. image:: ./images/IMG_20220402_160422.jpg
    :align: center
    :alt: DroneEngage on RPI-Zero-2 with camera
-
-|
-
-Quick Start
-===========
-
-Download a ready-made image for RPI-Zero2/RPI-4 with all modules pre-installed:
-
-.. tip::
-   Download DroneEngage images and binaries from `cloud.ardupilot.org/downloads <https://cloud.ardupilot.org/downloads/>`_
-
-See :ref:`de-software-installation_download` for detailed installation instructions.
-
 
 
 

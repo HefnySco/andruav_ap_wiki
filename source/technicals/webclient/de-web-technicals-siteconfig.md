@@ -1,0 +1,135 @@
+# Site Configuration
+
+`js_siteConfig` contains the **site/startup configuration** for the web client.
+
+It defines default values in code and then (optionally) overrides them from `public/config.json` at runtime.
+
+Files:
+
+- `src/js/js_siteConfig.js`
+- `public/config.json`
+
+## What `js_siteConfig` is responsible for
+
+`src/js/js_siteConfig.js` exports configuration values that are used across the web client, such as:
+
+- Which backend/auth host/port to use (test vs prod)
+- Map tile URL
+- Feature flags
+- Language settings
+- WebRTC ICE servers
+- Various header links
+
+This layer is meant to be controlled by **deployment configuration** (`public/config.json`).
+
+## How `public/config.json` overrides `js_siteConfig`
+
+At the bottom of `src/js/js_siteConfig.js`, there is a `loadConfigSync()` function that:
+
+- Loads `/config.json` using a **synchronous** `XMLHttpRequest`
+- Strips comments before parsing:
+  - Removes multi-line comments `/* ... */`
+  - Removes single-line comments `// ...`
+- Parses the result with `JSON.parse`
+- Applies overrides by updating exported `let` variables
+
+Important notes:
+
+- Because the load is synchronous, the config values are available immediately to modules that import `js_siteConfig`.
+- If `/config.json` does not exist or fails to parse, code defaults remain in effect.
+- This override mechanism is **only for `js_siteConfig`**. It does not update `js_globals`.
+
+## `public/config.json` keys (what they control)
+
+Below are the keys that `loadConfigSync()` actively reads and applies.
+
+### Backend selection
+
+- `CONST_TEST_MODE`
+  - **Effect**: When `true`, the web client uses `CONST_TEST_MODE_IP/PORT` for the auth backend.
+
+- `CONST_PROD_MODE_IP`, `CONST_PROD_MODE_PORT`
+  - **Effect**: Auth backend host/port used when `CONST_TEST_MODE=false`.
+
+- `CONST_TEST_MODE_IP`, `CONST_TEST_MODE_PORT`
+  - **Effect**: Auth backend host/port used when `CONST_TEST_MODE=true`.
+
+These values are used by `src/js/js_andruav_auth.js` to build the login URL.
+
+### Header links
+
+- `CONST_ANDRUAV_URL_ENABLE`
+  - **Effect**: show/hide Andruav download link.
+
+- `CONST_ACCOUNT_URL_ENABLE`
+  - **Effect**: show/hide account link.
+
+### Map
+
+- `CONST_MAP_LEAFLET_URL`
+  - **Effect**: map tiles source for Leaflet.
+
+### Network privacy / behavior
+
+- `CONST_DONT_BROADCAST_TO_GCSs`
+  - **Effect**: affects broadcast routing logic in `AndruavClientWS.API_sendCMD()`.
+
+- `CONST_DONT_BROADCAST_GCS_LOCATION`
+  - **Effect**: controls whether the GCS embeds/sends its location in the periodic ID message.
+
+### Feature flags
+
+- `CONST_FEATURE`
+  - **Effect**: enables/disables chunks of UI/features. Applied as a merge:
+    - `CONST_FEATURE = { ...CONST_FEATURE, ...data.CONST_FEATURE }`
+
+### WebRTC
+
+- `CONST_ICE_SERVERS`
+  - **Effect**: STUN/TURN servers used by WebRTC.
+
+### Module versions
+
+- `CONST_MODULE_VERSIONS`
+  - **Effect**: expected module versions and URLs; merged into defaults.
+
+### WebConnector
+
+- `CONST_WEBCONNECTOR_ENABLED`
+  - **Effect**: enables WebConnector mode for local development proxy.
+
+- `CONST_WEBCONNECTOR_AUTH_HOST`, `CONST_WEBCONNECTOR_AUTH_PORT`
+  - **Effect**: WebConnector auth server host/port.
+
+- `CONST_WEBCONNECTOR_WS_PORT`
+  - **Effect**: WebConnector WebSocket port.
+
+- `CONST_WEBCONNECTOR_APIKEY`
+  - **Effect**: API key for WebConnector authentication.
+
+- `CONST_WEBCONNECTOR_TOKEN`
+  - **Effect**: Static token for WebConnector sessions.
+
+- `CONST_WEBCONNECTOR_AUTO_FALLBACK`
+  - **Effect**: when `true`, falls back to cloud login if WebConnector unreachable; when `false`, WebConnector only.
+
+- `CONST_WEBCONNECTOR_SECURE`
+  - **Effect**: enables HTTPS/WSS for WebConnector.
+
+- `CONST_WEBCONNECTOR_BASE_PATH`
+  - **Effect**: base path for WebConnector API endpoints.
+
+### Language
+
+- `CONST_LANGUAGE`
+  - **Effect**: enabled languages and default language; merged into defaults.
+
+## Where to edit in production
+
+- During development: edit `public/config.json`.
+- After build: edit `build/config.json`.
+
+## Related pages
+
+- `wiki/Andruav_Configuration.md` (runtime preferences in `js_globals` / `js_localStorage`)
+- `wiki/Andruav_ServerComm.md` (communication layer overview)

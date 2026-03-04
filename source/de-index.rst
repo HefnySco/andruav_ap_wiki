@@ -15,9 +15,6 @@ DroneEngage is a cloud-based companion computer software for Ardupilot-based dro
    :titlesonly:
    :maxdepth: 1
    
-   What is DroneEngage? </de-what-is>
-   Getting Started Guide </de-getting-started>
-
 .. toctree::
    :caption: Using DroneEngage
    :titlesonly:
@@ -42,7 +39,6 @@ DroneEngage is a cloud-based companion computer software for Ardupilot-based dro
    :titlesonly:
    :maxdepth: 1
    
-   Developer Guide </de-dev>
    FAQ </de-faq> 
    Glossary </de-glossary>
    Contributing </de-contributing>

@@ -12,7 +12,6 @@ Choose your preferred installation method below. The **Ready-Made Image** is rec
    :titlesonly:
    :maxdepth: 1
    
-   Ready-Made Image (Recommended) </de-software-installation_download>
    Installing from Binaries </de-software-installation_binaries>
 
 |
