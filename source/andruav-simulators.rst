@@ -50,6 +50,14 @@ Once Andruav is connected to FCB board it should give you an indication and the 
    :alt: FCB Screen
 
 
+Testing GPS Injection in SITL
+=============================
+
+To test :ref:`andruav-gps-injection` in SITL, the simulator's own GPS must be
+switched off and SITL must start at the phone's location. See
+:ref:`andruav-gps-injection-sitl` for the parameter file and start command.
+
+
 
 
 

@@ -8,6 +8,13 @@ Authentication Server
 
 The **Authenticator** is the central authentication and authorization server for DroneEngage. It issues accounts, access codes, and session tokens, and it authenticates Communication Servers using Ed25519 server-to-server (S2S) cryptography.
 
+.. image:: ./images/seq_diagram_authentication.png
+   :height: 400px
+   :align: center
+   :alt: Authentication Sequence Diagram
+
+|
+
 What It Does
 ============
 
@@ -32,14 +39,7 @@ The Authenticator runs three services simultaneously:
 
 |
 
-**Source Code:** `https://github.com/DroneEngage/droneegnage_authenticator <https://github.com/DroneEngage/droneegnage_authenticator>`_  
-
-|
-
-.. image:: ./images/seq_diagram_authentication.png
-   :height: 400px
-   :align: center
-   :alt: Authentication Sequence Diagram
+**Source Code:** `https://github.com/DroneEngage/droneegnage_authenticator <https://github.com/DroneEngage/droneegnage_authenticator>`_
 
 
 |
@@ -93,7 +93,7 @@ Settings is defined in a file called **server.config** the most important fields
 |
 
 .. warning::
-    Although above is a JSON file but you can add comments to the code using // and /* */ blocks.
+    Although above is a JSON file but you can add comments to the code using ``//`` and ``/* */`` blocks.
 
 
 |

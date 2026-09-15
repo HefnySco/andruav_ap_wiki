@@ -6,7 +6,7 @@ Air-Gap RPI-4 without Access Point
 
 This configuration assumes that RPI board is connected to a local network. The default IP of the RPI in the ready image is 192.168.1.161.
 
-For a **ready image** please check :ref:`srv-install-airgap-download`, also **script** is available at `prepare-airgapped-server.sh <https://raw.githubusercontent.com/HefnySco/andruav_droneengane_scripts/main/server_installation/prepare-airgapped-server.sh>`_
+For a **ready image** please check :ref:`srv-install-airgap-download`, also **script** is available at `prepare-airgapped-server.sh <https://raw.githubusercontent.com/DroneEngage/DroneEngage_ScriptWiki/main/server_installation/prepare-airgapped-server.sh>`__
 
 .. youtube:: R1BedRTxuuY
 
@@ -79,7 +79,7 @@ The IP address must be equal to the local static IP of the machine.
 
 When the script finishs successfully the following will be created:
 
-    #. a folder **~/ssl** with three files - we will see this later in :ref:`access local domain`-:
+    #. a folder **~/ssl** with three files - we will see this later in :ref:`access-local-domain-wo-ap`:
 
         * privkey.pem
         * fullchain.pem
@@ -96,6 +96,8 @@ When the script finishs successfully the following will be created:
     #. a folder **~/map/cachedMap** that is empty. This folder can be filled with cached images to be used as a local map server.
         
 **Your Raspberry PI-4 now is fully ready**
+
+.. _access-local-domain-wo-ap:
 
 Access Local Domain
 ===================

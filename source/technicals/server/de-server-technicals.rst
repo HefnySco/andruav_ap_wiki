@@ -16,6 +16,7 @@ Server Technicals
    Database Schema <de-server-database-schema>
    Message Propagation <de-server-message-propagation>
    S2S Authentication <de-server-s2s-authentication>
+   Shared Server Package (droneengage_server_common) <de-server-technicals-common>
 
 Overview
 --------
@@ -25,7 +26,9 @@ The DroneEngage server architecture consists of two main backend components:
 - **Authentication Server** (\ ``droneegnage_authenticator``\ ) - Validates drone units and web clients against predefined accounts, and returns connection details for the assigned communication server.
 - **Communication Server** (\ ``droneengage_server``\ ) - Exchanges communication messages between different units and web clients via WebSocket connections.
 
-These two servers work together to provide secure, scalable communication for the DroneEngage ecosystem.
+These two servers work together to provide secure, scalable communication for the DroneEngage ecosystem. Both, plus the storage server, share
+common configuration-loading and error-handling code via
+:doc:`droneengage_server_common <de-server-technicals-common>`.
 
 Architecture
 ------------

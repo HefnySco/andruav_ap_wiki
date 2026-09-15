@@ -10,9 +10,9 @@ any other module. however it will not be useful, but it will appear on WebClient
 
 As we can see in the above diagram Communicator Module contains -among other components- Module Manager and Telemetry Manager.
 <br>
-<br>- **Telemetry Manager** is the component that is responsible for communicating with other modules, and [webclient-whatis](webclient-whatis.md) via [srv-communication](srv-communication.md). 
+<br>- **Telemetry Manager** is the component that is responsible for communicating with other modules, and [webclient-whatis](webclient-whatis) via [srv-communication](srv-communication). 
 <br>- **Module Manager** is the component that is responsible for communicating with other modules of the same unit.
-<br>- **Module Manager** is mainly a publisher subscriber module, where each module can subscribe in one or more messages listed in [Andruav Communication Protocol Messages](andruav-communication-protocol-messages.md) 
+<br>- **Module Manager** is mainly a publisher subscriber module, where each module can subscribe in one or more messages listed in [Andruav Communication Protocol Messages](andruav-communication-protocol-messages) 
 using **message type**. 
 <br>- **Module Manager** processes messages coming from Internet server via **Telemetry Manager** and then forward it
 to modules subscribed in these messages.

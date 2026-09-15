@@ -94,10 +94,12 @@ Both projects use CMake with automated version management and support for DEBUG 
 **Version Management:**
 
 Both projects use automatic version management:
+
 - Format: MAJOR.MINOR.BUGFIX.BUILD
 - BUILD number auto-increments on RELEASE builds
 - Version files stored in `.version` in project root
 - Current versions:
+
   - droneengage_communication: 3.10.1.x
   - droneengage_mavlink: 5.6.8.x
 
@@ -105,7 +107,7 @@ Output binaries will be in ./bin
 
 
 Generating Debian Packages (Optional)
-------------------------------------
+-------------------------------------
 
 Both projects support generating Debian (.deb) packages for easier installation and distribution.
 

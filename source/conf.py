@@ -56,7 +56,12 @@ templates_path = ['_templatesx', '_static']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = [
+    # Diagram spec/description notes for maintainers (not public pages) -
+    # `.txt` is a registered source suffix (see source_suffix below), so
+    # without this they'd otherwise get built and orphan-warned.
+    'images/diagrams_2026/*.txt',
+]
 
 todo_include_todos = True
 rst_prolog = """

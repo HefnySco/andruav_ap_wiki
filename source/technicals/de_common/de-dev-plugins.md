@@ -1,7 +1,7 @@
 # DroneEngage Custom Plugin
 
 Writing a Custom Plugin allows you to write a module that can handle hardware parts such as GPIO or sensors, or writing a module that performs data processing, such as processing images from the camera module for example.
-Once you write this module and integrate it to the system using [Databus library](https://github.com/DroneEngage/droneengage_databus), you will be able to access that new module from even remote units, and the [Web Client](../../de-web-client.html).
+Once you write this module and integrate it to the system using [Databus library](https://github.com/DroneEngage/droneengage_databus), you will be able to access that new module from even remote units, and the [Web Client](../../webclient-whatis).
 
 ---
 

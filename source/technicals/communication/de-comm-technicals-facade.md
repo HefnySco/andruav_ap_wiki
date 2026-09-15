@@ -1,9 +1,11 @@
+# CAndruavFacade
+
 `CAndruavFacade` is a singleton class providing high-level APIs for communication with the Andruav Communication Server.  
 It serves as the central interface for sending standardized messages and commands from internal modules to remote parties or the server.
 
 ---
 
-### Definition
+## Definition
 
 ```cpp
 21:71:/mnt/8a619ce7-cd3f-4520-af65-7991f16410f7/public_versions/drone_engage/drone_engage_communication_pro/src/comm_server/andruav_facade.hpp
@@ -94,7 +96,7 @@ class CAndruavFacade
 
 ---
 
-### Example Usages
+## Example Usages
 
 In practice, `CAndruavFacade` is used across multiple subsystems to send standardized messages without directly handling raw protocol details.
 
@@ -121,7 +123,7 @@ CAndruavFacade::getInstance().API_requestID(std::string());
 
 This triggers a request for the local unit’s identity from the server.
 
-#### Usage Summary
+### Usage Summary
 
 - **Main Callers**:
   - `de_modules_manager.cpp`: Handles module lifecycle, sends errors and ID updates
@@ -132,7 +134,7 @@ This triggers a request for the local unit’s identity from the server.
 
 ---
 
-### Notes
+## Notes
 
 - `CAndruavFacade` uses the **Meyers Singleton** pattern (line 26–30), which is thread-safe in C++11 due to static local variable initialization guarantees.
 - Despite its name suggesting a pure facade, it likely wraps a lower-level messaging system (e.g., WebSocket or TCP client) that isn't exposed here.
@@ -140,7 +142,7 @@ This triggers a request for the local unit’s identity from the server.
 
 ---
 
-### See Also
+## See Also
 
 - `ENUM_TASK_SCOPE`: Defines scoping levels (`SCOPE_GLOBAL`, `SCOPE_ACCOUNT`, etc.) used in task-loading APIs like `API_loadTasksByScope`. Determines which set of tasks to retrieve from the server.
 - `Json_de`: A JSON library wrapper (likely a typedef for `nlohmann::json`) used to serialize message payloads in methods such as `API_sendConfigTemplate`.

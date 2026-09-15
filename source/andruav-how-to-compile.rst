@@ -21,7 +21,7 @@ Now you need to Open Andruav_AP in ANdroind-Studio and select release and compil
 
 The output will be an APK file in **andruav_android_app/app/build/outputs/apk/PUBLIC_/release/**
 
-Now you need to install the APK file on the drone mobile. you can also Download if rom `here <https://cloud.ardupilot.org/downloads/Android/latest/>`_.
+Now you need to install the APK file on the drone mobile. you can also Download if rom `here <https://cloud.ardupilot.org/downloads/Android/latest/>`__.
 
 
 |
@@ -32,7 +32,7 @@ Now you need to install the APK file on the drone mobile. you can also Download 
 APK Download
 ============
 
-    Download **AndruavAP APK** from `HERE <https://cloud.ardupilot.org/downloads/Android/latest/>`_
+    Download **AndruavAP APK** from `HERE <https://cloud.ardupilot.org/downloads/Android/latest/>`__
 
     You can simply click the above link from the drone mobile and it wil be installed.
 

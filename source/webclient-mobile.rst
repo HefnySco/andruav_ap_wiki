@@ -4,6 +4,10 @@
 WebClient — Mobile View
 =======================
 
+.. youtube:: cO7825pTuAs
+
+|
+
 A phone-sized ground station that needs no install. Open
 `cloud.ardupilot.org:8001/mobile <https://cloud.ardupilot.org:8001/mobile>`_
 in any mobile browser, log in with your account and access code, and you

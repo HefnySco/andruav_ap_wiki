@@ -1,0 +1,58 @@
+DIAGRAM: binary_message_anatomy_2026.svg
+INTENDED CONTENT — what this diagram should show, in two stacked rows:
+
+ROW 1 — "Binary-attachment messages (IMG, SDR_SPECTRUM, TELNET_DATA)":
+  A horizontal byte strip of two segments plus a separator:
+    [ JSON Header (text) — e.g. {"tg":..,"sd":..,"mt":1006,"ms":"{...}"} ]
+    [ \0  null terminator, thin gray divider ]
+    [ Binary Payload (raw bytes) — e.g. image bytes / float32 spectrum /
+      pty output ]
+  A bracket/line above both segments labeled "total message length
+  (from the socket read)".
+  A caption below: "Header length = position of the null terminator.
+  Payload length = total length - header length - 1."
+
+ROW 2 — "Manually-chunked messages (WayPoints - max 20 items/chunk, no
+  per-chunk ack)":
+  Two chunk examples side by side, each split into a small purple
+  "chunk number" cell and a larger gray "chunk data" cell:
+    [2 bytes: chunk #] [chunk data: up to 20 waypoint items]  ...
+    [2 bytes: 0xFFFF = last chunk] [final chunk data: remaining items]
+  An ellipsis ("...") between the two example chunks implies more may
+  follow.
+
+A footer callout box explains:
+  "Losing one chunk corrupts the whole waypoint list — no per-chunk
+  retransmission exists." and clarifies this manual chunking is
+  DISTINCT from de_common's own UDP-layer chunking (used transparently
+  by UploadWayPoints/Upload_DE_Mission), which reassembles automatically
+  below the message-protocol layer — i.e. there are TWO different
+  chunking mechanisms in this protocol and this diagram is only showing
+  the manual one (WayPoints).
+
+SOURCE OF TRUTH:
+  - de_common/de_databus/messages.hpp — TYPE_AndruavMessage_IMG (1006),
+    TYPE_AndruavMessage_SDR_SPECTRUM (6516), TYPE_AndruavMessage_WayPoints
+    (1027) doc comments (chunk marker constants WAYPOINT_NO_CHUNK=0,
+    WAYPOINT_CHUNK=1, WAYPOINT_LAST_CHUNK=999 - NOTE: the diagram
+    currently shows "0xFFFF" as the last-chunk marker, which is WRONG,
+    see below)
+  - de_common README (chunk header format for de_common's OWN transport
+    layer chunking: 2-byte chunk number + data, 0xFFFF = last chunk —
+    this is the de_common-level mechanism, separate from WayPoints'
+    own manual chunking)
+
+KNOWN ISSUES / THINGS TO CHECK WHEN RE-DRAWING:
+  - (Fixed 2026-08-31: row 2's "last chunk" marker was originally
+    labeled "0xFFFF", which is actually de_common's SEPARATE low-level
+    UDP chunking marker, not WayPoints' own. Corrected both chunk cells
+    to read 'field "i" = 1 (WAYPOINT_CHUNK)' and 'field "i" = 999
+    (WAYPOINT_LAST_CHUNK)', matching the WayPoints doc comment exactly.)
+  - Minor visual corruption reported by reviewer (2026-08-31) beyond the
+    bug above — nature not yet specified, compare against this
+    description when re-drawing.
+
+TARGET PAGE(S):
+  - andruav-communication-protocol-messages.rst (embed near "Geofence &
+    Mission" section, where WayPoints is documented, and/or near
+    "Camera & Video" for the IMG binary-attachment case)

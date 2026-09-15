@@ -1,0 +1,50 @@
+DIAGRAM: storage_server_architecture_2026.svg
+INTENDED CONTENT — what this diagram should show:
+
+Two "Comm Server" boxes on the left (blue): "Comm Server (parent)" and
+"Comm Server (child)" — both connect via arrows into a dashed
+orchestrator container labeled "StorageServer (src/index.js)", over a
+link annotated "WebSocket (S2S, Ed25519-signed)".
+
+Inside the dashed StorageServer container, four purple sub-component
+boxes wired to match Architecture.md's own ASCII diagram exactly:
+  - "WebSocketServer (S2S endpoint)" — receives the comm-server connections
+  - "MessageHandlers (task/mission CRUD)" — fed by WebSocketServer
+  - "OfflineQueue (buffers for offline units)" — double-headed arrow to/from
+    WebSocketServer only (labeled "wsServer injected; queue flushes on
+    reconnect") — NOT connected to MessageHandlers or the DB directly,
+    since the source doesn't document either of those links
+  - "DatabaseManager (better-sqlite3)" — fed by MessageHandlers
+DatabaseManager feeds down into a "SQLite DB file (data/storage.db)"
+box below/outside the dashed container. OfflineQueue does NOT connect
+to the DB in this version (source doesn't state it's DB-backed).
+
+Below the diagram, a one-line flow summary:
+  "GCS / Units -> Comm Server -> Storage Server -> SQLite DB"
+and a note: "A unit offline when a task is saved gets it delivered from
+OfflineQueue on its next connect."
+
+A footer box lists the relevant Andruav System message IDs that ride
+over this same link: LoadTasks (9001), SaveTasks (9002), DeleteTasks
+(9003), DisableTasks (9004) — noting they are System messages carried
+over the same WebSocket as any other S2S traffic.
+
+SOURCE OF TRUTH:
+  - servers/droneengage_storage_server/wiki/Architecture.md (the
+    "Component Overview" ASCII diagram this is based on — 5 core
+    modules wired by the StorageServer orchestrator class in src/index.js)
+  - servers/droneengage_storage_server/wiki/Home.md (role in the system:
+    "GCS/Units <-> Comm Server <-> Storage Server <-> SQLite DB")
+  - de_common/de_databus/messages.hpp — TYPE_AndruavSystem_LoadTasks/
+    SaveTasks/DeleteTasks/DisableTasks (9001-9004) doc comments
+
+KNOWN ISSUES / THINGS TO CHECK WHEN RE-DRAWING:
+  - Minor visual corruption reported by reviewer (2026-08-31) — nature
+    not yet specified, compare against this description.
+  - (Fixed 2026-08-31: box was originally mislabeled "TaskStore" —
+    corrected to "DatabaseManager (better-sqlite3)" and its wiring to
+    OfflineQueue/DB corrected to match Architecture.md's ASCII diagram
+    exactly, after checking the real source instead of guessing.)
+
+TARGET PAGE(S):
+  - technicals/server/de-server-technicals-storage-architecture.md

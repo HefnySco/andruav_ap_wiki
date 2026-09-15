@@ -1,8 +1,8 @@
 .. _glossary:
 
-========================
+==============================
 DroneEngage & Andruav Glossary
-========================
+==============================
 
 This glossary defines key terms used throughout the DroneEngage and Andruav documentation.
 

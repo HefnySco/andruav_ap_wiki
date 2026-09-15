@@ -1,9 +1,11 @@
+# RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED
+
 `RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED` is an enum constant representing a remote control mode for guided flight using joystick input.  
 It enables velocity-based control of the drone in guided mode, where RC channel values are interpreted as movement commands rather than direct actuator outputs.
 
 ---
 
-### Definition
+## Definition
 
 ```c++
 102:105:drone_engage/drone_engage_mavlink/src/defines.hpp
@@ -22,7 +24,7 @@ This value is part of a bitmask-style enumeration used to manage different remot
 
 ---
 
-### Example Usages
+## Example Usages
 
 The `RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED` mode is activated when the drone enters guided flight and joystick control is desired. It is used in conditional logic to switch between direct RC channel override and guided velocity control.
 
@@ -70,7 +72,7 @@ This symbol is used in 4 core functions across `fcb_main.cpp` and referenced in 
 
 ---
 
-### Notes
+## Notes
 
 - Despite being named "joystick", this mode does **not** send joystick data directly. Instead, it maps joystick deflections to **velocity setpoints** in the local NED frame.
 - The system may **automatically switch** to this mode from `RC_SUB_ACTION_JOYSTICK_CHANNELS` when entering guided flight, as noted in the comment: *"Drone may switch [...] to this automatically if drone mode is guided."*
@@ -78,7 +80,7 @@ This symbol is used in 4 core functions across `fcb_main.cpp` and referenced in 
 
 ---
 
-### See Also
+## See Also
 
 - `RC_SUB_ACTION_JOYSTICK_CHANNELS`: Base joystick control mode; uses direct RC channel override unless upgraded to guided.
 - `VEHICLE_MODE_GUIDED`: Flight mode that allows external control via setpoints; required for this RC sub-action to take full effect.

@@ -1,9 +1,11 @@
+# CAndruavAuthenticator
+
 `CAndruavAuthenticator` is a singleton class responsible for authenticating drone agents and validating hardware with a remote server.  
 It handles secure login and hardware verification using HTTPS requests, parsing JSON responses to configure communication parameters.
 
 ---
 
-### Definition
+## Definition
 
 `CAndruavAuthenticator` is a C++ class defined in the `de::andruav_servers` namespace, designed to manage authentication and hardware validation for drone agents connecting to a communication server. It uses a singleton pattern to ensure only one instance exists, centralizing authentication state and data.
 
@@ -76,7 +78,7 @@ private:
 
 ---
 
-### Example Usages
+## Example Usages
 
 In `andruav_comm_server.cpp`, `CAndruavAuthenticator` is used to authenticate before establishing a WebSocket connection. This ensures only authorized drones can connect to the communication server.
 
@@ -107,7 +109,7 @@ This usage pattern shows:
 
 ---
 
-### Notes
+## Notes
 
 - Despite being named `CAndruavAuthenticator`, it authenticates *drone agents*, not users directly — the term "agent" refers to the drone-side software component.
 - The class uses hardcoded URL paths like `/agent/al/` and `/agent/ah/`, defined via macros (`AUTH_AGENT_LOGIN_COMMAND`, `AUTH_AGENT_HARDWARE_COMMAND`), which are constructed into full HTTPS URLs using config-provided server IP.
@@ -115,7 +117,7 @@ This usage pattern shows:
 
 ---
 
-### See Also
+## See Also
 
 - `CConfigFile`: Provides configuration data including authentication server address and credentials; required for `doAuthentication()` to function.
 - `AUTH_AGENT_LOGIN_COMMAND` (`"/agent/al/"`): The URL endpoint used for login, combined with parameters like `acc=`, `sid=`, and `&pwd=`.

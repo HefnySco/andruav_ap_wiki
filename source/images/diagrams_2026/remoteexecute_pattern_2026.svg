@@ -1,0 +1,36 @@
+<svg viewBox="0 0 820 380" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555555"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="380" fill="#ffffff"/>
+  <text x="410" y="28" font-size="15" fill="#333333" text-anchor="middle" font-weight="bold">RemoteExecute Request/Response Idiom (TYPE_AndruavMessage_RemoteExecute, 1005)</text>
+
+  <!-- lifelines -->
+  <rect x="80" y="55" width="220" height="45" rx="6" fill="#2980b9" stroke="#1b4f72" stroke-width="1.5"/>
+  <text x="190" y="83" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">WebClient (GCS)</text>
+  <line x1="190" y1="100" x2="190" y2="330" stroke="#999999" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <rect x="520" y="55" width="220" height="45" rx="6" fill="#27ae60" stroke="#186a3b" stroke-width="1.5"/>
+  <text x="630" y="83" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Module (e.g. de_mavlink)</text>
+  <line x1="630" y1="100" x2="630" y2="330" stroke="#999999" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Step 1 -->
+  <line x1="190" y1="150" x2="630" y2="150" stroke="#555555" stroke-width="2" marker-end="url(#arrow3)"/>
+  <text x="410" y="135" font-size="12" fill="#333333" text-anchor="middle" font-weight="bold">mt: 1005 (RemoteExecute)</text>
+  <text x="410" y="168" font-size="11" fill="#666666" text-anchor="middle">ms: { "C": 1004 }   — "send me your TYPE_AndruavMessage_ID"</text>
+
+  <!-- Step 2 -->
+  <line x1="630" y1="230" x2="190" y2="230" stroke="#555555" stroke-width="2" marker-end="url(#arrow3)"/>
+  <text x="410" y="215" font-size="12" fill="#333333" text-anchor="middle" font-weight="bold">mt: 1004 (TYPE_AndruavMessage_ID)</text>
+  <text x="410" y="248" font-size="11" fill="#666666" text-anchor="middle">ms: { VT, GS, VR, B, FM, ... }   — the reply IS a normal message of type C</text>
+
+  <!-- Alt path -->
+  <rect x="60" y="280" width="700" height="80" rx="6" fill="#f2f2f2" stroke="#999999" stroke-width="1"/>
+  <text x="410" y="300" font-size="12" fill="#333333" text-anchor="middle" font-weight="bold">If C &lt; 1000 instead:</text>
+  <text x="410" y="318" font-size="11" fill="#666666" text-anchor="middle">C is a RemoteCommand_* sub-command id (e.g. 505 REQUEST_PARA_LIST, 502 CLEAR_WAY_POINTS)</text>
+  <text x="410" y="336" font-size="11" fill="#666666" text-anchor="middle">— a one-shot action, not necessarily answered with a message of type "C"</text>
+  <text x="410" y="352" font-size="10" fill="#999999" text-anchor="middle">Source: de_databus/messages.hpp — TYPE_AndruavMessage_RemoteExecute doc comment, 2026</text>
+</svg>

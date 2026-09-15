@@ -4,6 +4,13 @@
 DroneEngage FAQ
 ===============
 
+.. image:: ./images/de.png
+   :height: 160px
+   :align: center
+   :alt: DroneEngage icon
+
+|
+
 Find answers to common questions about using DroneEngage with Ardupilot. For additional terms, see :ref:`glossary`. Submit new questions via `GitHub Issues <https://github.com/DroneEngage/droneengage_communication/issues>`_.
 
 General Questions

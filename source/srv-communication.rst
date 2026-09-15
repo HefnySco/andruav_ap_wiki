@@ -7,6 +7,13 @@ Communication Server
 
 The **Communication Server** is the real-time messaging backbone of DroneEngage. It relays WebSocket messages between drone units and Ground Control Stations, and it can form a server-to-server mesh for scalable deployments.
 
+.. image:: ./images/seq_diagram_authentication.png
+   :height: 400px
+   :align: center
+   :alt: Authentication and connection sequence between client, authenticator, and communication server
+
+|
+
 What It Does
 ============
 
@@ -30,14 +37,6 @@ Deployment Modes
 Source Code: `https://github.com/DroneEngage/droneengage_communication <https://github.com/DroneEngage/droneengage_communication>`_
 
 :ref:`webclient-udp-telemetry` is part of the communication server.
-
-
-|
-
-.. image:: ./images/seq_diagram_authentication.png
-   :height: 400px
-   :align: center
-   :alt: Authentication Sequence Diagram
 
 
 |
@@ -87,7 +86,7 @@ Settings is defined in a file called **server.config** the most important fields
 |
 
 .. warning::
-    Although above is a JSON file but you can add comments to the code using // and /* */ blocks.
+    Although above is a JSON file but you can add comments to the code using ``//`` and ``/* */`` blocks.
 
 |
 

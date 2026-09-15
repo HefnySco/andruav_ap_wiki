@@ -1,9 +1,11 @@
+# CAndruavCommServer
+
 `CAndruavCommServer` is a singleton class managing WebSocket-based communication between a drone unit and a central server.  
 It orchestrates connection lifecycle, message routing, and system-level commands within the DroneEngage communication framework.
 
 ---
 
-### Definition
+## Definition
 
 `CAndruavCommServer` is a concrete implementation of a communication server that uses WebSocket protocols to interface with remote parties (e.g., ground control stations, other drones). It inherits from both `CCallBack_WSASession` and `CAndruavCommServerBase`, indicating it handles low-level WebSocket events and provides high-level communication APIs.
 
@@ -72,11 +74,11 @@ private:
 
 ---
 
-### Example Usages
+## Example Usages
 
 The `CAndruavCommServer` is accessed globally via its `getInstance()` method. It is used in core modules such as `main.cpp` and `de_modules_manager.cpp` to initiate communication, send commands, and monitor connection status.
 
-#### Sending a System Message
+### Sending a System Message
 
 This real-world example shows how a system message is dispatched using the communication server:
 
@@ -90,7 +92,7 @@ CAndruavCommServer::getInstance().API_sendSystemMessage(
 
 > Sends a `LoadTasks` system command to reload mission tasks from the server. This is typically triggered during initialization or configuration reload.
 
-#### Checking Connection Status in Module Manager
+### Checking Connection Status in Module Manager
 
 Another usage occurs in the module manager, where the current connection status is embedded into inter-module messages:
 
@@ -101,7 +103,7 @@ ms[JSON_INTERMODULE_SOCKET_STATUS] = andruav_servers::CAndruavCommServer::getIns
 
 > Injects the current socket status (e.g., connected/disconnected) into module-to-module status updates, enabling synchronized behavior across components.
 
-#### Turning Off Communication
+### Turning Off Communication
 
 In message parsing logic, the server can be programmatically disabled:
 
@@ -122,7 +124,7 @@ It serves as a central hub for all external communications.
 
 ---
 
-### Notes
+## Notes
 
 - **Non-blocking design**: Despite not explicitly showing async code, the use of callbacks like `onTextMessageRecieved` implies event-driven, non-blocking I/O — essential for real-time drone operations.
 - **Dependency on WSA (WebSocket Abstraction)**: The class relies heavily on `CWSAProxy` and `CWSASession`, suggesting a custom or encapsulated WebSocket stack designed for reliability in mobile/embedded environments.
@@ -130,7 +132,7 @@ It serves as a central hub for all external communications.
 
 ---
 
-### See Also
+## See Also
 
 - `CAndruavCommServerBase`: Abstract base class defining the interface; `CAndruavCommServer` implements these virtual methods to provide concrete behavior.
 - `CCallBack_WSASession`: Provides low-level WebSocket event hooks; allows `CAndruavCommServer` to react to socket errors and incoming data.

@@ -70,7 +70,7 @@ The swarm system is implemented using three main C++ classes:
 
 
 Distance Parameters
-==================
+===================
 
 The swarm system uses configurable distance parameters:
 
@@ -87,7 +87,7 @@ Unit Roles
 Unit-1 is a DroneEngage unit that should be a leader of the swarm. Unit-2 is a DroneEngage unit that should be a follower of the swarm.
 
 Transition to Leader
------------------
+--------------------
 
 The process for establishing Unit-1 as the leader is as follows:
 
@@ -98,7 +98,7 @@ The process for establishing Unit-1 as the leader is as follows:
 
 
 Transition to Follower
--------------------
+----------------------
 
 The process for establishing Unit-2 as a follower is as follows:
 

@@ -1,0 +1,52 @@
+DIAGRAM: ir_camera_fusion_pipeline_2026.svg
+INTENDED CONTENT — what this diagram should show:
+
+Two hardware inputs on the left:
+  - "MI48 IR Sensor" (serial connection)
+  - "RGB Camera" (/dev/videoN)
+Both feed arrows into:
+  - "de_ir_camera" module (orange box) — labeled: fuses IR + RGB, detects
+    hot/cold point.
+
+de_ir_camera's output feeds into a dashed "Virtual Video Drivers
+(v4l2loopback)" band containing three virtual-device boxes in sequence,
+each consumed by the next real module below/beside it:
+  - "DE-THERMAL" (virtual device, output of de_ir_camera)
+    -> consumed by "de_tracker" (tracks the hot/cold point)
+  - "DE-TRK" (virtual device, output of de_tracker)
+    -> consumed by "de_ai / GCS" (reads DE-TRK)
+
+Separately, de_ir_camera also sends a message directly to the comm bus
+(sidecar box, dashed arrow down from de_ir_camera): "Comm Bus -> GCS",
+labeled with TYPE_AndruavMessage_TrackingTargetLocation (1043), noting
+this message ID is REUSED for unrelated hot/cold thermal point
+reporting (normally it's the tracker's own {x,y} offset message).
+
+Legend (top-left): orange = DE-Module, dashed yellow = Virtual Video
+Device, gray = Hardware Input.
+
+Footer credit line: source files referenced (IR/README.md,
+drone_engage_IR_camera/README.md, messages.hpp).
+
+SOURCE OF TRUTH:
+  - IR/README.md ("System Architecture" section — lists
+    drone_engage_IR_camera, mi48_lib_c, drone_engage_tracking,
+    pysenxor-master as one system)
+  - IR/drone_engage_IR_camera/README.md ("Virtual Video Device Chain"
+    section — has the original ASCII-art pipeline diagram this is based on)
+  - de_common/de_databus/messages.hpp — TYPE_AndruavMessage_TrackingTargetLocation
+    (1043) doc comment, specifically the note about IR camera reusing this ID
+
+KNOWN ISSUES / THINGS TO CHECK WHEN RE-DRAWING:
+  - Minor visual corruption reported by reviewer (2026-08-31) — nature
+    not yet specified. Compare rendered SVG against this description and
+    note exactly what looks wrong (missing box, misaligned arrow,
+    overlapping text, wrong color, etc.) so the redraw fixes the right thing.
+  - The de_tracker box currently sits slightly overlapping the bottom
+    edge of the yellow "Virtual Video Drivers" dashed band by ~10px —
+    should be fully below/outside the band, matching the style of the
+    existing camera-pipeline.png reference image.
+
+TARGET PAGE(S):
+  - technicals/vision/ir-camera/de-vision-ir-camera-technicals-overview.md
+  - possibly technicals/vision/camera/de-vision-camera-technicals.rst (cross-reference)

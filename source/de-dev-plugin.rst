@@ -30,6 +30,7 @@ make a complex plugin.
 **Source Code:** `https://github.com/DroneEngage/droneengage_communication/tree/master/src/de_broker <https://github.com/DroneEngage/droneengage_communication/tree/master/src/de_broker>`_  
 
 |
+
 .. image:: ./images/broker_cpp.png
    :align: center
    :alt: Broker Diagram

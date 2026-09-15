@@ -4,6 +4,13 @@
 Advanced Features
 =================
 
+.. image:: ./images/de_board_labelled.png
+   :height: 400px
+   :align: center
+   :alt: DroneEngage companion computer hardware, labelled
+
+|
+
 DroneEngage offers powerful features beyond basic telemetry and video streaming. These advanced capabilities provide enhanced safety, control, and coordination for complex drone operations.
 
 |

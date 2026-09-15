@@ -18,11 +18,11 @@ The **MAVLink Module** (`de_mavlink`, binary `de_ardupilot`) is the bridge betwe
 ## Quick links
 
 - [MAVLink configuration](de-config-mavlink.md)
-- [Telemetry optimization](webclient-udp-telemetry.rst)
-- [Geo-fencing](de-geo-fencing.md)
-- [Swarm](de-swarm.md)
-- [TX Block / RC override](de-tx-block.md)
-- [TX Freeze](de-tx-freeze.md)
+- [Telemetry optimization](webclient-udp-telemetry)
+- [Geo-fencing](de-geo-fencing)
+- [Swarm](de-swarm)
+- [TX Block / RC override](de-tx-block)
+- [TX Freeze](de-tx-freeze)
 
 ## For developers
 

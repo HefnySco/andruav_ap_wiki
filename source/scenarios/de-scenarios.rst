@@ -35,7 +35,7 @@ On-Board DroneEngage
 This is the **default DroneEngage installation** (:doc:`de-drone-connection`), where DroneEngage runs on a Raspberry Pi or similar board installed directly on the drone.
 
 Ground-DroneEngage (Air Unit)
-============================
+=============================
 
 This is a **very suitable configuration** (:doc:`de-drone-ground-config-unit`) for drones that already have telemetry and video links, allowing access via DroneEngage without modifying the onboard systems. It is also ideal when a powerful ground-based computer is needed for AI/ML processing.
 

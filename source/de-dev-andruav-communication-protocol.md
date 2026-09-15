@@ -46,7 +46,7 @@ field: **mt**
 
 This is a numeric field that defines the message itself.
 
-see: [Andruav Communication Protocol Messages](andruav-communication-protocol-messages.md)
+see: [Andruav Communication Protocol Messages](andruav-communication-protocol-messages)
 
 
 ## Protocol Payload Fields 

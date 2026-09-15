@@ -1,10 +1,12 @@
+# CFCBMain::connectToFCB
+
 `CFCBMain::connectToFCB` is a method that establishes a communication link to a flight control board (FCB) using MAVLink.
 
 It determines the connection type—serial, UDP, or TCP—from a configuration file and initiates the appropriate connection via the `m_mavlink_sdk` interface.
 
 ---
 
-### Definition
+## Definition
 
 ```cpp
 /mnt/8a619ce7-cd3f-4520-af65-7991f16410f7/public_versions/drone_engage/drone_engage_mavlink/src/fcb_main.cpp
@@ -57,7 +59,7 @@ The method relies entirely on configuration data parsed earlier in `CFCBMain::in
 
 ---
 
-### Example Usages
+## Example Usages
 
 No direct callers are found in the codebase, suggesting `connectToFCB()` may be intended for future use, part of an incomplete integration, or called indirectly via base class interfaces not captured in static analysis.
 
@@ -67,7 +69,7 @@ Given the lack of usage traces, it appears to be **defined but currently unused*
 
 ---
 
-### Notes
+## Notes
 
 - The function **always returns `true`** for valid cases but includes a `return false;` after the `switch` block, which is unreachable due to the `throw` in `default`. This suggests a minor logic redundancy.
 - It throws a **string literal** (`throw "Connection to FCB..."`) which is not type-safe; modern C++ practices recommend throwing objects derived from `std::exception`.
@@ -75,7 +77,7 @@ Given the lack of usage traces, it appears to be **defined but currently unused*
 
 ---
 
-### See Also
+## See Also
 
 - `CFCBMain::getConnectionType()`: Determines the transport method from config; used directly by `connectToFCB` to decide connection flow.
 - `m_jsonConfig["fcb_connection_uri"]`: Configuration object supplying connection parameters like `type`, `ip`, `port`, `baudrate`, and optional `dynamic` flag.

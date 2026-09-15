@@ -1,0 +1,60 @@
+DIAGRAM: gpio_pinout_2026.svg
+INTENDED CONTENT — what this diagram should show:
+
+The standard Raspberry Pi 40-pin GPIO header, physical top view, pin 1
+at top-left. Two columns of 20 pins each (column A = odd pins 1-39 top
+to bottom on the left, column B = even pins 2-40 top to bottom on the
+right), drawn as numbered circles inside a beige "header body" rectangle.
+
+Each pin is colored by function and labeled on the outside edge with
+its BCM name:
+  - red = 5V, orange = 3.3V, dark navy = GND
+  - green = I2C (GPIO2/SDA1, GPIO3/SCL1)
+  - blue = UART (GPIO14/TXD0, GPIO15/RXD0)
+  - dark cyan = SPI (GPIO7-11)
+  - gray = ID EEPROM reserved pins (GPIO0/GPIO1 — pins 27/28)
+  - teal = plain digital GPIO (everything else)
+  - purple, WITH an extra dashed ring around the pin = hardware PWM
+    (GPIO12, GPIO13, GPIO18, GPIO19 — pins 32, 33, 12, 35)
+
+All 40 pins are generated programmatically from a lookup table matching
+the standard, publicly documented Raspberry Pi 40-pin header (identical
+across Pi Zero W/2W, 3, 4, 5, 400) — this is NOT board-specific and
+should not need per-board changes.
+
+A legend above the header explains all 9 color categories.
+
+Below the header, two caption lines connect the diagram to
+de_rpi_gpio's actual config fields:
+  1. "de_rpi_gpio config: GPIO_ACTION_PORT_CONFIG selects a pin by BCM
+     number (field 'p') and a mode (field 'm')"
+  2. "Digital pins support PORT_WRITE (on/off); the dashed-ring pins
+     (12, 13, 18, 19) additionally support hardware PWM (duty width via
+     field 'd')"
+
+SOURCE OF TRUTH:
+  - Standard Raspberry Pi GPIO 40-pin header pinout (public reference,
+    identical across all 40-pin Pi models) — verify against
+    raspberrypi.com's official GPIO documentation if any pin looks wrong
+  - drone_engage_rpi_gpio/README.md (module purpose)
+  - de_common/de_databus/messages.hpp — TYPE_AndruavMessage_GPIO_ACTION
+    (6519) doc comment for the field semantics (p=pin, m=mode, v=value,
+    d=PWM duty, n=pin name lookup)
+
+KNOWN ISSUES / THINGS TO CHECK WHEN RE-DRAWING:
+  - Minor visual corruption reported by reviewer (2026-08-31) — nature
+    not yet specified. This is the densest of the 5 diagrams (40 pins +
+    40 labels + legend in a tall narrow canvas) so is the most likely
+    candidate for label collision/overflow — check text doesn't run
+    outside the canvas edges on either side, and that the legend (3x3
+    grid of swatches) doesn't overlap the title text above it.
+  - Confirm de_rpi_gpio's config actually uses BCM numbering (not
+    physical pin numbering) for field "p" — this diagram assumes BCM
+    (GPIO17, GPIO27, etc.) since that's the Linux/WiringPi convention,
+    but this was not independently re-verified against the module's
+    source code for this diagram (per project convention, only README/
+    wiki are read — the module currently has no wiki/ folder, only a
+    README, and the README doesn't specify the numbering scheme).
+
+TARGET PAGE(S):
+  - technicals/plugins/gpio/de-plugins-gpio-technicals-overview.md

@@ -7,7 +7,7 @@ Air-Gap RPI-4 with Access Point
 
 
 
-For a **ready image** please check :ref:`srv-install-airgap-download`, also **script** is available at `prepare-airgapped-server.sh <https://raw.githubusercontent.com/HefnySco/andruav_droneengane_scripts/main/server_installation/prepare-airgapped-server.sh>`_
+For a **ready image** please check :ref:`srv-install-airgap-download`, also **script** is available at `prepare-airgapped-server.sh <https://raw.githubusercontent.com/DroneEngage/DroneEngage_ScriptWiki/main/server_installation/prepare-airgapped-server.sh>`_
 
 AP: DE_2025
 

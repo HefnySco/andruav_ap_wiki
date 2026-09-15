@@ -95,7 +95,7 @@ Root Configuration
 - ``build.sh`` / ``build_release.sh`` / ``build_ddebug.sh`` - Build scripts
 
 Source Structure (\ ``src/``\ )
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - ``main.cpp`` - Entry point
 - ``defines.hpp`` - Vehicle types, modes, RC actions, data structures
@@ -103,7 +103,7 @@ Source Structure (\ ``src/``\ )
 - ``version.h`` - Auto-generated version header
 
 Core Components
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 - ``fcb_facade.cpp/hpp`` - Facade for FCB communication, telemetry forwarding
 - ``fcb_main.cpp/hpp`` - Main FCB logic, RC handling, mode management
@@ -150,7 +150,7 @@ Feature Modules
 - ``helpers/`` - GPS and other utilities
 
 Build Output
-~~~~~~~~~~~
+~~~~~~~~~~~~
 
 - Binary: ``bin/de_ardupilot``
 - Debian package: ``build/packages/de-mavlink-plugin-x.y.z-Linux.deb``

@@ -11,6 +11,8 @@ This section provides technical documentation for developers who want to build D
    Raspberry Pi Deployment <technicals/rpi-scripts/rpi-bookworm-scripts>
    Architecture <de-dev-architecture>
    Extending DroneEngage <de-dev-extending>
+   Creating Custom Plugins <de-dev-plugin>
+   SWARM Logic <de-dev-swarm>
    Web Client Technicals <technicals/webclient/de-web-technicals>
    Communication Module Technicals <technicals/communication/de-comm-technicals>
    Server Technicals <technicals/server/de-server-technicals>

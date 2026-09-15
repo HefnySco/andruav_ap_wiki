@@ -17,9 +17,9 @@ Every DroneEngage vehicle needs this module. It is the glue between the flight c
 ## Quick links
 
 - [Communication configuration](de-config-comm.md)
-- [Custom plugins overview](de-custom-plugins.md)
+- [Custom plugins overview](technicals/de_common/de-custom-plugins)
 - [DataBus protocol](de-dev-databus.md)
-- [Plugin development](de-dev-plugin.md)
+- [Plugin development](de-dev-plugin)
 
 ## For developers
 

@@ -5,6 +5,10 @@
 Getting Started
 ===============
 
+.. youtube:: Q-OyRnisq8U
+
+|
+
 .. toctree::
    :titlesonly:
    :maxdepth: 1

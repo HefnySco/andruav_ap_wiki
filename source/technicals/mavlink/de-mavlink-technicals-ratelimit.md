@@ -1,3 +1,5 @@
+# Rate Limiting Effects
+
 ## Effect of `m_rate_limit`
 
 `m_rate_limit` is used in the *first* shaping stage as a **time‑based rate limiter / outlier rejector** on the normalized tracking error:

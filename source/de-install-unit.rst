@@ -4,6 +4,10 @@
 DroneEngage Installation
 ========================
 
+.. youtube:: WEE4tTnNDwQ
+
+|
+
 Choose your preferred installation method below. The **Ready-Made Image** is recommended for most users.
 
 |
@@ -51,8 +55,6 @@ The easiest way to get started. Pre-built images include all modules and configu
 - Download from `cloud.ardupilot.org/downloads/RPI_Full_Images <https://cloud.ardupilot.org/downloads/RPI_Full_Images/droneengage_rpi/>`_
 - Available for RPI-Zero 2 W and RPI-4
 - Includes telemetry, camera, and all dependencies
-
-.. youtube:: WEE4tTnNDwQ
 
 See :ref:`de-software-installation_download` for detailed instructions.
 

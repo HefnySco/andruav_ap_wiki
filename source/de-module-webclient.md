@@ -1,3 +1,3 @@
 # WebClient Module
 
-This page has been merged into [WebClient](webclient-whatis.md).
+This page has been merged into [WebClient](webclient-whatis).

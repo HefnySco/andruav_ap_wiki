@@ -5,6 +5,12 @@
 Configuration
 =============
 
+.. image:: ./images/gcs_screen.png
+   :height: 350px
+   :align: center
+   :alt: WebClient ground control station screen
+
+|
 
 The following is the `js_siteConfig.js <https://github.com/DroneEngage/droneengage_webclient_react/blob/master/src/js/js_siteConfig.js>`_ the configuration file for the WebClient. This file is used to configure the WebClient to connect to the correct server and to enable or disable features.
 
@@ -43,7 +49,7 @@ The following is the `js_siteConfig.js <https://github.com/DroneEngage/droneenga
 
 
   // CHOOSE YOUR MAP SOURCE
-  export let CONST_MAP_LEAFLET_URL = "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHNhYWQiLCJhIjoiY2tqZnIwNXRuMndvdTJ4cnV0ODQ4djZ3NiJ9.LKojA3YMrG34L93jRThEGQ";
+  export let CONST_MAP_LEAFLET_URL = "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=pk.YOUR_MAPBOX_TOKEN";
   //export let CONST_MAP_LEAFLET_URL = "https://airgap.droneengage.com:88/{x}_{y}_{z}.jpeg" //LOCAL MAP
   
 
@@ -240,7 +246,7 @@ by changing the values in the config.json file without the need to rebuild WebCl
       },
 
   // CHOOSE YOUR MAP SOURCE
-  "CONST_MAP_LEAFLET_URL": "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaHNhYWQiLCJhIjoiY2tqZnIwNXRuMndvdTJ4cnV0ODQ4djZ3NiJ9.LKojA3YMrG34L93jRThEGQ",
+  "CONST_MAP_LEAFLET_URL": "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=pk.YOUR_MAPBOX_TOKEN",
   //export let CONST_MAP_LEAFLET_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
   //export let CONST_MAP_LEAFLET_URL = "https://airgap.droneengage.com:88/{x}_{y}_{z}.jpeg" //LOCAL MAP
   //export let CONST_MAP_LEAFLET_URL = "http://127.0.0.1:9991/{x}_{y}_{z}.jpeg" //LOCAL MAP

@@ -1,8 +1,8 @@
 .. _de-index:
 
-========================
+=========================
 DroneEngage Documentation
-========================
+=========================
 
 DroneEngage is a cloud-based companion computer software for Ardupilot-based drones, providing unlimited range telemetry, video streaming, and advanced fleet management capabilities.
 
@@ -24,6 +24,9 @@ DroneEngage is a cloud-based companion computer software for Ardupilot-based dro
    GCS Chat </de-gcs-chat>
    DE Camera Module </de-camera>
    Plugins </de-plugins>
+   SDR Plugin </de-plugin-sdr>
+   Sound Plugin </de-plugin-sound>
+   GPIO Plugin </de-plugin-gpio>
    Advanced Features </de-advanced>
    Configuration </webclient-configuration>
 

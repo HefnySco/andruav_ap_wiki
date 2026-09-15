@@ -1,3 +1,5 @@
+:orphan:
+
 .. _andruav-geo-fencing:
 
 ===================

@@ -2,6 +2,13 @@
 Communication Module Configuration
 =========================================
 
+.. image:: ./images/broker_diagram.png
+   :height: 350px
+   :align: center
+   :alt: de_comm broker architecture diagram
+
+|
+
 A file called **de_comm.config.module.json** exists in **/home/pi/drone_engage/de_comm/**. This file is written in JSON format. However, you can still add comments to the file. To those who do not know JSON just consider it a text file that you need to edit only few lines in it.
 
 Accessing the Configuration File
@@ -120,7 +127,7 @@ Important Notes
    **userName** and **accessCode** can be generated from your DroneEngage account.
 
 Example Configuration
-====================
+=====================
 
 .. code-block:: json
 

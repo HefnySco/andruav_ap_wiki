@@ -88,7 +88,7 @@ Root Configuration
 - ``build.sh`` / ``build_release.sh`` / ``build_ddebug.sh`` - Build scripts
 
 Source Structure (\ ``src/``\ )
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - ``main.cpp`` - Entry point for broker module
 - ``global.hpp`` - Global definitions and constants
@@ -99,7 +99,7 @@ Source Structure (\ ``src/``\ )
 - ``localConfigFile.cpp/hpp`` - Local configuration overrides
 
 Core Components
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 - ``comm_server/`` - Andruav communication server implementation
 
@@ -120,7 +120,7 @@ Core Components
 - ``notification_module/`` - Notification system
 
 Build Output
-~~~~~~~~~~~
+~~~~~~~~~~~~
 
 - Binary: ``bin/de_comm``
 - Debian package: ``build/de-communicator-pro-x.y.z-Linux.deb``
@@ -218,7 +218,7 @@ Configuration
 -------------
 
 Module Configuration (\ ``de_comm.config.module.json``\ )
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Key settings:
 

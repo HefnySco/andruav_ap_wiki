@@ -286,9 +286,9 @@ npm start
 
 ## Related Documentation
 
-- [Authentication Server Technicals](../server/de-server-technicals-authentication.md)
-- [Communication Server Technicals](../server/de-server-technicals-communication.md)
-- [Communication Module Technicals](../communication/de-comm-technicals.md)
-- [MAVLink Module Technicals](../mavlink/de-mavlink-technicals.md)
-- [Authentication ↔ Communication Flow](../server/de-server-technicals-auth-comm-flow.md)
-- [Message Propagation](../server/de-server-technicals-mesh-relay.md)
+- [Authentication Server Technicals](server/de-server-technicals-authentication)
+- [Communication Server Technicals](server/de-server-technicals-communication)
+- [Communication Module Technicals](communication/de-comm-technicals)
+- [MAVLink Module Technicals](mavlink/de-mavlink-technicals)
+- [Authentication ↔ Communication Flow](server/de-server-technicals-auth-comm-flow)
+- [Message Propagation](server/de-server-technicals-mesh-relay)

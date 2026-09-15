@@ -4,6 +4,12 @@
 Andruav & Drone-Engage Backend Server
 =====================================
 
+.. image:: ./images/comm_server_config.png
+   :height: 350px
+   :align: center
+   :alt: Backend server configuration
+
+|
 
 .. toctree::
    :caption: Contents:

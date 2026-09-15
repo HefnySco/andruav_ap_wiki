@@ -8,6 +8,12 @@ Admin Web Interface
 
 The Andruav Authenticator includes a web-based admin interface for monitoring and managing the authentication server, registered users, and connected communication servers.
 
+.. image:: https://raw.githubusercontent.com/DroneEngage/droneengage_authenticator/refs/heads/release/wiki/images/_new_dashboard_authweb.png
+   :height: 400px
+   :align: center
+   :alt: Admin Dashboard
+
+|
 
 Overview
 ========
@@ -48,12 +54,6 @@ The main dashboard displays:
 - **Connected Users**: Total users currently connected across all servers
 
 Statistics auto-refresh every 30 seconds.
-
-.. image:: https://raw.githubusercontent.com/DroneEngage/droneengage_authenticator/refs/heads/release/wiki/images/_new_dashboard_authweb.png
-   :height: 400px
-   :align: center
-   :alt: Admin Dashboard
-
 
 User Management
 ---------------
@@ -123,25 +123,25 @@ The admin interface is configured in ``server.config``:
 Configuration Parameters
 ------------------------
 
-+-------------------------+---------+---------+---------------------------------------------+
-| Parameter               | Type    | Default | Description                                 |
-+=========================+=========+=========+=============================================+
-| ``webadmin_enable``     | boolean | true    | Enable/disable admin web interface          |
-+-------------------------+---------+---------+---------------------------------------------+
-| ``admin_username``      | string  | "admin" | Admin username for login                    |
-+-------------------------+---------+---------+---------------------------------------------+
-| ``admin_password``      | string  | "admin123"| Admin password for login                   |
-+-------------------------+---------+---------+---------------------------------------------+
-| ``session_secret``      | string  | required| Secret for session encryption               |
-+-------------------------+---------+---------+---------------------------------------------+
-| ``webadmin_port``       | number  | 8089    | Port for admin web interface                |
-+-------------------------+---------+---------+---------------------------------------------+
-| ``webadmin_listening_ip``| string  | "0.0.0.0"| IP address to bind to                      |
-+-------------------------+---------+---------+---------------------------------------------+
++---------------------------+---------+------------+------------------------------------+
+| Parameter                 | Type    | Default    | Description                        |
++===========================+=========+============+====================================+
+| ``webadmin_enable``       | boolean | true       | Enable/disable admin web interface |
++---------------------------+---------+------------+------------------------------------+
+| ``admin_username``        | string  | "admin"    | Admin username for login           |
++---------------------------+---------+------------+------------------------------------+
+| ``admin_password``        | string  | "admin123" | Admin password for login           |
++---------------------------+---------+------------+------------------------------------+
+| ``session_secret``        | string  | required   | Secret for session encryption      |
++---------------------------+---------+------------+------------------------------------+
+| ``webadmin_port``         | number  | 8089       | Port for admin web interface       |
++---------------------------+---------+------------+------------------------------------+
+| ``webadmin_listening_ip`` | string  | "0.0.0.0"  | IP address to bind to              |
++---------------------------+---------+------------+------------------------------------+
 
 
 Security Considerations
-======================
+=======================
 
 Production Deployment
 ---------------------

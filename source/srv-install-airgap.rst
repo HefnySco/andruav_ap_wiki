@@ -44,6 +44,7 @@ Local Maps
 ==========
 
 |
+
 .. youtube:: QivckjIQ9Sk
 
 |
@@ -53,11 +54,17 @@ Local Maps
  * By storing map data locally, the server eliminates reliance on internet-based map services, ensuring uninterrupted operation even in areas with no connectivity.
 
  * This local map storage, allows for cached maps. Therefore, maps of needed areas can be downloaded when internet is available, and then used when internet is not available.
-    
-    
 
+|
 
+.. toctree::
+   :caption: Installation
+   :titlesonly:
+   :maxdepth: 1
 
+   Download the Ready Image <srv-install-airgap-download>
+   Set Up with Access Point <srv-install-airgap-ready-image-w-ap>
+   Set Up without Access Point <srv-install-airgap-ready-image-wo-ap>
 
 
 

@@ -4,13 +4,14 @@
 SWARM Interface
 ===============
 
+.. youtube:: B3Oe41PHwRo
 
 |
 
 .. image:: ./images/swarm-interface-view.png
    :height: 400px
    :align: center
-   :alt: FPV Vertical & Horizontal
+   :alt: SWARM interface view in the WebClient
 
 |
 
@@ -23,7 +24,7 @@ The DroneEngage SWARM system is designed to facilitate the coordination and mana
 .. image:: ./images/swarm_formation_1.png
    :height: 400px
    :align: center
-   :alt: FPV Vertical & Horizontal
+   :alt: Swarm formation hierarchy diagram
 
 |
 
@@ -55,7 +56,7 @@ Formation of drone_cairo appears in greed. you can click on it and change it in 
 .. image:: ./images/swarm-interface-1.png
    :height: 400px
    :align: center
-   :alt: FPV Vertical & Horizontal
+   :alt: drone_cairo as leader with Thread formation shown in green
 
 |
 
@@ -68,7 +69,7 @@ Formation of drone_cairo appears in yellow.
 .. image:: ./images/swarm-interface-2.png
    :height: 400px
    :align: center
-   :alt: FPV Vertical & Horizontal
+   :alt: drone1 as a follower of drone_cairo, shown in yellow
 
 |
 
@@ -83,7 +84,7 @@ Formation of drone2 appears in green and you can change it in real time.
 .. image:: ./images/swarm-interface-3.png
    :height: 400px
    :align: center
-   :alt: FPV Vertical & Horizontal
+   :alt: drone2 as both a follower and a sub-leader with its own formation
 
 |
 

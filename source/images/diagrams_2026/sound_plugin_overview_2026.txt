@@ -1,0 +1,28 @@
+DIAGRAM: sound_plugin_overview_2026.svg
+INTENDED CONTENT — what this diagram should show:
+
+A simple, friendly 3-box left-to-right flow (Track U style, not a
+protocol reference diagram):
+  - "WebClient" (blue) — "'Say this' / 'Play this file'"
+  - arrow ->
+  - "de_snd module" (orange) — "on the companion computer"
+  - arrow ->
+  - "Speaker" (green) — "announcement plays"
+
+Caption below: "Works both ways: alerts and voice messages you send, or
+status sounds the drone plays automatically."
+
+This is intentionally lighter-weight than the 5 technical diagrams in
+this folder (no message IDs, no field lists) — it exists purely to give
+de-plugin-sound.rst (a Track U feature page) an opening visual, since no
+suitable existing screenshot or matching YouTube video was found for
+this module as of 2026-09-04.
+
+SOURCE OF TRUTH:
+  - drone_engage_sound_module/README.md
+  - de_common/de_databus/messages.hpp — TYPE_AndruavMessage_SOUND_TEXT_TO_SPEECH
+    (6511) / TYPE_AndruavMessage_SOUND_PLAY_FILE (6512) doc comments (both
+    WEB_TO_MODULE, confirming the WebClient -> de_snd direction shown)
+
+TARGET PAGE(S):
+  - de-plugin-sound.rst (opening visual)

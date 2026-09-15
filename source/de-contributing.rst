@@ -36,6 +36,7 @@ Contribution Steps
 
 2. **Clone Your Fork**:
    - Run in your terminal:
+
      .. code-block:: bash
 
         $ git clone https://github.com/YOUR_USERNAME/droneengage_ap_wiki.git
@@ -43,6 +44,7 @@ Contribution Steps
 
 3. **Create a Branch**:
    - Create a new branch for your changes:
+
      .. code-block:: bash
 
         $ git checkout -b my-contribution
@@ -55,6 +57,7 @@ Contribution Steps
 
 5. **Test Changes Locally**:
    - Build the wiki using Docker:
+
      .. code-block:: bash
 
         $ ./docker.create.sh
@@ -65,6 +68,7 @@ Contribution Steps
 
 6. **Commit and Push**:
    - Commit your changes:
+
      .. code-block:: bash
 
         $ git add .
@@ -81,7 +85,7 @@ Contribution Steps
    - Maintainers may request changes. Update your branch and push new commits if needed.
 
 Testing Changes
---------------
+---------------
 
 To ensure your changes render correctly:
 - Run the Docker scripts to build the wiki (see :doc:`de-dev` for related build info).
@@ -89,7 +93,7 @@ To ensure your changes render correctly:
 - If adding code blocks (e.g., JSON in :doc:`de-config-comm`), verify syntax.
 
 Contribution Ideas
------------------
+------------------
 
 - **Fix Typos**: Improve clarity in pages like :doc:`de-what-is` or :doc:`de-config-mavlink`.
 - **Add Tutorials**: Create guides for features like swarm operations (:ref:`de-advanced`) or SITL (:ref:`de-simulators`).

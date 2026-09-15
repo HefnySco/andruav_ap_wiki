@@ -61,7 +61,7 @@ You can minimize the chat panel to save screen space:
 - Click again to expand and read new messages
 
 Navigating to a GCS
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 When you have a specific GCS selected, you can use the "Goto" button to navigate to that operator's location on the map.
 

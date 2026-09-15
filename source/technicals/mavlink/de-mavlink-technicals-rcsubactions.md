@@ -1,3 +1,5 @@
+# RC_SUB_ACTION
+
 `RC_SUB_ACTION` is an enumeration that defines the operational state of remote control (RC) channel input handling in a drone control system.  
 It determines how RC commands from a transmitter (TX) are processed and whether they are passed through, modified, or overridden by software.
 
@@ -5,7 +7,7 @@ This enum is used to manage the autonomy level of RC input—ranging from fully 
 
 ---
 
-### Definition
+## Definition
 
 ```cpp
 92:105:drone_engage/drone_engage_mavlink/src/defines.hpp
@@ -38,7 +40,7 @@ The enum is tightly coupled with RC override logic, where physical transmitter i
 
 ---
 
-### Example Usages
+## Example Usages
 
 One primary use is initializing the RC state when the system starts:
 
@@ -73,7 +75,7 @@ It is central to **remote control override systems**, especially in scenarios in
 
 ---
 
-### Notes
+## Notes
 
 - `RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED` is specifically intended for **guided mode flight**, where velocity commands (not raw PWM) are sent—this enables smoother autonomous maneuvers.
 - The enum values skip `3` and `5–7`, suggesting possible future extensions or alignment with bitmask-style flags (though not currently used as bitflags).
@@ -81,7 +83,7 @@ It is central to **remote control override systems**, especially in scenarios in
 
 ---
 
-### See Also
+## See Also
 
 - `ANDRUAV_VEHICLE_INFO`: Struct that holds `rc_sub_action` as part of the drone's state; used for telemetry and control decisions.
 - `CFCBMain::adjustRemoteJoystickByMode()`: Method that acts on `RC_SUB_ACTION` values to change RC behavior.

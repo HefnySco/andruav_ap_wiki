@@ -1,9 +1,11 @@
+# CAndruavParser
+
 `CAndruavParser` is a singleton class responsible for parsing incoming JSON-based commands from remote parties in the DroneEngage communication system.  
 It decodes and routes command messages to appropriate handlers based on message type, acting as a central dispatcher for protocol-level instructions.
 
 ---
 
-### Definition
+## Definition
 
 `CAndruavParser` is a thread-safe singleton class defined in the `de::andruav_servers` namespace. It provides static access to a single instance and exposes two primary parsing methods: `parseCommand` and `parseRemoteExecuteCommand`. The class is non-copyable and privately constructed, enforcing singleton usage.
 
@@ -56,7 +58,7 @@ class CAndruavParser
 
 ---
 
-### Example Usages
+## Example Usages
 
 `CAndruavParser` is invoked in `andruav_comm_server_local.cpp` to process incoming JSON messages from network clients. The message type determines whether `parseRemoteExecuteCommand` or the general `parseCommand` is called.
 
@@ -85,7 +87,7 @@ This pattern appears in multiple locations within `andruav_comm_server_local.cpp
 
 ---
 
-### Notes
+## Notes
 
 - The singleton implementation follows the Meyers singleton pattern (line 24–28), which is thread-safe in C++11 and later due to guaranteed static initialization concurrency safety.
 - Despite being defined in a header, its methods are implemented in `andruav_parser.cpp`, indicating separation of interface and implementation.
@@ -93,7 +95,7 @@ This pattern appears in multiple locations within `andruav_comm_server_local.cpp
 
 ---
 
-### See Also
+## See Also
 
 - `CAndruavUnits`: Global registry of connected devices; used by `CAndruavParser` to retrieve or create unit instances during command handling.
 - `CAndruavUnit`: Represents an individual connected drone or client; commands parsed by `CAndruavParser` are typically applied to instances of this class.

@@ -1,0 +1,58 @@
+<svg viewBox="0 0 920 440" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555555"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="920" height="440" fill="#ffffff"/>
+  <text x="460" y="26" font-size="15" fill="#333333" text-anchor="middle" font-weight="bold">Binary Message Anatomy</text>
+
+  <!-- Row 1: single binary-attachment message -->
+  <text x="40" y="65" font-size="12" fill="#333333" font-weight="bold">1. Binary-attachment messages (IMG, SDR_SPECTRUM, TELNET_DATA)</text>
+
+  <rect x="40" y="80" width="380" height="60" fill="#2980b9" stroke="#1b4f72" stroke-width="1.5"/>
+  <text x="230" y="105" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">JSON Header (text)</text>
+  <text x="230" y="123" font-size="10" fill="#eaf2f8" text-anchor="middle">{"tg":..,"sd":..,"mt":1006,"ms":"{...}"}</text>
+
+  <rect x="420" y="80" width="20" height="60" fill="#7f8c8d"/>
+  <text x="430" y="160" font-size="10" fill="#666666" text-anchor="middle">\0</text>
+
+  <rect x="440" y="80" width="380" height="60" fill="#c0392b" stroke="#7b1c11" stroke-width="1.5"/>
+  <text x="630" y="105" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Binary Payload (raw bytes)</text>
+  <text x="630" y="123" font-size="10" fill="#fadbd8" text-anchor="middle">image bytes / float32 spectrum / pty output</text>
+
+  <line x1="40" y1="60" x2="820" y2="60" stroke="#999999" stroke-width="1"/>
+  <text x="430" y="55" font-size="10" fill="#999999" text-anchor="middle">total message length (from the socket read)</text>
+
+  <text x="40" y="175" font-size="10" fill="#666666">Header length = position of the null terminator. Payload length = total length − header length − 1.</text>
+
+  <!-- Row 2: manual chunking -->
+  <text x="40" y="230" font-size="12" fill="#333333" font-weight="bold">2. Manually-chunked messages (WayPoints — max 20 items/chunk, no per-chunk ack)</text>
+
+  <rect x="40" y="245" width="70" height="55" fill="#8e44ad" stroke="#5b2c6f" stroke-width="1.5"/>
+  <text x="75" y="264" font-size="10" fill="#ffffff" text-anchor="middle">field "i"</text>
+  <text x="75" y="280" font-size="10" fill="#ffffff" text-anchor="middle">= 1</text>
+  <text x="75" y="293" font-size="8" fill="#eee0f5" text-anchor="middle">WAYPOINT_CHUNK</text>
+
+  <rect x="110" y="245" width="260" height="55" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="240" y="268" font-size="11" fill="#333333" text-anchor="middle">chunk data</text>
+  <text x="240" y="284" font-size="10" fill="#666666" text-anchor="middle">up to 20 waypoint items</text>
+
+  <text x="400" y="278" font-size="20" fill="#999999">...</text>
+
+  <rect x="440" y="245" width="70" height="55" fill="#8e44ad" stroke="#5b2c6f" stroke-width="1.5"/>
+  <text x="475" y="264" font-size="10" fill="#ffffff" text-anchor="middle">field "i"</text>
+  <text x="475" y="280" font-size="10" fill="#ffffff" text-anchor="middle">= 999</text>
+  <text x="475" y="293" font-size="8" fill="#eee0f5" text-anchor="middle">WAYPOINT_LAST_CHUNK</text>
+
+  <rect x="510" y="245" width="260" height="55" fill="#eeeeee" stroke="#999999" stroke-width="1.5"/>
+  <text x="640" y="268" font-size="11" fill="#333333" text-anchor="middle">final chunk data</text>
+  <text x="640" y="284" font-size="10" fill="#666666" text-anchor="middle">remaining waypoint items</text>
+
+  <rect x="30" y="340" width="860" height="80" rx="6" fill="#f2f2f2" stroke="#999999" stroke-width="1"/>
+  <text x="460" y="362" font-size="11" fill="#333333" text-anchor="middle" font-weight="bold">Losing one chunk corrupts the whole waypoint list — no per-chunk retransmission exists.</text>
+  <text x="460" y="380" font-size="11" fill="#666666" text-anchor="middle">This is distinct from de_common's own UDP-layer chunking (used transparently by UploadWayPoints/Upload_DE_Mission),</text>
+  <text x="460" y="396" font-size="11" fill="#666666" text-anchor="middle">which reassembles automatically below the message-protocol layer.</text>
+  <text x="460" y="412" font-size="10" fill="#999999" text-anchor="middle">Source: de_databus/messages.hpp — TYPE_AndruavMessage_WayPoints / IMG / SDR_SPECTRUM doc comments, 2026</text>
+</svg>

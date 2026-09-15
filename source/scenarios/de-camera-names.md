@@ -53,7 +53,7 @@ Device numbers can also be used with custom display names:
 Linux also supports udev rules, which allow devices to be renamed based on their properties without requiring DroneEngage-specific configuration.
 
 
-# Video Pipelining
+## Video Pipelining
 
 
 
@@ -74,7 +74,7 @@ DE-AI is the output of the AI module, displaying bounding boxes around detected 
 
 This approach enables chaining multiple modules together to create complex video pipelines.
 
-## Camera Manager Wrapper
+### Camera Manager Wrapper
 
 For Raspberry Pi deployments, DroneEngage provides a [Camera Manager Wrapper](https://github.com/DroneEngage/DroneEngage_ScriptWiki/blob/master/rpi_image_scripts/bookworm/wrapper/README.md) that orchestrates the startup, monitoring, and graceful shutdown of camera pipelines and tracking modules.
 

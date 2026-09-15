@@ -6,6 +6,8 @@ GPIO Plugin
 
 The GPIO Plugin enables control of Raspberry Pi GPIO pins through DroneEngage, allowing integration with external hardware like LEDs, relays, sensors, and other peripherals.
 
+.. youtube:: DMLjc728vMQ
+
 |
 
 Features

@@ -1,0 +1,50 @@
+DIAGRAM: remoteexecute_pattern_2026.svg
+INTENDED CONTENT — what this diagram should show:
+
+A simple 2-lifeline sequence diagram:
+  - Left lifeline: "WebClient (GCS)" (blue header box, dashed vertical
+    lifeline going down)
+  - Right lifeline: "Module (e.g. de_mavlink)" (green header box, dashed
+    vertical lifeline going down)
+
+Step 1 (arrow left-to-right): "mt: 1005 (RemoteExecute)" with payload
+  "ms: { "C": 1004 }" annotated underneath as
+  '— "send me your TYPE_AndruavMessage_ID"'
+
+Step 2 (arrow right-to-left, below step 1): "mt: 1004
+  (TYPE_AndruavMessage_ID)" with payload "ms: { VT, GS, VR, B, FM, ... }"
+  annotated underneath as
+  '— the reply IS a normal message of type C'
+
+A boxed callout below both arrows, titled "If C < 1000 instead:",
+explaining that C can also be a RemoteCommand_* sub-command id (e.g.
+505 REQUEST_PARA_LIST, 502 CLEAR_WAY_POINTS) — a one-shot action, not
+necessarily answered with a message of type "C".
+
+This diagram illustrates ONE general idiom used by roughly 10 different
+message types in the protocol reference (TYPE_AndruavMessage_ID,
+GeoFence, GeoFenceAttachStatus, etc. are all requestable this way via
+RemoteExecute) — it is intentionally generic/illustrative, not tied to
+one specific module.
+
+SOURCE OF TRUTH:
+  - de_common/de_databus/messages.hpp — TYPE_AndruavMessage_RemoteExecute
+    (1005) doc comment, which explicitly documents both the "C equals
+    another message type id" pattern and the "C < 1000 is a
+    RemoteCommand_*" pattern
+  - andruav-communication-protocol-messages.rst — "RemoteExecute
+    Envelope & Sub-Commands" section (the rendered wiki page this
+    diagram supports)
+
+KNOWN ISSUES / THINGS TO CHECK WHEN RE-DRAWING:
+  - Minor visual corruption reported by reviewer (2026-08-31) — nature
+    not yet specified, compare against this description.
+  - This is the simplest of the 5 diagrams (least text, cleanest
+    layout) so a corruption report here is most likely a rendering/
+    color issue rather than a content or layout problem — check arrow
+    endpoints land exactly on the lifelines and don't visually
+    overshoot into the lifeline boxes.
+
+TARGET PAGE(S):
+  - andruav-communication-protocol-messages.rst (embed near the
+    "RemoteExecute Envelope & Sub-Commands" section)

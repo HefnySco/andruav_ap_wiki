@@ -1,0 +1,77 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555555"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="600" fill="#ffffff"/>
+
+  <text x="450" y="30" font-size="15" fill="#333333" text-anchor="middle" font-weight="bold">DroneEngage Storage Server — Architecture</text>
+
+  <!-- Comm servers -->
+  <rect x="40" y="80" width="170" height="55" rx="6" fill="#2980b9" stroke="#1b4f72" stroke-width="1.5"/>
+  <text x="125" y="112" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Comm Server (parent)</text>
+
+  <rect x="40" y="160" width="170" height="55" rx="6" fill="#2980b9" stroke="#1b4f72" stroke-width="1.5"/>
+  <text x="125" y="192" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Comm Server (child)</text>
+
+  <text x="125" y="255" font-size="11" fill="#666666" text-anchor="middle">WebSocket (S2S,</text>
+  <text x="125" y="269" font-size="11" fill="#666666" text-anchor="middle">Ed25519-signed)</text>
+
+  <!-- StorageServer orchestrator box -->
+  <rect x="280" y="70" width="560" height="330" rx="8" fill="#fdf6e3" stroke="#d4a017" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="560" y="95" font-size="13" fill="#8a6d00" text-anchor="middle" font-weight="bold">StorageServer  (src/index.js)</text>
+
+  <rect x="310" y="120" width="200" height="60" rx="6" fill="#8e44ad" stroke="#5b2c6f" stroke-width="1.5"/>
+  <text x="410" y="145" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">WebSocketServer</text>
+  <text x="410" y="163" font-size="11" fill="#ffffff" text-anchor="middle">(S2S endpoint)</text>
+
+  <line x1="210" y1="107" x2="310" y2="140" stroke="#555555" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="210" y1="187" x2="310" y2="155" stroke="#555555" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <rect x="560" y="120" width="240" height="60" rx="6" fill="#8e44ad" stroke="#5b2c6f" stroke-width="1.5"/>
+  <text x="680" y="145" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">MessageHandlers</text>
+  <text x="680" y="163" font-size="11" fill="#ffffff" text-anchor="middle">task/mission CRUD</text>
+
+  <line x1="510" y1="150" x2="560" y2="150" stroke="#555555" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <rect x="310" y="230" width="200" height="60" rx="6" fill="#8e44ad" stroke="#5b2c6f" stroke-width="1.5"/>
+  <text x="410" y="255" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">OfflineQueue</text>
+  <text x="410" y="273" font-size="11" fill="#ffffff" text-anchor="middle">buffers for offline units</text>
+
+  <line x1="410" y1="180" x2="410" y2="230" stroke="#555555" stroke-width="2" marker-end="url(#arrow2)" marker-start="url(#arrow2)"/>
+  <text x="425" y="210" font-size="9" fill="#888888">wsServer injected;</text>
+  <text x="425" y="221" font-size="9" fill="#888888">queue flushes on reconnect</text>
+
+  <rect x="560" y="230" width="240" height="60" rx="6" fill="#8e44ad" stroke="#5b2c6f" stroke-width="1.5"/>
+  <text x="680" y="255" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">DatabaseManager</text>
+  <text x="680" y="273" font-size="11" fill="#ffffff" text-anchor="middle">better-sqlite3</text>
+
+  <line x1="680" y1="180" x2="680" y2="230" stroke="#555555" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <rect x="560" y="330" width="240" height="55" rx="6" fill="#f2f2f2" stroke="#999999" stroke-width="1.5"/>
+  <text x="680" y="355" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">SQLite DB file</text>
+  <text x="680" y="373" font-size="11" fill="#666666" text-anchor="middle">data/storage.db</text>
+
+  <line x1="680" y1="290" x2="680" y2="330" stroke="#555555" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Flow annotation -->
+  <text x="450" y="440" font-size="12" fill="#333333" text-anchor="middle" font-weight="bold">
+    GCS / Units &#8594; Comm Server &#8594; Storage Server &#8594; SQLite DB
+  </text>
+  <text x="450" y="462" font-size="11" fill="#666666" text-anchor="middle">
+    A unit offline when a task is saved gets it delivered from OfflineQueue on its next connect.
+  </text>
+
+  <rect x="40" y="500" width="820" height="70" rx="6" fill="#f2f2f2" stroke="#999999" stroke-width="1"/>
+  <text x="450" y="522" font-size="11" fill="#333333" text-anchor="middle" font-weight="bold">
+    S2S Auth: LoadTasks (9001) / SaveTasks (9002) / DeleteTasks (9003) / DisableTasks (9004)
+  </text>
+  <text x="450" y="540" font-size="10" fill="#666666" text-anchor="middle">
+    Andruav System messages, carried over the same WebSocket link as any other S2S traffic
+  </text>
+  <text x="450" y="556" font-size="10" fill="#999999" text-anchor="middle">
+    Source: servers/droneengage_storage_server/wiki/Architecture.md — 2026
+  </text>
+</svg>
