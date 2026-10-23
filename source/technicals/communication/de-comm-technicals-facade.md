@@ -8,7 +8,7 @@ It serves as the central interface for sending standardized messages and command
 ## Definition
 
 ```cpp
-21:71:/mnt/8a619ce7-cd3f-4520-af65-7991f16410f7/public_versions/drone_engage/drone_engage_communication_pro/src/comm_server/andruav_facade.hpp
+21:71:/mnt/8a619ce7-cd3f-4520-af65-7991f16410f7/public_versions/drone_engage/droneengage_communication_pro/src/comm_server/andruav_facade.hpp
 class CAndruavFacade
 {
     public:
@@ -103,7 +103,7 @@ In practice, `CAndruavFacade` is used across multiple subsystems to send standar
 For example, when a module fails license verification, an error message is sent using the facade:
 
 ```cpp
-518:519:/home/mhefny/TDisk/public_versions/drone_engage/drone_engage_communication_pro/src/de_broker/de_modules_manager.cpp
+518:519:/home/mhefny/TDisk/public_versions/drone_engage/droneengage_communication_pro/src/de_broker/de_modules_manager.cpp
 module_item->licence_status = ENUM_LICENCE::LICENSE_VERIFIED_BAD;
 andruav_servers::CAndruavFacade::getInstance().API_sendErrorMessage(
     std::string(), 
@@ -117,7 +117,7 @@ andruav_servers::CAndruavFacade::getInstance().API_sendErrorMessage(
 Another example occurs during system initialization upon successful server connection:
 
 ```cpp
-384:/home/mhefny/TDisk/public_versions/drone_engage/drone_engage_communication_pro/src/comm_server/andruav_comm_server.cpp
+384:/home/mhefny/TDisk/public_versions/drone_engage/droneengage_communication_pro/src/comm_server/andruav_comm_server.cpp
 CAndruavFacade::getInstance().API_requestID(std::string());
 ```
 

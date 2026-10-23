@@ -16,7 +16,7 @@ The class performs two main operations:
 It communicates over HTTPS using `libcurl`, parses responses with `nlohmann::json`, and stores configuration such as the communication server IP, port, and temporary login key.
 
 ```cpp
-57:135:/mnt/8a619ce7-cd3f-4520-af65-7991f16410f7/public_versions/drone_engage/drone_engage_communication_pro/src/comm_server/andruav_auth.hpp
+57:135:/mnt/8a619ce7-cd3f-4520-af65-7991f16410f7/public_versions/drone_engage/droneengage_communication_pro/src/comm_server/andruav_auth.hpp
 class CAndruavAuthenticator
 {
 public:
@@ -83,7 +83,7 @@ private:
 In `andruav_comm_server.cpp`, `CAndruavAuthenticator` is used to authenticate before establishing a WebSocket connection. This ensures only authorized drones can connect to the communication server.
 
 ```cpp
-149:158:/home/mhefny/TDisk/public_versions/drone_engage/drone_engage_communication_pro/src/comm_server/andruav_comm_server.cpp
+149:158:/home/mhefny/TDisk/public_versions/drone_engage/droneengage_communication_pro/src/comm_server/andruav_comm_server.cpp
 CAndruavAuthenticator& andruav_auth = CAndruavAuthenticator::getInstance();
 
 m_status = SOCKET_STATUS_CONNECTING;

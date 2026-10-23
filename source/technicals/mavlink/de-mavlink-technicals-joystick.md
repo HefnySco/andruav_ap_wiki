@@ -8,7 +8,7 @@ It enables velocity-based control of the drone in guided mode, where RC channel 
 ## Definition
 
 ```c++
-102:105:drone_engage/drone_engage_mavlink/src/defines.hpp
+102:105:drone_engage/droneengage_mavlink/src/defines.hpp
 // Velocity is sent for Thr, Pitch, Roll , YAWRate ... applicable in Arducopter and Rover
 // Drone may switch {@link _7adath_FCB_RemoteControlSettings#RC_SUB_ACTION_JOYSTICK_CHANNELS} to this automatically if drone mode is guided.
 RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED = 8
@@ -29,7 +29,7 @@ This value is part of a bitmask-style enumeration used to manage different remot
 The `RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED` mode is activated when the drone enters guided flight and joystick control is desired. It is used in conditional logic to switch between direct RC channel override and guided velocity control.
 
 ```c++
-1371:1373:drone_engage/drone_engage_mavlink/src/fcb_main.cpp
+1371:1373:drone_engage/droneengage_mavlink/src/fcb_main.cpp
 m_andruav_vehicle_info.rc_sub_action =
     RC_SUB_ACTION::RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED;
 
@@ -41,7 +41,7 @@ This snippet shows how the system explicitly sets the RC sub-action to guided jo
 Another key usage occurs in the control dispatch logic:
 
 ```c++
-1398:1404:drone_engage/drone_engage_mavlink/src/fcb_main.cpp
+1398:1404:drone_engage/droneengage_mavlink/src/fcb_main.cpp
 case RC_SUB_ACTION::RC_SUB_ACTION_JOYSTICK_CHANNELS:
 case RC_SUB_ACTION::RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED: {
   if (m_andruav_vehicle_info.flying_mode == VEHICLE_MODE_GUIDED) {
@@ -57,7 +57,7 @@ Here, both joystick modes are grouped, but behavior diverges based on current fl
 In the main control loop, timeout handling is also applied:
 
 ```c++
-489:492:drone_engage/drone_engage_mavlink/src/fcb_main.cpp
+489:492:drone_engage/droneengage_mavlink/src/fcb_main.cpp
 case RC_SUB_ACTION::RC_SUB_ACTION_JOYSTICK_CHANNELS_GUIDED: {
   if (now - m_andruav_vehicle_info.rc_command_last_update_time > RCCHANNEL_OVERRIDES_TIMEOUT) {
     releaseRemoteControl();

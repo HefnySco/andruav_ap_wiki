@@ -25,5 +25,5 @@
   <text x="650" y="145" font-size="11" fill="#eafaf1" text-anchor="middle">announcement plays</text>
 
   <text x="380" y="210" font-size="12" fill="#666666" text-anchor="middle">Works both ways: alerts and voice messages you send, or status sounds the drone plays automatically.</text>
-  <text x="380" y="230" font-size="10" fill="#999999" text-anchor="middle">Source: drone_engage_sound_module/README.md — 2026</text>
+  <text x="380" y="230" font-size="10" fill="#999999" text-anchor="middle">Source: droneengage_sound_module/README.md — 2026</text>
 </svg>

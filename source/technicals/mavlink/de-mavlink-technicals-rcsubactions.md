@@ -10,7 +10,7 @@ This enum is used to manage the autonomy level of RC input—ranging from fully 
 ## Definition
 
 ```cpp
-92:105:drone_engage/drone_engage_mavlink/src/defines.hpp
+92:105:drone_engage/droneengage_mavlink/src/defines.hpp
 typedef enum RC_SUB_ACTION 
 {
     // No RC channel data is sent to the drone.
@@ -45,7 +45,7 @@ The enum is tightly coupled with RC override logic, where physical transmitter i
 One primary use is initializing the RC state when the system starts:
 
 ```cpp
-249:251:drone_engage/drone_engage_mavlink/src/fcb_main.cpp
+249:251:drone_engage/droneengage_mavlink/src/fcb_main.cpp
 de::fcb::mission::CMissionManager::getInstance().getAndruavMission().clear();
 
 // Initialize RC override state to released (no input sent)
@@ -55,7 +55,7 @@ m_andruav_vehicle_info.rc_sub_action = RC_SUB_ACTION::RC_SUB_ACTION_RELEASED;
 Another key usage is in parsing incoming commands from a remote source (e.g. mobile app):
 
 ```cpp
-420:422:drone_engage/drone_engage_mavlink/src/fcb_andruav_message_parser.cpp
+420:422:drone_engage/droneengage_mavlink/src/fcb_andruav_message_parser.cpp
 int rc_sub_action = cmd["b"].get<int>();
 
 // Interpret integer command as RC_SUB_ACTION enum

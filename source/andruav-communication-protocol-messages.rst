@@ -188,7 +188,7 @@ Error/notification report (module lifecycle failures, permission denials, etc).
 
 :Direction: DEAD/UNUSED as this JSON type
 
-Roll/pitch/yaw/nav-error info. The webclient still has a legacy parser for it, but drone_engage_mavlink sends the equivalent as raw MAVLink (ATTITUDE/NAV_CONTROLLER_OUTPUT/VFR_HUD) under TYPE_AndruavMessage_MAVLINK instead.
+Roll/pitch/yaw/nav-error info. The webclient still has a legacy parser for it, but droneengage_mavlink sends the equivalent as raw MAVLink (ATTITUDE/NAV_CONTROLLER_OUTPUT/VFR_HUD) under TYPE_AndruavMessage_MAVLINK instead.
 
 .. rubric:: TYPE_AndruavMessage_CommSignalsStatus — 1059
 
@@ -269,7 +269,7 @@ Land the vehicle.
 :Rate: ON_DEMAND (intended)
 :Discard: NO (intended)
 
-"Circle here" - webclient sends it (API_do_CircleHere) but drone_engage_mavlink has no case for it. Currently a no-op end-to-end.
+"Circle here" - webclient sends it (API_do_CircleHere) but droneengage_mavlink has no case for it. Currently a no-op end-to-end.
 
 **Fields:** a lat, g lon, l alt, r radius, t turns
 
@@ -442,7 +442,7 @@ Trigger still-image capture (a bounded burst, not continuous video - video strea
 
 :Direction: WEB_TO_MODULE (intended) - DEAD/UNUSED end-to-end
 
-Webclient sends it but drone_engage_camera_2025 does not subscribe to it - no handler.
+Webclient sends it but droneengage_camera_2025 does not subscribe to it - no handler.
 
 .. rubric:: TYPE_AndruavMessage_CameraSwitch — 1050
 
@@ -722,7 +722,7 @@ Intended for other modules to exchange MAVLink info between each other; defined 
 
 .. rubric:: TYPE_AndruavMessage_UDPProxy_Info — 1071
 
-:Direction: MODULE_TO_WEB - implemented in drone_engage_mavlink
+:Direction: MODULE_TO_WEB - implemented in droneengage_mavlink
 :Rate: ON_DEMAND - reply to a request or after a pause/resume rate change
 :Discard: YES - a status snapshot, latest value supersedes older ones
 
@@ -738,7 +738,7 @@ Sends information about the UDP Proxy of the unit.
 
 Set IP/Port of the local communication server.
 
-**Fields:** u string REQUIRED (URL/IP); p string REQUIRED (port). BUG: drone_engage_communication_pro's handler parses u/p but then calls reconnectToCommServer() with hardcoded literals - the parsed values are discarded.
+**Fields:** u string REQUIRED (URL/IP); p string REQUIRED (port). BUG: droneengage_communication_pro's handler parses u/p but then calls reconnectToCommServer() with hardcoded literals - the parsed values are discarded.
 
 .. rubric:: TYPE_AndruavMessage_LocalServer_STATUS — 6523
 

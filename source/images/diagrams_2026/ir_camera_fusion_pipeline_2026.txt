@@ -26,13 +26,13 @@ Legend (top-left): orange = DE-Module, dashed yellow = Virtual Video
 Device, gray = Hardware Input.
 
 Footer credit line: source files referenced (IR/README.md,
-drone_engage_IR_camera/README.md, messages.hpp).
+droneengage_IR_camera/README.md, messages.hpp).
 
 SOURCE OF TRUTH:
   - IR/README.md ("System Architecture" section — lists
-    drone_engage_IR_camera, mi48_lib_c, drone_engage_tracking,
+    droneengage_IR_camera, mi48_lib_c, droneengage_tracking,
     pysenxor-master as one system)
-  - IR/drone_engage_IR_camera/README.md ("Virtual Video Device Chain"
+  - IR/droneengage_IR_camera/README.md ("Virtual Video Device Chain"
     section — has the original ASCII-art pipeline diagram this is based on)
   - de_common/de_databus/messages.hpp — TYPE_AndruavMessage_TrackingTargetLocation
     (1043) doc comment, specifically the note about IR camera reusing this ID

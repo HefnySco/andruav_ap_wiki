@@ -36,7 +36,7 @@ SOURCE OF TRUTH:
   - Standard Raspberry Pi GPIO 40-pin header pinout (public reference,
     identical across all 40-pin Pi models) — verify against
     raspberrypi.com's official GPIO documentation if any pin looks wrong
-  - drone_engage_rpi_gpio/README.md (module purpose)
+  - droneengage_rpi_gpio/README.md (module purpose)
   - de_common/de_databus/messages.hpp — TYPE_AndruavMessage_GPIO_ACTION
     (6519) doc comment for the field semantics (p=pin, m=mode, v=value,
     d=PWM duty, n=pin name lookup)

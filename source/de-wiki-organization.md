@@ -103,8 +103,8 @@ Groups the video-processing modules that form the camera → tracker → AI
 chain described in the workspace `AGENTS.md` (virtual-video-device
 pipeline), one subfolder per module:
 
-- `technicals/vision/camera/` — `drone_engage_camera_2025` (active)
-- `technicals/vision/ir-camera/` — `IR/drone_engage_IR_camera` (active), plus its
+- `technicals/vision/camera/` — `droneengage_camera_2025` (active)
+- `technicals/vision/ir-camera/` — `IR/droneengage_IR_camera` (active), plus its
   dependency library `IR/mi48_lib_c/` and the reference-only `IR/pysenxor-master/`,
   documented together in the same folder
 - `technicals/vision/tracking/` — reserved, not yet built
@@ -120,7 +120,7 @@ one subfolder per module:
 #### Ops Tools (`technicals/ops/`)
 Groups dev/ops-only modules with no end-user-facing (Track U) page —
 `de_bot`, `droneengage_telnet`, `droneengage_performance_monitor`,
-`drone_engage_wifi_manager`.
+`droneengage_wifi_manager`.
 
 See `MODULES_MANIFEST.md` for the authoritative per-module status,
 source files, and sync state — check it before porting or updating any

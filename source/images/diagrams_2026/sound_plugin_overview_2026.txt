@@ -19,7 +19,7 @@ suitable existing screenshot or matching YouTube video was found for
 this module as of 2026-09-04.
 
 SOURCE OF TRUTH:
-  - drone_engage_sound_module/README.md
+  - droneengage_sound_module/README.md
   - de_common/de_databus/messages.hpp — TYPE_AndruavMessage_SOUND_TEXT_TO_SPEECH
     (6511) / TYPE_AndruavMessage_SOUND_PLAY_FILE (6512) doc comments (both
     WEB_TO_MODULE, confirming the WebClient -> de_snd direction shown)

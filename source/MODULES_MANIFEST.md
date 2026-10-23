@@ -37,8 +37,8 @@ Track D page the same day.
 
 | Module | Repo path | Track U page(s) | Track D folder | Source docs mined | Status | Last synced |
 |---|---|---|---|---|---|---|
-| de_comm | `drone_engage_communication_pro/` | de-what-is, de-index | `technicals/communication/` | `wiki/*.md` | done | pre-existing |
-| de_mavlink | `drone_engage_mavlink/` | de-config-mavlink, andruav-* | `technicals/mavlink/` | `wiki/*.md` | done | pre-existing |
+| de_comm | `droneengage_communication_pro/` | de-what-is, de-index | `technicals/communication/` | `wiki/*.md` | done | pre-existing |
+| de_mavlink | `droneengage_mavlink/` | de-config-mavlink, andruav-* | `technicals/mavlink/` | `wiki/*.md` | done | pre-existing |
 | webclient | `droneengage_webclient_react/` | webclient-*.rst | `technicals/webclient/` | `wiki/*.md` | done | pre-existing |
 | webconnector | `droneengage_webclient_react/webconnector/` | — (dev/ops only) | `technicals/webclient/de-web-technicals-webconnector*.md` | `webconnector/wiki/README_*.md` | **skeleton** | 2026-08-29 |
 | droneengage_server | `servers/droneengage_server/` | srv-communication | `technicals/server/` | `wiki/*.md` | done | pre-existing |
@@ -48,20 +48,20 @@ Track D page the same day.
 | droneengage_server_common | `servers/droneengage_server_common/` | — (dev-only shared package, no Track U) | `technicals/server/de-server-technicals-common.md` | `README.md` | done | 2026-09-04 |
 | de_common | `de_common/` | — | `technicals/de_common/`, `andruav-communication-protocol-messages.rst` (message type reference, generated from `de_databus/messages.hpp` doc comments) | `README.md`, `de_databus/messages.hpp` | done | 2026-08-29 |
 | de_databus | `de_databus/` | — | de-dev-databus.md | `README.md` (+nodejs/python/examples) | partial | pre-existing |
-| drone_engage_camera_2025 | `drone_engage_camera_2025/` | de-camera.md | `technicals/vision/camera/` | `wiki/*.md` (4 files) | **skeleton** | 2026-08-29 |
-| drone_engage_sdr_module | `drone_engage_sdr_module/` | de-plugin-sdr.rst | `technicals/plugins/sdr/` | `README.md` (no wiki/) | **skeleton** | 2026-08-29 |
-| drone_engage_rpi_gpio | `drone_engage_rpi_gpio/` | de-plugin-gpio.rst | `technicals/plugins/gpio/` | `README.md` (no wiki/) | **skeleton** | 2026-08-29 |
-| drone_engage_sound_module | `drone_engage_sound_module/` | de-plugin-sound.rst | `technicals/plugins/sound/` | `README.md` (no wiki/) | **skeleton** | 2026-08-29 |
+| droneengage_camera_2025 | `droneengage_camera_2025/` | de-camera.md | `technicals/vision/camera/` | `wiki/*.md` (4 files) | **skeleton** | 2026-08-29 |
+| droneengage_sdr_module | `droneengage_sdr_module/` | de-plugin-sdr.rst | `technicals/plugins/sdr/` | `README.md` (no wiki/) | **skeleton** | 2026-08-29 |
+| droneengage_rpi_gpio | `droneengage_rpi_gpio/` | de-plugin-gpio.rst | `technicals/plugins/gpio/` | `README.md` (no wiki/) | **skeleton** | 2026-08-29 |
+| droneengage_sound_module | `droneengage_sound_module/` | de-plugin-sound.rst | `technicals/plugins/sound/` | `README.md` (no wiki/) | **skeleton** | 2026-08-29 |
 | de_bot | `de_bot/` | — (ops tool, no Track U) | `technicals/ops/bot/` | `README.md` | **skeleton** | 2026-08-29 |
 | droneengage_telnet | `droneengage_telnet/` | — (ops tool, no Track U) | `technicals/ops/telnet/` | `README.md` | **skeleton** | 2026-08-29 |
 | droneengage_performance_monitor | `servers/droneengage_performance_monitor/` | — (ops tool, no Track U) | `technicals/ops/performance-monitor/` | `README.md` | **skeleton** | 2026-08-29 |
-| drone_engage_wifi_manager | `drone_engage_wifi_manager/` | de-rpi-image-tools-wifi.rst (RPi-image tool, different scope) | `technicals/ops/wifi-manager/` | none found — needs a source doc pass before content can be written | **skeleton, blocked** | 2026-08-29 |
-| drone_engage_IR_camera | `IR/drone_engage_IR_camera/` | — (needs a Track U page: not yet planned) | `technicals/vision/ir-camera/` | `README.md` (no `wiki/`) | **skeleton** | 2026-08-29 |
+| droneengage_wifi_manager | `droneengage_wifi_manager/` | de-rpi-image-tools-wifi.rst (RPi-image tool, different scope) | `technicals/ops/wifi-manager/` | none found — needs a source doc pass before content can be written | **skeleton, blocked** | 2026-08-29 |
+| droneengage_IR_camera | `IR/droneengage_IR_camera/` | — (needs a Track U page: not yet planned) | `technicals/vision/ir-camera/` | `README.md` (no `wiki/`) | **skeleton** | 2026-08-29 |
 | mi48_lib_c *(dependency of IR camera)* | `IR/mi48_lib_c/` | — (library, no Track U) | `technicals/vision/ir-camera/de-vision-ir-camera-technicals-mi48-lib*.md` | `README.md` + `examples/README.md` | **skeleton** | 2026-08-29 |
 | pysenxor-master *(reference, not a build dep)* | `IR/pysenxor-master/` | — (library, no Track U) | `technicals/vision/ir-camera/de-vision-ir-camera-technicals-pysenxor.md` | `README.md` | **skeleton** | 2026-08-29 |
 
 Note on the IR camera cluster: `IR/README.md` describes it as one system —
-`drone_engage_IR_camera` (the module) is built against `mi48_lib_c` (its
+`droneengage_IR_camera` (the module) is built against `mi48_lib_c` (its
 direct C++ dependency, own git repo); `pysenxor-master` is a vendored
 Python reference implementation of the same sensor protocol, not linked
 into the C++ build. All three are documented together under
@@ -73,11 +73,11 @@ API right next to it.
 
 | Module | Repo path | Planned Track D location | Notes |
 |---|---|---|---|
-| drone_engage_tracking | `drone_engage_tracking/` | `technicals/vision/tracking/` | has `wiki/` (2 files) ready when unblocked |
-| drone_engage_yolo_ai | `drone_engage_yolo_ai/` | `technicals/vision/ai-detection/` | has `wiki/messages-documentation.md` |
-| drone_engage_yolo_ai_generic | `drone_engage_yolo_ai_generic/` | `technicals/vision/ai-detection/` (shares folder with yolo_ai — IMX500 vs ONNX/RKNN variants) | has `wiki/messages-documentation.md` |
-| drone_engage_viewlink_module | `drone_engage_viewlink_module/` | `technicals/plugins/viewlink/` | no `wiki/`, no README found |
-| drone_engage_p2p | `drone_engage_p2p/` | `technicals/plugins/p2p/` | no `wiki/` found |
+| droneengage_tracking | `droneengage_tracking/` | `technicals/vision/tracking/` | has `wiki/` (2 files) ready when unblocked |
+| droneengage_yolo_ai | `droneengage_yolo_ai/` | `technicals/vision/ai-detection/` | has `wiki/messages-documentation.md` |
+| droneengage_yolo_ai_generic | `droneengage_yolo_ai_generic/` | `technicals/vision/ai-detection/` (shares folder with yolo_ai — IMX500 vs ONNX/RKNN variants) | has `wiki/messages-documentation.md` |
+| droneengage_viewlink_module | `droneengage_viewlink_module/` | `technicals/plugins/viewlink/` | no `wiki/`, no README found |
+| droneengage_p2p | `droneengage_p2p/` | `technicals/plugins/p2p/` | no `wiki/` found |
 
 Do not create folders or pages for the above until they're explicitly
 pulled off hold. When they are, `technicals/vision/` and

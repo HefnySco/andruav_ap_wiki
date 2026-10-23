@@ -68,5 +68,5 @@
 
   <line x1="315" y1="285" x2="315" y2="400" stroke="#555555" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
 
-  <text x="540" y="465" font-size="10" fill="#999999" text-anchor="middle">Source: IR/README.md, IR/drone_engage_IR_camera/README.md, de_databus/messages.hpp — 2026</text>
+  <text x="540" y="465" font-size="10" fill="#999999" text-anchor="middle">Source: IR/README.md, IR/droneengage_IR_camera/README.md, de_databus/messages.hpp — 2026</text>
 </svg>
