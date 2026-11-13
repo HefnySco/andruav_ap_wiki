@@ -4,6 +4,14 @@
 Air-Gap RPI-4 without Access Point
 ==================================
 
+.. note::
+
+   The script and the ready image on this page install the earlier
+   **Node.js** servers. The new backend has four **Rust** servers. To set up
+   the Rust servers, see :ref:`srv-airgap-servers`.
+
+
+
 This configuration assumes that RPI board is connected to a local network. The default IP of the RPI in the ready image is 192.168.1.161.
 
 For a **ready image** please check :ref:`srv-install-airgap-download`, also **script** is available at `prepare-airgapped-server.sh <https://raw.githubusercontent.com/DroneEngage/DroneEngage_ScriptWiki/main/server_installation/prepare-airgapped-server.sh>`__

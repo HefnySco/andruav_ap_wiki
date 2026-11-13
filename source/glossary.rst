@@ -54,7 +54,7 @@ This glossary defines key terms used throughout the DroneEngage and Andruav docu
         Flight Control Board. Hardware that runs autopilot firmware (e.g., `OBAL <https://ardupilot.org/copter/docs/common-obal-overview.html>`_, `Pixhawk <https://pixhawk.org/>`_, Cube, Kakute). Connects to the companion computer via serial or UDP.
 
     GCS
-        Ground Control Station. Software used to monitor and control drones. Examples include `Mission Planner <https://ardupilot.org/planner/>`_, `QGroundControl <http://qgroundcontrol.com/>`_, Andruav App in GCS mode, and the `DroneEngage web client <https://cloud.ardupilot.org:8001/>`_.
+        Ground Control Station. Software used to monitor and control drones. Examples include `Mission Planner <https://ardupilot.org/planner/>`_, `QGroundControl <http://qgroundcontrol.com/>`_, and the `DroneEngage web client <https://cloud.ardupilot.org:8001/>`_.
 
     Geo-Fence
         A virtual boundary that restricts drone flight to specific areas. DroneEngage provides independent geo-fencing that works alongside or instead of the FCB's built-in geo-fence.

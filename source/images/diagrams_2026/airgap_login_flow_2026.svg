@@ -1,0 +1,40 @@
+<svg viewBox="0 0 820 400" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="lf_a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333333"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="820" height="400" fill="#ffffff"/>
+  <text x="410" y="28" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">How a Unit or a WebClient Connects</text>
+
+  <rect x="40" y="48" width="200" height="46" rx="10" fill="#27ae60" stroke="#186a3b" stroke-width="1.5"/>
+  <text x="140" y="70" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Unit or WebClient</text>
+  <text x="140" y="86" font-size="10" fill="#eafaf1" text-anchor="middle">email + access code</text>
+  <rect x="310" y="48" width="200" height="46" rx="10" fill="#c0392b" stroke="#78281f" stroke-width="1.5"/>
+  <text x="410" y="76" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Authenticator</text>
+  <rect x="580" y="48" width="200" height="46" rx="10" fill="#2471a3" stroke="#154360" stroke-width="1.5"/>
+  <text x="680" y="76" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Communication Server</text>
+
+  <line x1="140" y1="94" x2="140" y2="380" stroke="#aab7b8" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="410" y1="94" x2="410" y2="380" stroke="#aab7b8" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="680" y1="94" x2="680" y2="380" stroke="#aab7b8" stroke-width="2" stroke-dasharray="5 4"/>
+
+  <!-- 0 -->
+  <line x1="678" y1="125" x2="414" y2="125" stroke="#7f8c8d" stroke-width="2" marker-end="url(#lf_a)"/>
+  <text x="545" y="118" font-size="12" fill="#566573" text-anchor="middle">0 · At start: connect and register (S2S)</text>
+  <!-- 1 -->
+  <line x1="142" y1="170" x2="406" y2="170" stroke="#333333" stroke-width="2" marker-end="url(#lf_a)"/>
+  <text x="275" y="163" font-size="12" fill="#333333" text-anchor="middle">1 · Log in (HTTPS 19408)</text>
+  <!-- 2 -->
+  <line x1="412" y1="210" x2="676" y2="210" stroke="#7f8c8d" stroke-width="2" marker-end="url(#lf_a)"/>
+  <text x="545" y="203" font-size="12" fill="#566573" text-anchor="middle">2 · Make a temporary login key</text>
+  <line x1="678" y1="240" x2="414" y2="240" stroke="#7f8c8d" stroke-width="2" marker-end="url(#lf_a)"/>
+  <text x="545" y="233" font-size="12" fill="#566573" text-anchor="middle">3 · Here is the key</text>
+  <!-- 4 -->
+  <line x1="408" y1="285" x2="144" y2="285" stroke="#333333" stroke-width="2" marker-end="url(#lf_a)"/>
+  <text x="275" y="270" font-size="12" fill="#333333" text-anchor="middle">4 · Server address, port and key</text>
+  <!-- 5 -->
+  <line x1="142" y1="335" x2="676" y2="335" stroke="#2471a3" stroke-width="3" marker-end="url(#lf_a)"/>
+  <text x="410" y="327" font-size="12" fill="#2471a3" text-anchor="middle" font-weight="bold">5 · Open the WebSocket with the key (WSS 9966) — messages flow</text>
+  <text x="410" y="372" font-size="11" fill="#666666" text-anchor="middle">The Authenticator does not redirect. It sends JSON with the address of the Communication Server.</text>
+</svg>

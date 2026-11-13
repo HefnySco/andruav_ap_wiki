@@ -4,6 +4,14 @@
 Air-Gap RPI-4 with Access Point
 ===============================
 
+.. note::
+
+   The script and the ready image on this page install the earlier
+   **Node.js** servers. The new backend has four **Rust** servers. To set up
+   the Rust servers, see :ref:`srv-airgap-servers`.
+
+
+
 
 
 

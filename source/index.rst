@@ -16,7 +16,7 @@ Just an Android phone. Mount one on the drone, keep one in your hand (or
 use the WebClient instead) — telemetry and FPV video over WiFi/4G/5G in
 minutes.
 
-.. image:: ./images/new_andruav_2026/andruav_home.png
+.. image:: ./images/new_andruav_2026/andruav_home.jpeg
    :height: 400px
    :align: center
    :alt: Andruav home screen
@@ -70,6 +70,7 @@ install required. Includes a phone-optimized ``/mobile`` view.
    Developer Guide </de-dev>
    Scenarios & Use Cases </scenarios/de-scenarios>
    Simulation (SITL) </de-simulators>
+   DroneEngage Studio </studio/index>
    FAQ </de-faq>
    Glossary </glossary>
    Contributing </de-contributing>

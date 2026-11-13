@@ -32,7 +32,7 @@ Now you need to install the APK file on the drone mobile. you can also Download 
 APK Download
 ============
 
-    Download **AndruavAP APK** from `HERE <https://cloud.ardupilot.org/downloads/Android/latest/>`__
+    Download **AndruavAP APK** from `HERE <https://sourceforge.net/projects/andruav/>`__
 
     You can simply click the above link from the drone mobile and it wil be installed.
 

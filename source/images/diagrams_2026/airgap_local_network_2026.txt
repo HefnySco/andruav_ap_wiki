@@ -1,0 +1,8 @@
+DIAGRAM: airgap_local_network_2026.svg
+INTENDED CONTENT: the airgap.local SD card as GUIDME.md describes it
+(2026-11-13): the Pi is its own Wi-Fi AP "DE_SERVER" (192.169.9.1/24,
+dnsmasq DHCP+DNS). Services with URLs: WebClient 8001, wiki + GUIDME.md
+8080, auth admin 8089, storage dashboard 9001 (all HTTPS), login 19408,
+comm 9966, UDP relay 9100 + 40000-40999, maps 88 (HTTP), coturn 3478.
+Clients: laptop browser, vehicle unit, MAVLink GCS over the Wi-Fi.
+Replaces images/srv_rpi_deployment.png on srv-Installation.rst.

@@ -1,0 +1,52 @@
+<svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ns_a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555555"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="880" height="400" fill="#ffffff"/>
+  <text x="440" y="28" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">Andruav 2026 — DroneEngage Runs Inside the Phone</text>
+
+  <!-- Phone -->
+  <rect x="230" y="50" width="420" height="320" rx="26" fill="#f8f9f9" stroke="#566573" stroke-width="2"/>
+  <text x="440" y="74" font-size="13" fill="#566573" text-anchor="middle" font-weight="bold">Android phone on the vehicle</text>
+
+  <rect x="260" y="88" width="360" height="54" rx="10" fill="#2c3e50"/>
+  <text x="440" y="111" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Andruav app</text>
+  <text x="440" y="130" font-size="11" fill="#d5dbdb" text-anchor="middle">home screen · PHONE · FPV · settings</text>
+
+  <rect x="260" y="160" width="110" height="74" rx="10" fill="#2471a3"/>
+  <text x="315" y="190" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">de_comm</text>
+  <text x="315" y="208" font-size="10" fill="#eaf2f8" text-anchor="middle">server link</text>
+  <rect x="385" y="160" width="110" height="74" rx="10" fill="#27ae60"/>
+  <text x="440" y="190" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">de_mavlink</text>
+  <text x="440" y="208" font-size="10" fill="#eafaf1" text-anchor="middle">flight controller</text>
+  <rect x="510" y="160" width="110" height="74" rx="10" fill="#e67e22"/>
+  <text x="565" y="190" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">andruav_phone</text>
+  <text x="565" y="208" font-size="10" fill="#fdebd0" text-anchor="middle">camera · sound · SMS</text>
+
+  <rect x="260" y="252" width="360" height="34" rx="8" fill="#ffffff" stroke="#7f8c8d" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="440" y="274" font-size="12" fill="#566573" text-anchor="middle">local message bus (UDP) — the same as on a Raspberry Pi</text>
+  <line x1="315" y1="234" x2="315" y2="252" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="440" y1="234" x2="440" y2="252" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="565" y1="234" x2="565" y2="252" stroke="#7f8c8d" stroke-width="2"/>
+  <text x="440" y="320" font-size="12" fill="#333333" text-anchor="middle">The real DroneEngage modules (C++), built for Android</text>
+  <text x="440" y="340" font-size="11" fill="#666666" text-anchor="middle">Same protocol, same WebClient, same account as DroneEngage on a Pi</text>
+
+  <!-- Left: server -->
+  <rect x="20" y="150" width="170" height="94" rx="10" fill="#2980b9" stroke="#1b4f72" stroke-width="1.5"/>
+  <text x="105" y="182" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Mission Server</text>
+  <text x="105" y="202" font-size="11" fill="#eaf2f8" text-anchor="middle">cloud.ardupilot.org</text>
+  <text x="105" y="220" font-size="11" fill="#eaf2f8" text-anchor="middle">or your air-gap Pi</text>
+  <line x1="258" y1="197" x2="192" y2="197" stroke="#555555" stroke-width="2" marker-start="url(#ns_a)" marker-end="url(#ns_a)"/>
+  <text x="225" y="188" font-size="11" fill="#555555" text-anchor="middle">4G / Wi-Fi</text>
+
+  <!-- Right: FC -->
+  <rect x="690" y="150" width="170" height="94" rx="10" fill="#8e44ad" stroke="#5b2c6f" stroke-width="1.5"/>
+  <text x="775" y="182" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Flight controller</text>
+  <text x="775" y="202" font-size="11" fill="#f4ecf7" text-anchor="middle">ArduPilot</text>
+  <text x="775" y="220" font-size="11" fill="#f4ecf7" text-anchor="middle">drone · boat · rover</text>
+  <path d="M440,234 V244 H660 V197 H688" fill="none" stroke="#555555" stroke-width="2" marker-end="url(#ns_a)"/>
+  <text x="672" y="140" font-size="11" fill="#555555" text-anchor="middle">USB · Bluetooth</text>
+  <text x="672" y="154" font-size="11" fill="#555555" text-anchor="middle">Wi-Fi · UDP</text>
+</svg>

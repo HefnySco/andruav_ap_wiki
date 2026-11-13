@@ -12,7 +12,7 @@ FPV Gears are normally expensive, requires certain setup and antennas. Andruav h
 
 |
 
-Andruav FPV is very distinguished, as it allows multiple GCS to receive a video broadcast from the same vehicle. Those GCSs could be in different places in the world and they all share the same video streaming from drone. Also video streaming receiving is supported by Andruav GCS mobile app, as well as :ref:`webclient-whatis`.
+Andruav FPV is very distinguished, as it allows multiple GCS to receive a video broadcast from the same vehicle. Those GCSs could be in different places in the world and they all share the same video streaming from drone. You watch the video in the :ref:`webclient-whatis`, on a computer or in the :ref:`webclient-mobile` on a phone.
 
 |
 
@@ -47,18 +47,6 @@ Andruav FPV Capabilities
 
 |
 
-.. warning::
-    If you have to install your Drone mobile vertically you might find it difficult to view video on GCS mobile.
-    you can use the bellow settings in GCS mobile to adjust your view.
-
-
-.. image:: ./images/gcs_landscape.jpg
-   :height: 400px
-   :align: center
-   :alt: FPV Vertical & Horizontal
-
-
-|
 
 Andruav FPV on WebClient
 ========================

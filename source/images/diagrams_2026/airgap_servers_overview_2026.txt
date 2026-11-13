@@ -1,0 +1,9 @@
+DIAGRAM: airgap_servers_overview_2026.svg
+INTENDED CONTENT: the four Rust servers inside the air-gap Raspberry Pi
+(Authenticator, Communication Server, Storage Server, UDP Relay), the
+WebClient web site and the network helpers, with their default ports.
+Clients on the left: WebClient, vehicle unit, MAVLink GCS.
+A = login to the Authenticator, B = WSS to the Communication Server,
+C = optional MAVLink over UDP through the UDP Relay. Grey arrows = S2S links
+inside the Pi. Ports come from each repo's server.config (2026-11-13).
+Used by: srv-airgap-servers.rst

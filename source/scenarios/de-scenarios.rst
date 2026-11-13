@@ -56,8 +56,8 @@ Each time cameras are initialized, they may receive a different index (i.e., ``/
 Andruav + Mission Planner over 4G/5G, with Video
 =================================================
 
-For the mobile-only setup — two Android phones and Andruav instead of a
-Raspberry Pi — see :doc:`andruav-mp-4g5g`. It covers linking the flight
+For the phone setup — one Android phone with Andruav instead of a
+Raspberry Pi, and the WebClient in a browser — see :doc:`andruav-mp-4g5g`. It covers linking the flight
 controller, forwarding telemetry into Mission Planner over UDPCI, and
 streaming live video, all over a standard 4G/5G or WiFi connection.
 

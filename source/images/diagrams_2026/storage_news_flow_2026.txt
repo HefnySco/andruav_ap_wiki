@@ -1,0 +1,7 @@
+DIAGRAM: storage_news_flow_2026.svg
+INTENDED CONTENT: news flow. The admin (storage dashboard, global or account
+scope) or a WebClient user ("Post News" panel, account scope only) posts news.
+The Storage Server saves it (SQLite) and pushes it at once (mt 9018) to the
+Communication Server(s), which deliver it to the WebClients of the account,
+or of all accounts for global news.
+Used by: srv-storage.rst

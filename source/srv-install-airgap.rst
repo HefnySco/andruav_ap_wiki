@@ -4,10 +4,29 @@
 Air-Gap RPI-4 Backend-Server Deployment
 =======================================
 
-The DroneEngage Air-Gap Server is designed to provide a robust and secure, self-contained server solution, particularly valuable in situations where internet connectivity is unreliable, restricted, or entirely prohibited.
+The DroneEngage Air-Gap Server is a complete backend on one Raspberry Pi.
+Use it when the internet is slow, not available, or not permitted.
 
 
 .. youtube:: mHRhm1bP3aQ
+
+|
+
+What Runs on the Pi
+-------------------
+
+The Pi runs four Rust servers: the Authenticator, the Communication Server,
+the Storage Server and the UDP Relay. It also runs the WebClient web site,
+an offline map server, a DNS server and a video relay (coturn).
+
+.. image:: /images/diagrams_2026/airgap_servers_overview_2026.svg
+   :align: center
+   :alt: The four Rust servers inside the air-gap Raspberry Pi
+
+|
+
+See :ref:`srv-airgap-servers` for the ports, the config files and the
+settings that you must change.
 
 |
 

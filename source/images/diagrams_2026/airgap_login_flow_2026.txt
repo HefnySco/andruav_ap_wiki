@@ -1,0 +1,7 @@
+DIAGRAM: airgap_login_flow_2026.svg
+INTENDED CONTENT: the login sequence. 0 comm server registers with the
+authenticator over S2S at start. 1 client logs in (HTTPS 19408). 2-3 the
+authenticator gets a temporary login key from the comm server. 4 the
+authenticator replies with address, port and key (JSON, no redirect).
+5 the client opens the WSS (9966) with the key.
+Used by: srv-airgap-servers.rst, srv-authentication.rst

@@ -4,11 +4,12 @@
 Andruav
 =======
 
-**Two Android phones. No other gear.** One rides on your drone or RC vehicle,
-the other stays in your hand — and together they give you unlimited-range
-telemetry, live HD FPV video, and a direct line into Mission Planner.
-Andruav has been rebuilt from the ground up for 2026: modern Android
-support, a reworked video pipeline, and a new dark interface.
+**One phone. Any vehicle. Air, land or water.**
+
+Andruav is the companion computer that everybody already owns. Put an
+Android phone on your drone, boat or rover. Andruav connects it to the
+ArduPilot flight controller and to the cloud. You get telemetry with no
+range limit, live FPV video, and a link to Mission Planner.
 
 .. youtube:: ak4IFExkYsA
 
@@ -20,25 +21,64 @@ support, a reworked video pipeline, and a new dark interface.
 
 |
 
-Two Phones. That's It.
-=======================
+New in Andruav 15: DroneEngage Inside
+=====================================
 
-Mount one Android phone on your drone or RC vehicle running Andruav. That's
-your companion computer — it talks to your ArduPilot flight controller and
-to the cloud over WiFi or 3G/4G/5G, so range stops being limited by your
-radio.
+The phone now runs the real DroneEngage modules, the same modules that run
+on a Raspberry Pi. **Prove your idea on a phone. Ship it on DroneEngage.**
 
-Your second phone is the ground station. Install Andruav on it too, or skip
-the install entirely and open the :ref:`webclient-mobile` in any mobile
-browser — a phone-sized live view with map, flight controls, FPV, and unit
-status, ready in one tap. See :ref:`webclient-whatis` for the full
-browser-based ground station.
+.. image:: /images/diagrams_2026/andruav_native_stack_2026.svg
+   :align: center
+   :alt: The DroneEngage modules inside the Andruav phone, between the Mission Server and the flight controller
+
+|
+
+|pic_de_home| |pic_de_imu|
+
+.. |pic_de_home| image:: ./images/andruav_de/andruav_home_connected.jpeg
+   :height: 480px
+   :alt: New home screen - Mission Server online and secured, flight telemetry linked, four module tiles
+
+.. |pic_de_imu| image:: ./images/andruav_de/andruav_imu.jpeg
+   :height: 480px
+   :alt: New PHONE screen - phone attitude, status and raw sensors
+
+|
+
+- **New home screen** — the server, the flight telemetry and the four
+  modules (PHONE, FPV, Com, FCB) on one page.
+- **PHONE screen** — the phone IMU, the phone GPS and the SMS settings in
+  three tabs.
+- **Comm-loss failsafe** — if the server link stops, the phone sets the
+  flight controller to RTL, LAND or another mode that you select.
+- **Safer SMS control** — allowed contacts, a PIN, a lockout and a dry run.
+- **One-tap telemetry** — open or close the Mission Planner UDP link from
+  the home screen.
+- **Sun theme** — high contrast for direct sunlight.
+- **Your own server** — connect to ``cloud.ardupilot.org`` or to your own
+  :ref:`air-gap server <srv-airgap-servers>`.
+
+See :ref:`andruav-de-native` for all the new features.
+
+|
+
+One Phone on the Vehicle. The WebClient on the Ground.
+======================================================
+
+Put one Android phone with Andruav on your drone, boat or rover. This phone
+is the companion computer. It talks to the ArduPilot flight controller and to
+the cloud over Wi-Fi or 3G/4G/5G, so the range is not limited by a radio.
+
+Andruav is **not** a ground station app. You control the vehicle from the
+:ref:`WebClient <webclient-whatis>` in a browser. On a phone, open the
+:ref:`webclient-mobile`. It has the map, the flight controls, the FPV video
+and the unit status. You do not install an app.
 
 |pic_home| |pic_mobile|
 
-.. |pic_home| image:: ./images/new_andruav_2026/andruav_home.png
+.. |pic_home| image:: ./images/andruav_de/andruav_home_connected.jpeg
    :height: 500px
-   :alt: Andruav home screen showing connection status and modules
+   :alt: Andruav home screen on the vehicle phone, connected to the server and the flight controller
 
 .. |pic_mobile| image:: ./images/new_andruav_2026/webclient_mobile_andruav_connected.png
    :height: 500px
@@ -56,7 +96,7 @@ different places in the world, all watching the same flight live.
 .. image:: ./images/new_andruav_2026/andruav_fpv.png
    :width: 90%
    :align: center
-   :alt: Live FPV video with telemetry overlay: battery, speed, altitude, GPS status
+   :alt: Live FPV video from the phone camera
 
 |
 
@@ -123,7 +163,9 @@ and the `Andruav Android app <https://deepwiki.com/HefnySco/andruav_android_app>
    :maxdepth: 1
 
    What is Andruav </andruav-what-is>
+   What Is New: DroneEngage Inside </andruav-de-native>
    Getting Started </andruav-getting-started>
+   Settings </andruav-settings>
    How to Build </andruav-how-to-compile>
    Andruav Serial Port </andruav-serial>
    Andruav FPV </andruav-fpv>

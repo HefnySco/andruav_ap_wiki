@@ -5,10 +5,14 @@
 Configuration
 =============
 
-.. image:: ./images/gcs_screen.png
-   :height: 350px
+.. image:: /images/diagrams_2026/webclient_config_files_2026.svg
    :align: center
-   :alt: WebClient ground control station screen
+   :alt: config.json values replace the default values of js_siteConfig.js, and the WebClient uses the result to reach the Authenticator
+
+.. note::
+
+   This page is about the configuration of the **WebClient** web site. For
+   the settings of the Andruav app on the phone, see :ref:`andruav-settings`.
 
 |
 

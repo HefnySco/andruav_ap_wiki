@@ -5,59 +5,107 @@
 Andruav Simulation using SITL
 =============================
 
-You do not need to have a real drone to test Andruav cabapilities. Actually it is recommended to use `SITL <https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html>`_ simulation to test Andruav before actually flying long range with your drone. 
+You do not need a real vehicle to test Andruav. Use
+`SITL <https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html>`_
+before you use Andruav on a real drone, boat or rover. SITL can simulate
+ArduCopter, ArduPlane, ArduRover (rovers and boats) and ArduSub.
 
-If you want more real action then maybe you can try `Webots SITL <https://ardupilot.org/dev/docs/sitl-with-webots.html>`_ to have a real taste of how using Andruav really feels.
+For a 3D view, you can also use
+`Webots SITL <https://ardupilot.org/dev/docs/sitl-with-webots.html>`_.
 
 .. youtube:: c5CJaRH9Pig
 
+|
 
+Connect Andruav to SITL
+=======================
 
-Connecting to SITL
-==================
+Andruav connects to SITL over UDP. The phone and the SITL computer must be
+on the same network.
 
-Andruav connects tp SITL or Webots-SITL in the same way. The easiest way is set Andruav-Drone mobile FCB screen to connect using UDP. You need to specify the listening port.
-In SITL simulator make sure that it sends UDP packets to mobile IP address on the specified port.
+**On the SITL computer**
 
-.. image:: ./images/s_fcb1.jpg
-   :height: 400px
-   :align: center
-   :alt: FCB Screen for Drone Mobile
+Start SITL and send MAVLink to the IP of the phone:
 
- 
 .. code-block:: bash
-    
-    $ ~/ardupilot/Tools/autotest/sim_vehicle.py -j4 -v ArduCopter -M  --out=udpout:127.0.0.1:14550 --out=udpout:192.168.1.100:10100
 
-The above example sends UDP packets to 127.0.0.1 port 14550 as well as 192.168.1.100 port 10100. So you can use a separate Mission Planner or QGC *not connected to Andruav* to test the drone in parallel.
+    ~/ardupilot/Tools/autotest/sim_vehicle.py -j4 -v ArduCopter -M \
+        --out=udpout:127.0.0.1:14550 \
+        --out=udpout:192.168.1.100:14550
 
+In this example:
+
+* ``127.0.0.1:14550`` is for a Mission Planner or QGroundControl on the
+  same computer. It does not go through Andruav.
+* ``192.168.1.100:14550`` is the phone. Change it to the IP of your phone.
+
+For a rover, use ``-v Rover``. For a boat, use ``-v Rover --frame=motorboat``.
+
+**On the phone**
+
+#. On the home screen, tap the **FCB** tile.
+#. Tap **UDP Broadcast**.
+#. Make sure that **Port** is the same port as in the SITL command (``14550``).
+   The sheet shows the **Local IP** of the phone. Use this IP in the SITL
+   command.
+#. Tap **CONNECT**.
+
+.. image:: ./images/andruav_de/andruav_fcb_sheet.jpeg
+   :height: 500px
+   :align: center
+   :alt: FCB sheet with UDP Broadcast selected, the local IP of the phone and port 14550
+
+|
 
 .. tip::
-    give static IP to your mobile so it you do not need to change IP address each time.
+    Give your phone a static IP on your router. Then you do not change the
+    SITL command each time.
 
+|
 
-Once Andruav is connected to FCB board it should give you an indication and the FCB button turns green.
+Check the Link
+==============
 
+When Andruav receives MAVLink from SITL:
 
-|pic1|  and   |pic2|
+* The **FCB** tile becomes green and shows **LINKED**.
+* The **Flight Telemetry** card shows the vehicle type, for example
+  *QuadCopter via native*, the flight mode and the arm state.
 
-.. |pic1| image:: ./images/s_fcb2.jpg
-   :width: 35 %
-   :alt: FCB Screen
+.. image:: ./images/andruav_de/andruav_home_connected.jpeg
+   :height: 500px
+   :align: center
+   :alt: Home screen with the FCB tile LINKED and flight telemetry from the vehicle
 
-.. |pic2| image:: ./images/s_fcb3.jpg
-   :width: 35 %
-   :alt: FCB Screen
+|
 
+Then tap **CONNECT** on the Mission Server card. Open the WebClient, and
+control the simulated vehicle from there.
+
+|
+
+Test the Comm-Loss Failsafe in SITL
+===================================
+
+Use SITL to test the :ref:`comm-loss failsafe <andruav-de-native>` before a
+real run:
+
+#. Turn on **Settings > DroneEngage native > Comm-loss flight failsafe**.
+#. Select the **Failsafe flight mode**, for example ``rtl``.
+#. In SITL, arm the vehicle and take off.
+#. Stop the server link of the phone.
+#. Make sure that the vehicle changes to the failsafe mode.
+
+.. note::
+
+   The SITL link and the server link must be different. For example, use
+   Wi-Fi for SITL and mobile data for the server. Then turn off only the
+   mobile data in step 4.
+
+|
 
 Testing GPS Injection in SITL
 =============================
 
-To test :ref:`andruav-gps-injection` in SITL, the simulator's own GPS must be
-switched off and SITL must start at the phone's location. See
-:ref:`andruav-gps-injection-sitl` for the parameter file and start command.
-
-
-
-
-
+GPS Injection is *coming* and is not active in this version. When it is
+available, see :ref:`andruav-gps-injection-sitl` for the SITL parameters.

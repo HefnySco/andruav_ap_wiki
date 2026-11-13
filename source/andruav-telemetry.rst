@@ -5,17 +5,24 @@
 Andruav Telemetry
 =================
 
-.. toctree::
-   :caption: Contents:
-   :titlesonly:
-   :maxdepth: 2
+Andruav connects to `ArduPilot flight controllers <https://ardupilot.org/copter/docs/common-autopilots.html>`_
+over Bluetooth, USB, Wi-Fi (TCP) or UDP. Then it sends the telemetry to the
+server over the internet, so the range has no limit.
 
-   Andruav GCS Telemetry </andruav-gcs-telemetry>
-   
+To use Mission Planner or QGroundControl with the vehicle:
 
+#. On the Andruav home screen, tap **ENABLE TELEMETRY**.
+#. The Flight Telemetry card shows an address, for example ``andruav.com:40952``.
+#. In Mission Planner, connect with **UDPCI** to this address.
 
+You can also do this from the WebClient. See :ref:`webclient-udp-telemetry`.
 
-Andruav integrates with `Ardupilot-based flight control boards <https://ardupilot.org/copter/docs/common-autopilots.html>`_. Andruav can connect to these boards via bluetooth, USB, TCP and UDP connections. 
+.. image:: ./images/andruav_de/andruav_home_connected.jpeg
+   :height: 500px
+   :align: center
+   :alt: Flight Telemetry card with the telemetry address for Mission Planner
+
+|
 
 The below video might be a record-breaking telemetry range for RC. In the following video you can see a car is being control in Cairo Egypt.driver is in Los-Angeles USA. **Andruav 12,193 km RC Car Demo**.
 

@@ -5,6 +5,18 @@
 Andruav GPS Injection
 =====================
 
+.. important::
+
+   **Coming.** GPS Injection and NTRIP RTK are not active in Andruav 15 (the
+   DroneEngage native version). The settings are visible but they do nothing
+   yet. This page tells how the feature works when it is available. The
+   **PHONE > GPS** tab shows the phone GPS fix now.
+
+   .. image:: ./images/andruav_de/andruav_gps.png
+      :height: 420px
+      :align: center
+      :alt: PHONE screen GPS tab with GPS Injection marked as coming
+
 
 Your drone-side phone already has a capable multi-constellation GNSS receiver.
 With GPS Injection, Andruav sends the phone's GPS fix to the ArduPilot flight
@@ -68,13 +80,13 @@ QGroundControl, then **reboot** the flight controller.
 Step 2 — Enable GPS Injection in Andruav
 ========================================
 
-On the drone-side phone open **Drone Settings → FCB & Telemetry** and enable
+On the drone-side phone open **Settings → FCB & Telemetry** and enable
 **GPS Injection**.
 
-.. image:: ./images/gps_settings.png
+.. image:: ./images/andruav_de/andruav_pref_1_connection_fcb.jpeg
     :align: center
-    :height: 400px
-    :alt: GPS Injection preference
+    :height: 450px
+    :alt: Settings - FCB & Telemetry with GPS Injection
 
 Once the flight controller is connected, the GPS Injection description shows
 whether the flight controller will accept the phone's GPS:

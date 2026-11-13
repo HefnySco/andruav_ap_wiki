@@ -1,0 +1,7 @@
+DIAGRAM: andruav_native_stack_2026.svg
+INTENDED CONTENT: Andruav 15.x runs the real DroneEngage modules inside the
+phone: de_comm (server link), de_mavlink (flight controller) and the Java
+andruav_phone module (camera, GPS, SMS) on the local UDP bus. Left: the
+Mission Server (cloud.ardupilot.org or an air-gap Pi) over 4G/Wi-Fi. Right:
+the ArduPilot flight controller over USB, Bluetooth, Wi-Fi or UDP.
+Used by: andruav-index.rst, andruav-de-native.rst

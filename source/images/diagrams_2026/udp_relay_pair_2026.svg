@@ -1,0 +1,50 @@
+<svg viewBox="0 0 860 330" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ur_a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d35400"/>
+    </marker>
+    <marker id="ur_g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="860" height="330" fill="#ffffff"/>
+  <text x="430" y="28" font-size="17" fill="#333333" text-anchor="middle" font-weight="bold">UDP Relay — One Pair for Each Vehicle</text>
+
+  <rect x="320" y="50" width="220" height="50" rx="10" fill="#2471a3" stroke="#154360" stroke-width="1.5"/>
+  <text x="430" y="72" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Communication Server</text>
+  <text x="430" y="90" font-size="10" fill="#eaf2f8" text-anchor="middle">asks the relay to open or close a pair</text>
+  <line x1="430" y1="100" x2="430" y2="133" stroke="#7f8c8d" stroke-width="2" marker-end="url(#ur_g)"/>
+  <text x="438" y="122" font-size="11" fill="#566573">control 9100 (S2S)</text>
+
+  <rect x="20" y="150" width="170" height="80" rx="10" fill="#27ae60" stroke="#186a3b" stroke-width="1.5"/>
+  <text x="105" y="182" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Vehicle</text>
+  <text x="105" y="202" font-size="11" fill="#eafaf1" text-anchor="middle">de_mavlink module</text>
+
+  <rect x="250" y="135" width="360" height="110" rx="12" fill="#fdf2e9" stroke="#d35400" stroke-width="2"/>
+  <text x="430" y="157" font-size="13" fill="#873600" text-anchor="middle" font-weight="bold">UDP Relay pair</text>
+  <rect x="270" y="170" width="140" height="56" rx="8" fill="#d35400"/>
+  <text x="340" y="194" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">socket 1</text>
+  <text x="340" y="212" font-size="11" fill="#fdebd0" text-anchor="middle">vehicle side</text>
+  <rect x="450" y="170" width="140" height="56" rx="8" fill="#d35400"/>
+  <text x="520" y="194" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">socket 2</text>
+  <text x="520" y="212" font-size="11" fill="#fdebd0" text-anchor="middle">GCS side</text>
+  <line x1="412" y1="198" x2="448" y2="198" stroke="#d35400" stroke-width="2" marker-start="url(#ur_a)" marker-end="url(#ur_a)"/>
+
+  <rect x="670" y="150" width="170" height="80" rx="10" fill="#8e44ad" stroke="#5b2c6f" stroke-width="1.5"/>
+  <text x="755" y="182" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">MAVLink GCS</text>
+  <text x="755" y="202" font-size="11" fill="#f4ecf7" text-anchor="middle">QGC, Mission Planner</text>
+
+  <line x1="190" y1="190" x2="268" y2="198" stroke="#d35400" stroke-width="2" stroke-dasharray="6 4" marker-start="url(#ur_a)" marker-end="url(#ur_a)"/>
+  <line x1="592" y1="198" x2="668" y2="190" stroke="#d35400" stroke-width="2" stroke-dasharray="6 4" marker-start="url(#ur_a)" marker-end="url(#ur_a)"/>
+
+  <text x="230" y="275" font-size="12" fill="#333333" text-anchor="middle" font-weight="bold">Vehicle side guard</text>
+  <text x="230" y="293" font-size="11" fill="#555555" text-anchor="middle">require_unit_token: only the real vehicle</text>
+  <text x="230" y="309" font-size="11" fill="#555555" text-anchor="middle">can use socket 1 (DEU1 hello)</text>
+
+  <text x="630" y="275" font-size="12" fill="#333333" text-anchor="middle" font-weight="bold">GCS side guard</text>
+  <text x="630" y="293" font-size="11" fill="#555555" text-anchor="middle">gcs_peer_policy "tofu": the first GCS is locked,</text>
+  <text x="630" y="309" font-size="11" fill="#555555" text-anchor="middle">other senders are dropped and reported</text>
+
+  <text x="430" y="275" font-size="11" fill="#555555" text-anchor="middle">rate limit per socket</text>
+  <text x="430" y="291" font-size="11" fill="#555555" text-anchor="middle">2000 packets/s · 4 MB/s</text>
+</svg>

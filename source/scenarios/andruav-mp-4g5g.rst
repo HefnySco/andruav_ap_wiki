@@ -5,8 +5,9 @@ Andruav + Mission Planner over 4G/5G, with Live Video
 =====================================================
 
 This is the classic Andruav setup: no radio telemetry module, no analog FPV
-gear — just two Android phones and a cellular connection, giving you
-Mission Planner control and live video anywhere there's 4G/5G or WiFi.
+gear — just one Android phone on the vehicle and a cellular connection,
+giving you Mission Planner control and live video anywhere there's 4G/5G or
+WiFi. On the ground you use the WebClient in a browser.
 
 .. youtube:: DmpX-D10GyQ
 
@@ -37,7 +38,7 @@ How It Connects
 ================
 
 The drone-side phone is the only thing that needs a cellular connection.
-Everything else — Mission Planner, the WebClient, a second phone — connects
+Everything else — Mission Planner, the WebClient on a computer or a phone — connects
 to it through the cloud server, so none of them need to be reachable from
 the internet themselves:
 
@@ -63,23 +64,24 @@ Setup Steps
    connection sheet and pick Bluetooth, USB, or WiFi/UDP depending on how
    your board is wired.
 
-   .. image:: ../images/new_andruav_2026/andruav_fcb_bluetooth.png
+   .. image:: ../images/andruav_de/andruav_fcb_sheet.jpeg
       :height: 480px
       :align: center
       :alt: Andruav FCB connection sheet with Bluetooth, USB, WiFi and UDP options
 
-2. **Confirm the cloud connection.** The Comm Server screen should show
-   ``Cloud.Ardupilot.org`` connected, with your Unit ID and access code
-   set. This is the same link the WebClient and Mission Planner will both
-   reach through.
+2. **Confirm the cloud connection.** Tap **CONNECT** on the Mission Server
+   card. The card must show ``cloud.ardupilot.org`` and **Native Unit
+   Online**. This is the same link the WebClient and Mission Planner will
+   both reach through.
 
-   .. image:: ../images/new_andruav_2026/andruav_comm_server.png
+   .. image:: ../images/andruav_de/andruav_home_connected.jpeg
       :height: 480px
       :align: center
-      :alt: Andruav Comm Server settings screen
+      :alt: Andruav home screen - Mission Server card online and Flight Telemetry linked
 
-3. **Forward telemetry to Mission Planner.** Enable the UDP Proxy — from the
-   phone's settings, or from the WebClient's Smart Telemetry panel (also
+3. **Forward telemetry to Mission Planner.** Enable the UDP Proxy — with
+   **ENABLE TELEMETRY** on the Andruav home screen, or from the WebClient's
+   Smart Telemetry panel (also
    reachable from the :ref:`webclient-mobile`) — and point Mission
    Planner's UDPCI connection at the IP/port it gives you. Full detail in
    :ref:`webclient-udp-telemetry`.
@@ -90,14 +92,14 @@ Setup Steps
       :alt: Smart Telemetry panel on the mobile WebClient showing the UDP proxy IP and port for Mission Planner
 
 4. **Start live video.** Open :ref:`webclient-whatis` (or the lightweight
-   :ref:`webclient-mobile` on a second phone), sign in with the same
+   :ref:`webclient-mobile` in a phone browser), sign in with the same
    access code, and press the video icon on the drone's card to start
    streaming.
 
    .. image:: ../images/new_andruav_2026/andruav_fpv.png
       :width: 90%
       :align: center
-      :alt: Live FPV video with telemetry overlay received over 4G/5G
+      :alt: Live FPV video received over 4G/5G
 
 |
 

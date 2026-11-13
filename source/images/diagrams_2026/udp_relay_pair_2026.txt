@@ -1,0 +1,7 @@
+DIAGRAM: udp_relay_pair_2026.svg
+INTENDED CONTENT: one UDP relay pair. de_mavlink <-> socket 1 <-> socket 2
+<-> QGC/Mission Planner. The comm server opens and closes pairs over the
+control link (9100, S2S). Guards: require_unit_token (DEU1 hello) on the
+vehicle side, gcs_peer_policy tofu on the GCS side, per-socket rate limit
+(max_pps_per_socket 2000, max_bps_per_socket 4000000).
+Used by: srv-udp-relay.rst

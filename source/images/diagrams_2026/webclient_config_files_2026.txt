@@ -1,0 +1,6 @@
+DIAGRAM: webclient_config_files_2026.svg
+INTENDED CONTENT: js_siteConfig.js (defaults, built in) and public/config.json
+(your changes, no rebuild) combine; config.json wins. The WebClient uses the
+result to log in to the Authenticator (CONST_PROD_MODE_IP / PORT 19408).
+Replaces the old Andruav home screenshot (gcs_screen.png) on this page.
+Used by: webclient-configuration.rst

@@ -35,3 +35,14 @@ For More Detailed Information check this video:
 
 |
 
+
+DroneEngage Studio
+==================
+
+For developers and testers, **DroneEngage Studio** runs whole fleets of
+simulated copters, planes, rovers and boats on one Linux machine, with
+the real DroneEngage modules and servers, scripted faults and PASS/FAIL
+checks. It has its own section: :doc:`DroneEngage Studio <studio/index>`.
+
+|
+
